@@ -1,0 +1,17 @@
+{
+  "name": "pixelforge-game",
+  "description": "An action shooter game built with Phaser and TypeScript.",
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "vite --config vite/config.dev.mjs",
+    "build": "vite build --config vite/config.prod.mjs"
+  },
+  "devDependencies": {
+    "typescript": "~5.7.2",
+    "vite": "^6.3.1"
+  },
+  "dependencies": {
+    "phaser": "4.0.0",
+    "terser": "^5.39.0"
+  }
+}
