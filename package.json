@@ -11,6 +11,10 @@
     "vite": "^6.3.1"
   },
   "dependencies": {
+    "@pixelforge/cli": "file:../pixelforge/release/pixelforge-cli-0.4.0.tgz",
+    "@pixelforge/core": "file:../pixelforge/release/pixelforge-core-0.4.0.tgz",
+    "@pixelforge/exporters": "file:../pixelforge/release/pixelforge-exporters-0.4.0.tgz",
+    "@pixelforge/phaser": "file:../pixelforge/release/pixelforge-phaser-0.4.0.tgz",
     "phaser": "4.0.0",
     "terser": "^5.39.0"
   }

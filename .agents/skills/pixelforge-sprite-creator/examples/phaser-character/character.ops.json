@@ -1,0 +1,165 @@
+{
+  "version": "1.0",
+  "operations": [
+    {
+      "op": "addAnimation",
+      "name": "idle",
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 350
+        },
+        {
+          "frameId": "frame-1",
+          "durationMs": 450
+        }
+      ],
+      "loop": true
+    },
+    {
+      "op": "addAnimation",
+      "name": "jump",
+      "frames": [
+        {
+          "frameId": "frame-2",
+          "durationMs": 200
+        }
+      ],
+      "loop": false
+    },
+    {
+      "op": "copyFrame",
+      "source": "frame-1",
+      "id": "attack-windup"
+    },
+    {
+      "op": "copyFrame",
+      "source": "frame-2",
+      "id": "attack-active"
+    },
+    {
+      "op": "drawRect",
+      "frame": "attack-active",
+      "layer": "base",
+      "x": 20,
+      "y": 14,
+      "width": 10,
+      "height": 2,
+      "color": 4
+    },
+    {
+      "op": "drawRect",
+      "frame": "attack-active",
+      "layer": "base",
+      "x": 19,
+      "y": 12,
+      "width": 2,
+      "height": 6,
+      "color": 9
+    },
+    {
+      "op": "addAnimation",
+      "name": "attack",
+      "frames": [
+        {
+          "frameId": "attack-windup",
+          "durationMs": 120
+        },
+        {
+          "frameId": "attack-active",
+          "durationMs": 220
+        },
+        {
+          "frameId": "frame-0",
+          "durationMs": 180
+        }
+      ],
+      "loop": false
+    },
+    {
+      "op": "setSpriteOrigin",
+      "origin": {
+        "x": 0.5,
+        "y": 1
+      }
+    },
+    {
+      "op": "setCollisionBody",
+      "body": {
+        "type": "rectangle",
+        "x": 11,
+        "y": 5,
+        "width": 11,
+        "height": 25
+      }
+    },
+    {
+      "op": "addGameBox",
+      "box": {
+        "id": "body-hurt",
+        "name": "body",
+        "kind": "hurtbox",
+        "scope": {
+          "type": "project"
+        },
+        "rect": {
+          "x": 11,
+          "y": 5,
+          "width": 11,
+          "height": 25
+        },
+        "enabled": true
+      }
+    },
+    {
+      "op": "addGameBox",
+      "box": {
+        "id": "blade-active",
+        "name": "weapon",
+        "kind": "hitbox",
+        "scope": {
+          "type": "entry",
+          "animation": "attack",
+          "index": 1
+        },
+        "rect": {
+          "x": 20,
+          "y": 12,
+          "width": 12,
+          "height": 8
+        },
+        "enabled": true
+      }
+    },
+    {
+      "op": "setAnchor",
+      "anchor": {
+        "id": "hand",
+        "name": "weapon_hand",
+        "x": 20,
+        "y": 15,
+        "scope": {
+          "type": "project"
+        }
+      }
+    },
+    {
+      "op": "setAnimationEvent",
+      "event": {
+        "id": "attack-start",
+        "animation": "attack",
+        "index": 1,
+        "name": "attack_start"
+      }
+    },
+    {
+      "op": "setAnimationEvent",
+      "event": {
+        "id": "attack-end",
+        "animation": "attack",
+        "index": 2,
+        "name": "attack_end"
+      }
+    }
+  ]
+}

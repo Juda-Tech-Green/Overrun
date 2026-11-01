@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "operations": [
+    { "op": "copyFrame", "source": "frame-0", "id": "sparkle" },
+    {
+      "op": "setPixel",
+      "frame": "sparkle",
+      "layer": "base",
+      "x": 2,
+      "y": 2,
+      "color": 5
+    },
+    {
+      "op": "addAnimation",
+      "name": "sparkle-spin",
+      "loop": true,
+      "frames": [
+        { "frameId": "frame-0", "durationMs": 125 },
+        { "frameId": "sparkle", "durationMs": 250 }
+      ]
+    },
+    {
+      "op": "addAnimationFrame",
+      "name": "sparkle-spin",
+      "frameId": "frame-3",
+      "durationMs": 90
+    },
+    {
+      "op": "setFrameDuration",
+      "name": "sparkle-spin",
+      "index": 0,
+      "durationMs": 150
+    },
+    {
+      "op": "reorderAnimationFrames",
+      "name": "sparkle-spin",
+      "indices": [0, 2, 1]
+    }
+  ]
+}

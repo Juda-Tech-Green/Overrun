@@ -4,6 +4,20 @@ An action shooter game built with [Phaser 4](https://phaser.io), TypeScript and 
 
 Built from the [phaserjs/template-vite-ts](https://github.com/phaserjs/template-vite-ts) template.
 
+## PixelForge sprite tooling
+
+The [`pixelforge-sprite-creator`](https://github.com/Juda-Tech-Green/pixelforge) agent skill is installed in `.agents/skills/`, and the PixelForge CLI (v0.4.0, from local maintainer tarballs — not published on npm) is in `node_modules`.
+
+Useful commands here:
+
+```sh
+node_modules/.bin/pixelforge validate MY.sprite.json   # validate a sprite project
+node_modules/.bin/pixelforge render MY.sprite.json --animation spin --frame 0 --output frame.png       # render a frame
+node_modules/.bin/pixelforge export MY.sprite.json --format phaser --layout atlas --name hero --output public/assets/hero   # export a Phaser bundle into public/assets
+```
+
+Note: the `@pixelforge/phaser` runtime adapter targets Phaser 3.90 (peer range); this game is on Phaser 4, so the adapter is installed but unused — load exported atlases/sheets with Phaser 4's standard `load.atlas` / `load.spritesheet` APIs instead.
+
 ## Requirements
 
 - [Node.js](https://nodejs.org)

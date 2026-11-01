@@ -1,0 +1,235 @@
+{
+  "version": "1.0",
+  "operations": [
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 12,
+      "y": 21,
+      "width": 13,
+      "height": 17,
+      "color": 2
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 18,
+      "y": 30,
+      "width": 6,
+      "height": 12,
+      "color": 1
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 26,
+      "y": 30,
+      "width": 5,
+      "height": 12,
+      "color": 1
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 15,
+      "y": 40,
+      "width": 9,
+      "height": 3,
+      "color": 6
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 25,
+      "y": 40,
+      "width": 8,
+      "height": 3,
+      "color": 6
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 17,
+      "y": 19,
+      "width": 14,
+      "height": 14,
+      "color": 3
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 18,
+      "y": 9,
+      "width": 13,
+      "height": 10,
+      "color": 4
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 17,
+      "y": 8,
+      "width": 15,
+      "height": 5,
+      "color": 5
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 20,
+      "y": 6,
+      "width": 10,
+      "height": 3,
+      "color": 5
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 29,
+      "y": 13,
+      "width": 2,
+      "height": 2,
+      "color": 1
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 17,
+      "y": 30,
+      "width": 14,
+      "height": 3,
+      "color": 6
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 14,
+      "y": 21,
+      "width": 4,
+      "height": 11,
+      "color": 3
+    },
+    {
+      "op": "drawRect",
+      "frame": "frame-0",
+      "layer": "base",
+      "x": 14,
+      "y": 32,
+      "width": 4,
+      "height": 3,
+      "color": 4
+    },
+    {
+      "op": "copyFrame",
+      "source": "frame-0",
+      "id": "walk-1"
+    },
+    {
+      "op": "moveRegion",
+      "frame": "walk-1",
+      "layer": "base",
+      "x": 15,
+      "y": 34,
+      "width": 9,
+      "height": 9,
+      "dx": 1,
+      "dy": 0
+    },
+    {
+      "op": "copyFrame",
+      "source": "frame-0",
+      "id": "walk-2"
+    },
+    {
+      "op": "copyFrame",
+      "source": "frame-0",
+      "id": "walk-3"
+    },
+    {
+      "op": "moveRegion",
+      "frame": "walk-3",
+      "layer": "base",
+      "x": 15,
+      "y": 34,
+      "width": 9,
+      "height": 9,
+      "dx": -1,
+      "dy": 0
+    },
+    {
+      "op": "copyFrame",
+      "source": "frame-0",
+      "id": "walk-4"
+    },
+    {
+      "op": "copyFrame",
+      "source": "frame-0",
+      "id": "walk-5"
+    },
+    {
+      "op": "moveRegion",
+      "frame": "walk-5",
+      "layer": "base",
+      "x": 15,
+      "y": 34,
+      "width": 9,
+      "height": 9,
+      "dx": -1,
+      "dy": 0
+    },
+    {
+      "op": "addAnimation",
+      "name": "walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 125
+        },
+        {
+          "frameId": "walk-1",
+          "durationMs": 125
+        },
+        {
+          "frameId": "walk-2",
+          "durationMs": 125
+        },
+        {
+          "frameId": "walk-3",
+          "durationMs": 125
+        },
+        {
+          "frameId": "walk-4",
+          "durationMs": 125
+        },
+        {
+          "frameId": "walk-5",
+          "durationMs": 125
+        }
+      ]
+    },
+    {
+      "op": "addAnimation",
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 500
+        }
+      ]
+    }
+  ]
+}

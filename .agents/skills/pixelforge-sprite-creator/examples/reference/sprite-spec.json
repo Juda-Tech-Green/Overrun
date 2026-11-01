@@ -1,0 +1,79 @@
+{
+  "referencePath": "reference.png",
+  "rights": "Original PixelForge contributor artwork; MIT",
+  "canvas": {
+    "width": 48,
+    "height": 48
+  },
+  "palette": [
+    [
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      26,
+      31,
+      44,
+      255
+    ],
+    [
+      35,
+      87,
+      143,
+      255
+    ],
+    [
+      114,
+      141,
+      163,
+      255
+    ],
+    [
+      234,
+      174,
+      117,
+      255
+    ],
+    [
+      63,
+      77,
+      101,
+      255
+    ],
+    [
+      111,
+      69,
+      47,
+      255
+    ]
+  ],
+  "facing": "right",
+  "baselineY": 43,
+  "visibleFeatures": [
+    "blue cape",
+    "slate cap",
+    "warm skin",
+    "belt",
+    "dark trousers",
+    "brown boots",
+    "right-facing eye"
+  ],
+  "animations": [
+    {
+      "name": "walk",
+      "frames": 6,
+      "durationMs": 125
+    },
+    {
+      "name": "idle",
+      "frames": 1,
+      "durationMs": 500
+    }
+  ],
+  "limitations": [
+    "Block approximation of curved reference",
+    "Small leg shifts rather than full articulated gait"
+  ]
+}
