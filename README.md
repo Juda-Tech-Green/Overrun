@@ -6,7 +6,7 @@ Built from the [phaserjs/template-vite-ts](https://github.com/phaserjs/template-
 
 ## PixelForge sprite tooling
 
-The [`pixelforge-sprite-creator`](https://github.com/Juda-Tech-Green/pixelforge) agent skill is installed in `.agents/skills/`, and the PixelForge CLI (v0.4.0, from local maintainer tarballs — not published on npm) is in `node_modules`.
+The [`pixelforge-sprite-creator`](https://github.com/Juda-Tech-Green/pixelforge) agent skill is installed in `.agents/skills/`, and the PixelForge CLI (v0.4.0, from maintainer tarballs vendored in `vendor/pixelforge/` — not published on npm) is in `node_modules`. See [pixelforge-install-review.md](pixelforge-install-review.md) for the full install review and reproducible setup recipe.
 
 Useful commands here:
 
