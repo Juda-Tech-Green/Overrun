@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "zombie-attack",
+      "file": "zombie-attack.wav",
+      "source": "zombie-attack.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 300
+    }
+  ],
+  "events": []
+}

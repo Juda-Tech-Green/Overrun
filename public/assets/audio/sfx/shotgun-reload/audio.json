@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "shotgun-reload",
+      "file": "shotgun-reload.wav",
+      "source": "shotgun-reload.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 300
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "impact-rock",
+      "file": "impact-rock.wav",
+      "source": "impact-rock.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 220
+    }
+  ],
+  "events": []
+}

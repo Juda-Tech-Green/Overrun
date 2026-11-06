@@ -1,0 +1,103 @@
+{
+  "version": "1.0",
+  "id": "shop-buy-item",
+  "name": "shop-buy-item",
+  "sampleRate": 44100,
+  "durationMs": 400,
+  "seed": 779953,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.4,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 380,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 1800,
+          "decay": 12,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 2400,
+          "decay": 15,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 3700,
+          "decay": 18,
+          "gain": 0.3333333333333333
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.18,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 90,
+            "value": 0
+          },
+          {
+            "timeMs": 98,
+            "value": 1
+          },
+          {
+            "timeMs": 300,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 2200,
+        "endHz": 2200,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "shop-buy-item"
+  },
+  "metadata": {
+    "trigger": "Purchasing First-Aid Kit",
+    "design": "Traditional coin pouch jingle (damped metal modes)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "altar-active-glow",
+      "file": "altar-active-glow.wav",
+      "source": "altar-active-glow.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 650
+    }
+  ],
+  "events": []
+}

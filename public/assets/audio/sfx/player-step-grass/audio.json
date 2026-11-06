@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "player-step-grass",
+      "file": "player-step-grass.wav",
+      "source": "player-step-grass.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 60
+    }
+  ],
+  "events": []
+}

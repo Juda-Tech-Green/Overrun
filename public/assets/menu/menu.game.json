@@ -1,0 +1,28 @@
+{
+  "version": "1.0",
+  "width": 96,
+  "height": 32,
+  "frameIds": [
+    "btn-normal",
+    "btn-hover",
+    "btn-pressed",
+    "toggle-on",
+    "toggle-off",
+    "banner-header",
+    "shop-banner",
+    "btn-buy-normal",
+    "btn-buy-hover",
+    "btn-buy-disabled",
+    "item-card-frame"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

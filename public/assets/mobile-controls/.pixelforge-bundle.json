@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "files": {
+    "bundle.json": "d16a0fd810a35aa9b35aa830f0c89dda1722bf36d755fe327ed33e29a82053a2",
+    "mobile-controls.animations.json": "463d9ca53104405c4147135c9bae273d775a80d987e0af952a1d5f7afbd76955",
+    "mobile-controls.game.json": "432fe7a61d715a8c145644f162afe078dc72e3a942259aee70f35db4f5a6c6ff",
+    "README.md": "e348ecdaccffbb31e1af71044ca3844dc79cded6968c60d62f389575ee5ec3a4",
+    "mobile-controls.atlas.json": "088053a2e065de4330d150403d4d68008db904b9e61d73bc2c00ed8bcd8e9d0b",
+    "mobile-controls.png": "111eaa031f138fd9a265f740245549c3f680ede969f453c11ef1285b939cb662"
+  }
+}

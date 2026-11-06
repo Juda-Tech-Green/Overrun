@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ghoul-die",
+      "file": "ghoul-die.wav",
+      "source": "ghoul-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 850
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "id": "ui-autospawn-toggle",
+  "name": "ui-autospawn-toggle",
+  "sampleRate": 44100,
+  "durationMs": 60,
+  "seed": 867062,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 60,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 700,
+          "decay": 12,
+          "gain": 0.5
+        },
+        {
+          "frequencyHz": 1239,
+          "decay": 15,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.12,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 36,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 3500
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ui-autospawn-toggle"
+  },
+  "metadata": {
+    "trigger": "Toggling Spawner on/off (`[P]`)",
+    "design": "Mechanical toggle switch click"
+  }
+}

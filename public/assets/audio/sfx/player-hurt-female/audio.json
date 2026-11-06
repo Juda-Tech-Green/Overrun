@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "player-hurt-female",
+      "file": "player-hurt-female.wav",
+      "source": "player-hurt-female.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 220
+    }
+  ],
+  "events": []
+}

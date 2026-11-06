@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "shotgun-fire",
+      "file": "shotgun-fire.wav",
+      "source": "shotgun-fire.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 500
+    }
+  ],
+  "events": []
+}

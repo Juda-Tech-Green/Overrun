@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 32,
+  "frameIds": [
+    "frame-0",
+    "idle-1",
+    "idle-2"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

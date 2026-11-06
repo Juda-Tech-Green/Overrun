@@ -1,0 +1,98 @@
+{
+  "version": "1.0",
+  "id": "impact-castle-stone",
+  "name": "impact-castle-stone",
+  "sampleRate": 44100,
+  "durationMs": 400,
+  "seed": 257299,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 160,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 1200,
+          "decay": 12,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 2700,
+          "decay": 15,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 4100,
+          "decay": 18,
+          "gain": 0.3333333333333333
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.2,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 60,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 5000
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 60,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "impact-castle-stone"
+  },
+  "metadata": {
+    "trigger": "Bullet hits castle wall / door",
+    "design": "Sharp ricochet ping with brief delayed spark echo"
+  }
+}

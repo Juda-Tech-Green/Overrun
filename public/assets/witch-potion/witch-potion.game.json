@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "width": 24,
+  "height": 24,
+  "frameIds": [
+    "fly-0",
+    "fly-1",
+    "fly-2",
+    "fly-3",
+    "splash-0",
+    "splash-1",
+    "splash-2",
+    "splash-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 7,
+      "y": 7,
+      "width": 10,
+      "height": 13
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

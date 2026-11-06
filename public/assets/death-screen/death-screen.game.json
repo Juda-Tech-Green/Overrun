@@ -1,0 +1,21 @@
+{
+  "version": "1.0",
+  "width": 320,
+  "height": 192,
+  "frameIds": [
+    "death-zombie",
+    "death-werewolf",
+    "death-witch",
+    "death-dragon"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

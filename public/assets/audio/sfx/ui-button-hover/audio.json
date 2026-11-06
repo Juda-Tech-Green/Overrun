@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ui-button-hover",
+      "file": "ui-button-hover.wav",
+      "source": "ui-button-hover.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 15
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "id": "player-heartbeat-low",
+  "name": "player-heartbeat-low",
+  "sampleRate": 44100,
+  "durationMs": 500,
+  "seed": 138514,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.42,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 160,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 60,
+        "endHz": 45,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.34,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 210,
+            "value": 0
+          },
+          {
+            "timeMs": 218,
+            "value": 1
+          },
+          {
+            "timeMs": 390,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 45,
+        "endHz": 45,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "player-heartbeat-low"
+  },
+  "metadata": {
+    "trigger": "Player at 1 HP (danger warning)",
+    "design": "Dual sub-thump sine pulse (60 Hz & 45 Hz) with gentle exponential decay"
+  }
+}

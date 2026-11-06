@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "id": "loot-pickup-bone",
+  "name": "loot-pickup-bone",
+  "sampleRate": 44100,
+  "durationMs": 220,
+  "seed": 716601,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.1697056274847714,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 180,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 1100,
+        "endHz": 1100,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.1697056274847714,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 45,
+            "value": 0
+          },
+          {
+            "timeMs": 53,
+            "value": 1
+          },
+          {
+            "timeMs": 180,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 1600,
+        "endHz": 1600,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 80,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "loot-pickup-bone"
+  },
+  "metadata": {
+    "trigger": "Collecting dropped Bone",
+    "design": "Crisp dry bone click + ascending confirmation blip"
+  }
+}

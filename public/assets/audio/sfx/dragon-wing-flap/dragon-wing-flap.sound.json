@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "id": "dragon-wing-flap",
+  "name": "dragon-wing-flap",
+  "sampleRate": 44100,
+  "durationMs": 120,
+  "seed": 597816,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.65,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 120,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 350
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 120,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 55,
+        "endHz": 35,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "dragon-wing-flap"
+  },
+  "metadata": {
+    "trigger": "Flight cycle in combat",
+    "design": "Heavy subsonic air displacement whoosh (lowpass filtered noise, 120 ms)"
+  }
+}

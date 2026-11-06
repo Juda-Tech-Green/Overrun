@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "banshee-spawn",
+      "file": "banshee-spawn.wav",
+      "source": "banshee-spawn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 900
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "potion-shatter",
+      "file": "potion-shatter.wav",
+      "source": "potion-shatter.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 380
+    }
+  ],
+  "events": []
+}

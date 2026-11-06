@@ -1,0 +1,8 @@
+[
+  {
+    "op": "setFrequency",
+    "id": "main",
+    "frequency": { "startHz": 1200, "endHz": 160, "curve": "exponential" }
+  },
+  { "op": "setGain", "id": "main", "gain": 0.3 }
+]

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "drowner-spawn",
+      "file": "drowner-spawn.wav",
+      "source": "drowner-spawn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 600
+    }
+  ],
+  "events": []
+}

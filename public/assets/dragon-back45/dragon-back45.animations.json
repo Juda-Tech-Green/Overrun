@@ -1,0 +1,143 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-back45-0",
+          "durationMs": 180
+        },
+        {
+          "frameId": "idle-back45-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "idle-back45-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "idle-back45-3",
+          "durationMs": 180
+        },
+        {
+          "frameId": "idle-back45-4",
+          "durationMs": 160
+        },
+        {
+          "frameId": "idle-back45-5",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "name": "fly",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "fly-back45-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-back45-1",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-back45-2",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-back45-3",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-back45-4",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-back45-5",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-back45-6",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-back45-7",
+          "durationMs": 80
+        }
+      ]
+    },
+    {
+      "name": "attack",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-back45-0",
+          "durationMs": 100
+        },
+        {
+          "frameId": "attack-back45-1",
+          "durationMs": 100
+        },
+        {
+          "frameId": "attack-back45-2",
+          "durationMs": 140
+        },
+        {
+          "frameId": "attack-back45-3",
+          "durationMs": 140
+        },
+        {
+          "frameId": "attack-back45-4",
+          "durationMs": 140
+        },
+        {
+          "frameId": "attack-back45-5",
+          "durationMs": 260
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-back45-0",
+          "durationMs": 90
+        },
+        {
+          "frameId": "hurt-back45-1",
+          "durationMs": 90
+        }
+      ]
+    },
+    {
+      "name": "die",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-back45-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "die-back45-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "die-back45-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "die-back45-3",
+          "durationMs": 160
+        },
+        {
+          "frameId": "die-back45-4",
+          "durationMs": 650
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "version": "1.0",
+  "id": "rifle-reload",
+  "name": "rifle-reload",
+  "sampleRate": 44100,
+  "durationMs": 480,
+  "seed": 193947,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 90,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 4000
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 180,
+            "value": 0
+          },
+          {
+            "timeMs": 187.5,
+            "value": 1
+          },
+          {
+            "timeMs": 240,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 1800,
+        "endHz": 1200,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.45,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 320,
+            "value": 0
+          },
+          {
+            "timeMs": 323,
+            "value": 1
+          },
+          {
+            "timeMs": 460,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 2200
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "rifle-reload"
+  },
+  "metadata": {
+    "trigger": "Pressing `[R]` / magazine reload",
+    "design": "Three-part mechanical ratchet: mag eject, click, slide cock (480 ms)"
+  }
+}

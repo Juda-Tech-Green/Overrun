@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "heal-play",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "heal-1",
+          "durationMs": 80
+        },
+        {
+          "frameId": "heal-2",
+          "durationMs": 80
+        },
+        {
+          "frameId": "heal-3",
+          "durationMs": 90
+        },
+        {
+          "frameId": "heal-4",
+          "durationMs": 90
+        },
+        {
+          "frameId": "heal-5",
+          "durationMs": 90
+        },
+        {
+          "frameId": "heal-6",
+          "durationMs": 80
+        }
+      ]
+    }
+  ]
+}

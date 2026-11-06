@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "portal-teleport",
+      "file": "portal-teleport.wav",
+      "source": "portal-teleport.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1100
+    }
+  ],
+  "events": []
+}

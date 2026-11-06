@@ -1,0 +1,75 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-0",
+          "durationMs": 240
+        },
+        {
+          "frameId": "idle-1",
+          "durationMs": 240
+        },
+        {
+          "frameId": "idle-2",
+          "durationMs": 240
+        },
+        {
+          "frameId": "idle-3",
+          "durationMs": 240
+        }
+      ]
+    },
+    {
+      "name": "active",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "active-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "active-1",
+          "durationMs": 140
+        },
+        {
+          "frameId": "active-2",
+          "durationMs": 140
+        },
+        {
+          "frameId": "active-3",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "summon",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "summon-0",
+          "durationMs": 100
+        },
+        {
+          "frameId": "summon-1",
+          "durationMs": 100
+        },
+        {
+          "frameId": "summon-2",
+          "durationMs": 100
+        },
+        {
+          "frameId": "summon-3",
+          "durationMs": 100
+        },
+        {
+          "frameId": "summon-4",
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

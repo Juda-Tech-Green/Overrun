@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "id": "dog-whimper-alert",
+  "name": "dog-whimper-alert",
+  "sampleRate": 44100,
+  "durationMs": 600,
+  "seed": 170190,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 560,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 800,
+        "endHz": 500,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 7,
+        "depth": 0.4
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "dog-whimper-alert"
+  },
+  "metadata": {
+    "trigger": "Dog warning when player is hurt",
+    "design": "Modulated high sine sweep (800→500 Hz) with vibrato"
+  }
+}

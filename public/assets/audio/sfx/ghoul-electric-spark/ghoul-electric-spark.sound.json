@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "id": "ghoul-electric-spark",
+  "name": "ghoul-electric-spark",
+  "sampleRate": 44100,
+  "durationMs": 25,
+  "seed": 399841,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 25,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 8000
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3.125,
+            "value": 1
+          },
+          {
+            "timeMs": 25,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sawtooth",
+      "frequency": {
+        "startHz": 3200,
+        "endHz": 800,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ghoul-electric-spark"
+  },
+  "metadata": {
+    "trigger": "Ambient electric aura",
+    "design": "Intermittent high-voltage micro-discharges (noise bursts, 25 ms)"
+  }
+}

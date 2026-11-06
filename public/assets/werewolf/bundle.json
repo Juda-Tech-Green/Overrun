@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "werewolf.png",
+  "atlas": "werewolf.atlas.json",
+  "animations": "werewolf.animations.json",
+  "game": "werewolf.game.json",
+  "frameWidth": 48,
+  "frameHeight": 64,
+  "padding": 0,
+  "frameCount": 65
+}

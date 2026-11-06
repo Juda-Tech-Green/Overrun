@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "portal-unlock-turn",
+      "file": "portal-unlock-turn.wav",
+      "source": "portal-unlock-turn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 450
+    }
+  ],
+  "events": []
+}

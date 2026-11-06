@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "id": "witch-potion-throw",
+  "name": "witch-potion-throw",
+  "sampleRate": 44100,
+  "durationMs": 200,
+  "seed": 542383,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 200,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 3000
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.18,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 200,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 900,
+        "endHz": 330,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "witch-potion-throw"
+  },
+  "metadata": {
+    "trigger": "Witch throwing toxic bottle",
+    "design": "Resonant aerodynamic bottle whoosh (air-slicing noise)"
+  }
+}

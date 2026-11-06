@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "zombie-spawn",
+      "file": "zombie-spawn.wav",
+      "source": "zombie-spawn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1400
+    }
+  ],
+  "events": []
+}

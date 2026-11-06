@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "files": {
+    "bundle.json": "2ef22266169237e474204da6dd8701c1ff9560f2b45983477882d337746bb6a1",
+    "altar-dragon.animations.json": "ab7ea7401c432ab8428ede8e27dcbee4d735bd4540fc5302b110db56a9f18f8d",
+    "altar-dragon.game.json": "b83d66a3e6e0f0128e55edc7eb2b64cc42201eae7e465418e067c6d0f21635af",
+    "README.md": "0f30525ae603f60181809c739fcaa9bf37b2fef8648054b4ff9dbe748117d55a",
+    "altar-dragon.atlas.json": "b560259d2707e559ec8f5366e75ecaf0266dfcf4590d58604398177f089726aa",
+    "altar-dragon.png": "4e49a487fe5dea19b37d526462910953f7102ae6b958e1045228d59daef29bc3"
+  }
+}

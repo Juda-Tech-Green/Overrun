@@ -1,13 +1,15 @@
 # CLI setup and execution
 
-Use Node 22.12+ (24 recommended). PixelForge is not publicly published by this project. Use the maintainer-supplied local tarballs, installing the complete dependency graph together:
+Use Node22.12+ (24 recommended). Install the matching0.5 local tarballs together from a stable location inside the consumer repository, such as vendor/pixelforge/:
 
 ```sh
-npm install --offline --ignore-scripts /path/pixelforge-core-0.4.0.tgz /path/pixelforge-exporters-0.4.0.tgz /path/pixelforge-cli-0.4.0.tgz /path/pixelforge-phaser-0.4.0.tgz
+npm install --ignore-scripts ./vendor/pixelforge/pixelforge-core-0.5.0.tgz ./vendor/pixelforge/pixelforge-exporters-0.5.0.tgz ./vendor/pixelforge/pixelforge-cli-0.5.0.tgz ./vendor/pixelforge/pixelforge-phaser-0.5.0.tgz
 ```
 
-Offline installation also needs cached third-party dependencies; otherwise obtain reviewed dependencies through the user's package policy. Do not silently install another remote package named pixelforge.
+Normal installation resolves third-party dependencies online. --offline additionally requires a populated compatible npm cache; archives do not bundle those dependencies. Verify SHA256SUMS through the provider's verifier/trusted channel; checksums detect corruption, do not authenticate publishers. Do not save a dependency pointing to an unrelated sibling source checkout, substitute a similarly named public package, or force legacy-peer-deps. Inspect the host Phaser version before installing its adapter. Build source using npm ci then npm run pack:release; no dist bootstrap workaround is needed.
 
-The exact portable invocation is `node node_modules/@pixelforge/cli/dist/index.js`. A local npm script can use the `pixelforge` bin. Windows also has `node_modules/.bin/pixelforge.cmd`; POSIX has `node_modules/.bin/pixelforge`. No global installation or Bash is required.
+Exact invocation: `node node_modules/@pixelforge/cli/dist/index.js`; local npm scripts can use pixelforge. Windows node_modules/.bin/pixelforge.cmd and POSIX node_modules/.bin/pixelforge are equivalent; no Bash/global installation required.
 
-Commands: `init NAME --width 32 --height 32 --output sprite.sprite.json`, `inspect FILE`, `validate FILE`, `apply FILE --operations OPS --output UPDATED`, `render FILE --animation walk --frame 0 --output frame.png`, `export FILE --format spritesheet --columns 4 --padding 1 --output sheet.png`, `export FILE --format phaser --layout atlas --name hero --output public/hero`. Phaser directory must not exist. Every failure is nonzero; runtime errors and successful commands are machine-readable JSON. Init uses transparent index0 and white index1. Add palette colors through operations rather than writing thousands of pixels.
+Discover with --help, operations list, operations describe NAME (or --example), and inspect FILE --summary. Use selectors/pagination rather than dense source reads. init accepts --palette FILE (RGBA tuples; index0 transparent); default remains transparent/white. setPixel stays strict, shapes clip. apply reports operation index/targets/canvas ranges on failure and atomically preserves outputs.
+
+Run scripts/check-environment.mjs, validate-project.mjs FILE and validate-export.mjs BUNDLE FILE from the consumer directory. Helpers resolve installed CLI/core from that cwd. See [production workflow](production-workflow.md) for contact/diff/check/build-assets and managed --replace. Runtime errors and successful commands are JSON; failures exit nonzero. Public registry publication is not implied by these local artifacts.

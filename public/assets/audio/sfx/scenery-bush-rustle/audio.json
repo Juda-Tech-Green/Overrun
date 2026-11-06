@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "scenery-bush-rustle",
+      "file": "scenery-bush-rustle.wav",
+      "source": "scenery-bush-rustle.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 220
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "id": "loot-pickup-fang",
+  "name": "loot-pickup-fang",
+  "sampleRate": 44100,
+  "durationMs": 280,
+  "seed": 724520,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.1697056274847714,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 240,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 880,
+        "endHz": 880,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.1697056274847714,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 45,
+            "value": 0
+          },
+          {
+            "timeMs": 53,
+            "value": 1
+          },
+          {
+            "timeMs": 240,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 1320,
+        "endHz": 1320,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 80,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "loot-pickup-fang"
+  },
+  "metadata": {
+    "trigger": "Collecting dropped Fang",
+    "design": "Sharp organic snip + harmonic chime"
+  }
+}

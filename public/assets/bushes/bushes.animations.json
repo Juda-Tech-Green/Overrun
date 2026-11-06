@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "sway-berry",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "berry-1",
+          "durationMs": 260
+        },
+        {
+          "frameId": "berry-2",
+          "durationMs": 260
+        },
+        {
+          "frameId": "berry-3",
+          "durationMs": 260
+        }
+      ]
+    },
+    {
+      "name": "sway-flower",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "flower-1",
+          "durationMs": 280
+        },
+        {
+          "frameId": "flower-2",
+          "durationMs": 280
+        },
+        {
+          "frameId": "flower-3",
+          "durationMs": 280
+        }
+      ]
+    },
+    {
+      "name": "sway-lavender",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "lavender-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "lavender-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "lavender-3",
+          "durationMs": 250
+        }
+      ]
+    }
+  ]
+}

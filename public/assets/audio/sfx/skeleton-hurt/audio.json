@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "skeleton-hurt",
+      "file": "skeleton-hurt.wav",
+      "source": "skeleton-hurt.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 180
+    }
+  ],
+  "events": []
+}

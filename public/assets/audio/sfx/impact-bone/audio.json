@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "impact-bone",
+      "file": "impact-bone.wav",
+      "source": "impact-bone.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 95
+    }
+  ],
+  "events": []
+}

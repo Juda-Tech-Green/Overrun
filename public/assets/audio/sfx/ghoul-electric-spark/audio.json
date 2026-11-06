@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ghoul-electric-spark",
+      "file": "ghoul-electric-spark.wav",
+      "source": "ghoul-electric-spark.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 25
+    }
+  ],
+  "events": []
+}

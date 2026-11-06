@@ -1,0 +1,113 @@
+{
+  "version": "1.0",
+  "width": 512,
+  "height": 512,
+  "frameIds": [
+    "idle-front-0",
+    "idle-front-1",
+    "idle-front-2",
+    "idle-front-3",
+    "idle-front-4",
+    "idle-front-5",
+    "fly-front-0",
+    "fly-front-1",
+    "fly-front-2",
+    "fly-front-3",
+    "fly-front-4",
+    "fly-front-5",
+    "fly-front-6",
+    "fly-front-7",
+    "attack-front-0",
+    "attack-front-1",
+    "attack-front-2",
+    "attack-front-3",
+    "attack-front-4",
+    "attack-front-5",
+    "hurt-front-0",
+    "hurt-front-1",
+    "die-front-0",
+    "die-front-1",
+    "die-front-2",
+    "die-front-3",
+    "die-front-4"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.85
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 180,
+      "y": 200,
+      "width": 180,
+      "height": 240
+    },
+    "boxes": [
+      {
+        "id": "dragon-hurt",
+        "kind": "hurtbox",
+        "name": "body",
+        "scope": {
+          "type": "project"
+        },
+        "rect": {
+          "x": 160,
+          "y": 160,
+          "width": 220,
+          "height": 280
+        },
+        "enabled": true
+      },
+      {
+        "id": "dragon-breath",
+        "kind": "hitbox",
+        "name": "breath",
+        "scope": {
+          "type": "entry",
+          "animation": "attack",
+          "index": 2
+        },
+        "rect": {
+          "x": 175,
+          "y": 235,
+          "width": 160,
+          "height": 220
+        },
+        "enabled": true
+      }
+    ],
+    "anchors": [
+      {
+        "id": "muzzle",
+        "name": "muzzle",
+        "x": 256,
+        "y": 222,
+        "scope": {
+          "type": "project"
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "dragon-breath-start",
+        "animation": "attack",
+        "index": 2,
+        "name": "dragon_breath_start"
+      },
+      {
+        "id": "dragon-breath-end",
+        "animation": "attack",
+        "index": 5,
+        "name": "dragon_breath_end"
+      },
+      {
+        "id": "dragon-die-end",
+        "animation": "die",
+        "index": 4,
+        "name": "dragon_die_end"
+      }
+    ]
+  }
+}

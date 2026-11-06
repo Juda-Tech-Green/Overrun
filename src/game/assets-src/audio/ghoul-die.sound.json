@@ -1,0 +1,127 @@
+{
+  "version": "1.0",
+  "id": "ghoul-die",
+  "name": "ghoul-die",
+  "sampleRate": 44100,
+  "durationMs": 850,
+  "seed": 423598,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 800,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sawtooth",
+      "frequency": {
+        "startHz": 260,
+        "endHz": 72.80000000000001,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 800,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 1400
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.2,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 800,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 468,
+          "decay": 12,
+          "gain": 0.5
+        },
+        {
+          "frequencyHz": 806,
+          "decay": 15,
+          "gain": 0.5
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 90,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ghoul-die"
+  },
+  "metadata": {
+    "trigger": "HP reaches 0 (freezing shatter)",
+    "design": "Glassy cryo-shatter burst + dissipating electric hum"
+  }
+}

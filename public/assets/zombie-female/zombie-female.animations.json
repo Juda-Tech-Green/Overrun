@@ -1,0 +1,415 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 500
+        },
+        {
+          "frameId": "idle-b",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "walk-3",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-4",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "name": "attack",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-windup",
+          "durationMs": 180
+        },
+        {
+          "frameId": "attack-lunge",
+          "durationMs": 120
+        },
+        {
+          "frameId": "attack-recover",
+          "durationMs": 240
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "name": "die",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-1",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-3",
+          "durationMs": 450
+        }
+      ]
+    },
+    {
+      "name": "idle-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-front-0",
+          "durationMs": 500
+        },
+        {
+          "frameId": "idle-front-1",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "walk-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-front-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "walk-front-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front-3",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "name": "attack-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-front-0",
+          "durationMs": 180
+        },
+        {
+          "frameId": "attack-front-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "attack-front-2",
+          "durationMs": 240
+        }
+      ]
+    },
+    {
+      "name": "hurt-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-front-0",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "name": "die-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-front-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-front-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-front-2",
+          "durationMs": 450
+        }
+      ]
+    },
+    {
+      "name": "idle-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-front45-0",
+          "durationMs": 500
+        },
+        {
+          "frameId": "idle-front45-1",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "walk-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-front45-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "walk-front45-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front45-3",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "name": "attack-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-front45-0",
+          "durationMs": 180
+        },
+        {
+          "frameId": "attack-front45-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "attack-front45-2",
+          "durationMs": 240
+        }
+      ]
+    },
+    {
+      "name": "hurt-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-front45-0",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "name": "die-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-front45-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-front45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-front45-2",
+          "durationMs": 450
+        }
+      ]
+    },
+    {
+      "name": "idle-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-back-0",
+          "durationMs": 500
+        },
+        {
+          "frameId": "idle-back-1",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "walk-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-back-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "walk-back-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back-3",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "name": "attack-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-back-0",
+          "durationMs": 180
+        },
+        {
+          "frameId": "attack-back-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "attack-back-2",
+          "durationMs": 240
+        }
+      ]
+    },
+    {
+      "name": "hurt-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-back-0",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "name": "die-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-back-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-back-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-back-2",
+          "durationMs": 450
+        }
+      ]
+    },
+    {
+      "name": "idle-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-back45-0",
+          "durationMs": 500
+        },
+        {
+          "frameId": "idle-back45-1",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "walk-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-back45-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "walk-back45-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back45-3",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "name": "attack-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-back45-0",
+          "durationMs": 180
+        },
+        {
+          "frameId": "attack-back45-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "attack-back45-2",
+          "durationMs": 240
+        }
+      ]
+    },
+    {
+      "name": "hurt-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-back45-0",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "name": "die-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-back45-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-back45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-back45-2",
+          "durationMs": 450
+        }
+      ]
+    }
+  ]
+}

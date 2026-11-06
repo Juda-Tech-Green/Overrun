@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "zombie-female.png",
+  "atlas": "zombie-female.atlas.json",
+  "animations": "zombie-female.animations.json",
+  "game": "zombie-female.game.json",
+  "frameWidth": 48,
+  "frameHeight": 64,
+  "padding": 0,
+  "frameCount": 65
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ui-chat-message",
+      "file": "ui-chat-message.wav",
+      "source": "ui-chat-message.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 30
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "loot-pickup-eye",
+      "file": "loot-pickup-eye.wav",
+      "source": "loot-pickup-eye.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 350
+    }
+  ],
+  "events": []
+}

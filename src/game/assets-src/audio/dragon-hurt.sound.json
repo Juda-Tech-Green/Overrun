@@ -1,0 +1,119 @@
+{
+  "version": "1.0",
+  "id": "dragon-hurt",
+  "name": "dragon-hurt",
+  "sampleRate": 44100,
+  "durationMs": 450,
+  "seed": 629492,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 420,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sawtooth",
+      "frequency": {
+        "startHz": 95,
+        "endHz": 50,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 400,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 180,
+          "decay": 12,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 530,
+          "decay": 15,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 1400,
+          "decay": 18,
+          "gain": 0.3333333333333333
+        }
+      ]
+    }
+  ],
+  "effects": [
+    {
+      "id": "grit",
+      "type": "distortion",
+      "model": "tanh",
+      "inputGain": 2,
+      "outputGain": 0.7,
+      "mix": 0.35,
+      "positive": 1,
+      "negative": 1,
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "oversample": 4
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "dragon-hurt"
+  },
+  "metadata": {
+    "trigger": "Dragon struck by projectile",
+    "design": "Scaly metallic resonance + deep enraged beast grunt"
+  }
+}

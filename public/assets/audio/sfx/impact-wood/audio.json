@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "impact-wood",
+      "file": "impact-wood.wav",
+      "source": "impact-wood.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 80
+    }
+  ],
+  "events": []
+}

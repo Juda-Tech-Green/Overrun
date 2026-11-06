@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "werewolf-step",
+      "file": "werewolf-step.wav",
+      "source": "werewolf-step.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 100
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "altar-dragon.png",
+  "atlas": "altar-dragon.atlas.json",
+  "animations": "altar-dragon.animations.json",
+  "game": "altar-dragon.game.json",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "padding": 0,
+  "frameCount": 5
+}

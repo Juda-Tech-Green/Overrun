@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "loot-pickup-bone",
+      "file": "loot-pickup-bone.wav",
+      "source": "loot-pickup-bone.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 220
+    }
+  ],
+  "events": []
+}

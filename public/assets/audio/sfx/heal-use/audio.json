@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "heal-use",
+      "file": "heal-use.wav",
+      "source": "heal-use.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 450
+    }
+  ],
+  "events": []
+}

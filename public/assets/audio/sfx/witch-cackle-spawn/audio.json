@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "witch-cackle-spawn",
+      "file": "witch-cackle-spawn.wav",
+      "source": "witch-cackle-spawn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 900
+    }
+  ],
+  "events": []
+}

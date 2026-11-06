@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ui-button-click",
+      "file": "ui-button-click.wav",
+      "source": "ui-button-click.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 35
+    }
+  ],
+  "events": []
+}

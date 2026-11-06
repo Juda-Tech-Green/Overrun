@@ -1,0 +1,15 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "pointer",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "pointer",
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

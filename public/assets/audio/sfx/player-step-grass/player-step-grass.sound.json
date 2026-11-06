@@ -1,0 +1,50 @@
+{
+  "version": "1.0",
+  "id": "player-step-grass",
+  "name": "player-step-grass",
+  "sampleRate": 44100,
+  "durationMs": 60,
+  "seed": 91000,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.65,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 60,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 450
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "player-step-grass"
+  },
+  "metadata": {
+    "trigger": "Walking on meadow grass tiles",
+    "design": "Filtered brown noise burst, short decay (60 ms), gentle low-pass"
+  }
+}

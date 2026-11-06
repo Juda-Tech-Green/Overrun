@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "weapons.png",
+  "atlas": "weapons.atlas.json",
+  "animations": "weapons.animations.json",
+  "game": "weapons.game.json",
+  "frameWidth": 64,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 3
+}

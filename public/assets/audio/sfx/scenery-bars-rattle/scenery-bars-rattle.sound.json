@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "id": "scenery-bars-rattle",
+  "name": "scenery-bars-rattle",
+  "sampleRate": 44100,
+  "durationMs": 450,
+  "seed": 835386,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.4,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 440,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 120,
+          "decay": 12,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 310,
+          "decay": 15,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 740,
+          "decay": 18,
+          "gain": 0.3333333333333333
+        }
+      ]
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "scenery-bars-rattle"
+  },
+  "metadata": {
+    "trigger": "Prison cell bars animation",
+    "design": "Dull iron bar vibration hum"
+  }
+}

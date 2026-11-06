@@ -1,0 +1,6 @@
+[build]
+  command = "npm run release:check"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "24"

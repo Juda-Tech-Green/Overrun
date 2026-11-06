@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "skill": "pixelforge-audio-creator",
+  "files": {
+    "SKILL.md": "497f266398a03b80872b802cf7b5e750a4a468314f70f9d2f7555aaed99868e3",
+    "examples/laser-edit.ops.json": "fa022a5c848da8cb308407061808468cbc4e05f37125215b0118e1efc05ff50b",
+    "references/integration.md": "e5b3bce6727ee5858d80ca2a2176ebc5331453cde05ceba90597d1ff1f44b1e8",
+    "references/recipes.md": "553a013d10021ada72e019a5433c556969acf8068fe816423343f98d6ebac454",
+    "references/sound-model.md": "b15120941c3f707e5a6864d756d081280d1447f2d0e19f142ad21484558abd18",
+    "scripts/check-environment.mjs": "8193580bb254cf7bdc370134f2dc8c75cfbbdb940dfa4a3bdbfec1f8ae8b9bbc",
+    "scripts/install.mjs": "7b0ea4b0a950452cfec8277088be3902251ac16cfb8b039ab300907df83b796c"
+  }
+}

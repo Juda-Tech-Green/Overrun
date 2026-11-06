@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "width": 128,
+  "height": 192,
+  "frameIds": [
+    "green-1",
+    "green-2",
+    "green-3",
+    "pink-1",
+    "pink-2",
+    "pink-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 46,
+      "y": 162,
+      "width": 36,
+      "height": 22
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

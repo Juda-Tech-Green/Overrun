@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "witch-die",
+      "file": "witch-die.wav",
+      "source": "witch-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1100
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "id": "ui-chat-message",
+  "name": "ui-chat-message",
+  "sampleRate": 44100,
+  "durationMs": 30,
+  "seed": 874981,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3.75,
+            "value": 1
+          },
+          {
+            "timeMs": 30,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 440,
+        "endHz": 660,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ui-chat-message"
+  },
+  "metadata": {
+    "trigger": "Sending/receiving in-game chat",
+    "design": "Soft digital confirmation pop (440→660 Hz, 30 ms)"
+  }
+}

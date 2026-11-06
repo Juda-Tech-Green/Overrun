@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "ripple",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 100
+        },
+        {
+          "frameId": "ripple-1",
+          "durationMs": 100
+        },
+        {
+          "frameId": "ripple-2",
+          "durationMs": 100
+        },
+        {
+          "frameId": "ripple-3",
+          "durationMs": 100
+        },
+        {
+          "frameId": "ripple-4",
+          "durationMs": 100
+        },
+        {
+          "frameId": "ripple-5",
+          "durationMs": 100
+        },
+        {
+          "frameId": "ripple-6",
+          "durationMs": 100
+        },
+        {
+          "frameId": "ripple-7",
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

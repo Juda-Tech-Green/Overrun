@@ -1,0 +1,219 @@
+{
+  "version": "1.0",
+  "id": "ritual-offering-chime",
+  "name": "ritual-offering-chime",
+  "sampleRate": 44100,
+  "durationMs": 950,
+  "seed": 677006,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.1073312629199899,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 910,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 440,
+        "endHz": 440,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.1073312629199899,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 45,
+            "value": 0
+          },
+          {
+            "timeMs": 53,
+            "value": 1
+          },
+          {
+            "timeMs": 910,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 550,
+        "endHz": 550,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.1073312629199899,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 90,
+            "value": 0
+          },
+          {
+            "timeMs": 98,
+            "value": 1
+          },
+          {
+            "timeMs": 910,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 660,
+        "endHz": 660,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-3",
+      "gain": 0.1073312629199899,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 135,
+            "value": 0
+          },
+          {
+            "timeMs": 143,
+            "value": 1
+          },
+          {
+            "timeMs": 910,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 880,
+        "endHz": 880,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-4",
+      "gain": 0.1073312629199899,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 180,
+            "value": 0
+          },
+          {
+            "timeMs": 188,
+            "value": 1
+          },
+          {
+            "timeMs": 910,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 1100,
+        "endHz": 1100,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 80,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ritual-offering-chime"
+  },
+  "metadata": {
+    "trigger": "Offering Bone, Fang, Eye & Pearl",
+    "design": "Sparkling multi-tone bell chime (pentatonic cascade)"
+  }
+}

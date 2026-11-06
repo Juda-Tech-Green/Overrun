@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "width": 48,
+  "height": 64,
+  "frameIds": [
+    "frame-0",
+    "idle-2",
+    "walk-1",
+    "walk-2",
+    "walk-3",
+    "walk-4",
+    "attack-1",
+    "attack-2",
+    "attack-3",
+    "hurt",
+    "die-1",
+    "die-2",
+    "die-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 12,
+      "y": 14,
+      "width": 24,
+      "height": 48
+    },
+    "boxes": [
+      {
+        "id": "werewolf-hurt",
+        "kind": "hurtbox",
+        "name": "body",
+        "scope": {
+          "type": "project"
+        },
+        "rect": {
+          "x": 12,
+          "y": 14,
+          "width": 24,
+          "height": 48
+        },
+        "enabled": true
+      },
+      {
+        "id": "werewolf-slash",
+        "kind": "hitbox",
+        "name": "slash",
+        "scope": {
+          "type": "entry",
+          "animation": "attack",
+          "index": 1
+        },
+        "rect": {
+          "x": 26,
+          "y": 16,
+          "width": 22,
+          "height": 30
+        },
+        "enabled": true
+      }
+    ],
+    "anchors": [],
+    "events": [
+      {
+        "id": "werewolf-slash-start",
+        "animation": "attack",
+        "index": 1,
+        "name": "werewolf_slash_start"
+      },
+      {
+        "id": "werewolf-slash-end",
+        "animation": "attack",
+        "index": 2,
+        "name": "werewolf_slash_end"
+      },
+      {
+        "id": "werewolf-die-end",
+        "animation": "die",
+        "index": 2,
+        "name": "werewolf_die_end"
+      }
+    ]
+  }
+}

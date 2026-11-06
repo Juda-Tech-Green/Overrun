@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "inventory-open",
+      "file": "inventory-open.wav",
+      "source": "inventory-open.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 160
+    }
+  ],
+  "events": []
+}

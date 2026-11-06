@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "impact-metal-bars",
+      "file": "impact-metal-bars.wav",
+      "source": "impact-metal-bars.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1200
+    }
+  ],
+  "events": []
+}

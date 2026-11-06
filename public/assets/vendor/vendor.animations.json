@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "vendor-idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-1",
+          "durationMs": 360
+        },
+        {
+          "frameId": "idle-2",
+          "durationMs": 360
+        },
+        {
+          "frameId": "idle-3",
+          "durationMs": 360
+        }
+      ]
+    }
+  ]
+}

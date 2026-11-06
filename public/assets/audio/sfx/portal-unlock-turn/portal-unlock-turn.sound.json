@@ -1,0 +1,128 @@
+{
+  "version": "1.0",
+  "id": "portal-unlock-turn",
+  "name": "portal-unlock-turn",
+  "sampleRate": 44100,
+  "durationMs": 450,
+  "seed": 692844,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.45,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 330,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 700
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 270,
+            "value": 0
+          },
+          {
+            "timeMs": 278,
+            "value": 1
+          },
+          {
+            "timeMs": 445,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 260,
+        "endHz": 80,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.2,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 440,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 180,
+          "decay": 12,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 420,
+          "decay": 15,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 1200,
+          "decay": 18,
+          "gain": 0.3333333333333333
+        }
+      ]
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "portal-unlock-turn"
+  },
+  "metadata": {
+    "trigger": "Unlocking portal with Dragon Key",
+    "design": "Heavy stone/iron lock mechanism shifting into place (450 ms)"
+  }
+}

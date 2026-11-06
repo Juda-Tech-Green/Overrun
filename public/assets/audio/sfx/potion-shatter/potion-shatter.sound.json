@@ -1,0 +1,95 @@
+{
+  "version": "1.0",
+  "id": "potion-shatter",
+  "name": "potion-shatter",
+  "sampleRate": 44100,
+  "durationMs": 380,
+  "seed": 550302,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.5,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 360,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 2100,
+          "decay": 12,
+          "gain": 0.25
+        },
+        {
+          "frequencyHz": 3400,
+          "decay": 15,
+          "gain": 0.25
+        },
+        {
+          "frequencyHz": 4800,
+          "decay": 18,
+          "gain": 0.25
+        },
+        {
+          "frequencyHz": 6700,
+          "decay": 21,
+          "gain": 0.25
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 150,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 7000
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "potion-shatter"
+  },
+  "metadata": {
+    "trigger": "Potion bottle impacts ground/wall",
+    "design": "High-frequency glass bottle shatter: cluster of metallic/glass pings"
+  }
+}

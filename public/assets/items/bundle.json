@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "items.png",
+  "atlas": "items.atlas.json",
+  "animations": "items.animations.json",
+  "game": "items.game.json",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 26
+}

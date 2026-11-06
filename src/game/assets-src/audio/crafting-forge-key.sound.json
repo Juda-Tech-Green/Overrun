@@ -1,0 +1,154 @@
+{
+  "version": "1.0",
+  "id": "crafting-forge-key",
+  "name": "crafting-forge-key",
+  "sampleRate": 44100,
+  "durationMs": 1100,
+  "seed": 748277,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.5,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 750,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 440,
+          "decay": 12,
+          "gain": 0.25
+        },
+        {
+          "frequencyHz": 1193,
+          "decay": 15,
+          "gain": 0.25
+        },
+        {
+          "frequencyHz": 2371,
+          "decay": 18,
+          "gain": 0.25
+        },
+        {
+          "frequencyHz": 3599,
+          "decay": 21,
+          "gain": 0.25
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.16,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 200,
+            "value": 0
+          },
+          {
+            "timeMs": 208,
+            "value": 1
+          },
+          {
+            "timeMs": 900,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 880,
+        "endHz": 880,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.16,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 300,
+            "value": 0
+          },
+          {
+            "timeMs": 308,
+            "value": 1
+          },
+          {
+            "timeMs": 1000,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 1320,
+        "endHz": 1320,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 100,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "crafting-forge-key"
+  },
+  "metadata": {
+    "trigger": "Crafting the Dragon Key in menu",
+    "design": "Metallic anvil hammer ping + magical completion chime"
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "version": "1.0",
+  "id": "portal-locked-rattle",
+  "name": "portal-locked-rattle",
+  "sampleRate": 44100,
+  "durationMs": 300,
+  "seed": 684925,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.5,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 280,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 110,
+          "decay": 12,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 370,
+          "decay": 15,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 820,
+          "decay": 18,
+          "gain": 0.3333333333333333
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 280,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 1000
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "portal-locked-rattle"
+  },
+  "metadata": {
+    "trigger": "Touching portal without key",
+    "design": "Heavy locked iron tumblers rattling (refusal sound)"
+  }
+}

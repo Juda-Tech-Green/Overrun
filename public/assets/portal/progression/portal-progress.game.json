@@ -1,0 +1,25 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 48,
+  "frameIds": [
+    "frame-0",
+    "frame-1",
+    "frame-2",
+    "frame-3",
+    "portal-locked",
+    "prompt-altar-dragon",
+    "prompt-portal-locked",
+    "prompt-portal-enter"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

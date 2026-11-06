@@ -1,0 +1,104 @@
+{
+  "version": "1.0",
+  "id": "ghoul-hurt",
+  "name": "ghoul-hurt",
+  "sampleRate": 44100,
+  "durationMs": 180,
+  "seed": 415679,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 180,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sawtooth",
+      "frequency": {
+        "startHz": 338,
+        "endHz": 182,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.16,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 80,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 1800
+    }
+  ],
+  "effects": [
+    {
+      "id": "grit",
+      "type": "distortion",
+      "model": "tanh",
+      "inputGain": 2,
+      "outputGain": 0.7,
+      "mix": 0.35,
+      "positive": 1,
+      "negative": 1,
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "oversample": 4
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ghoul-hurt"
+  },
+  "metadata": {
+    "trigger": "Hit by projectile",
+    "design": "Short-circuit electrical pop + cryo groan"
+  }
+}

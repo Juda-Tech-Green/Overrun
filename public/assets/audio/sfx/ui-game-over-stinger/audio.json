@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ui-game-over-stinger",
+      "file": "ui-game-over-stinger.wav",
+      "source": "ui-game-over-stinger.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1800
+    }
+  ],
+  "events": []
+}

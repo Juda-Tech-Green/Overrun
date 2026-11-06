@@ -1,0 +1,47 @@
+{
+  "format": "pixelforge-manifest",
+  "version": "1.0",
+  "name": "bullet",
+  "width": 16,
+  "height": 3,
+  "frameWidth": 8,
+  "frameHeight": 3,
+  "columns": 2,
+  "rows": 1,
+  "padding": 0,
+  "margin": 0,
+  "frames": [
+    {
+      "id": "frame-0",
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "width": 8,
+      "height": 3
+    },
+    {
+      "id": "flicker",
+      "index": 1,
+      "x": 8,
+      "y": 0,
+      "width": 8,
+      "height": 3
+    }
+  ],
+  "animations": [
+    {
+      "name": "fly",
+      "loop": true,
+      "frames": [
+        {
+          "index": 0,
+          "durationMs": 50
+        },
+        {
+          "index": 1,
+          "durationMs": 50
+        }
+      ]
+    }
+  ]
+}

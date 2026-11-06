@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "witch-potion-red.png",
+  "atlas": "witch-potion-red.atlas.json",
+  "animations": "witch-potion-red.animations.json",
+  "game": "witch-potion-red.game.json",
+  "frameWidth": 24,
+  "frameHeight": 24,
+  "padding": 0,
+  "frameCount": 8
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "skeleton-die",
+      "file": "skeleton-die.wav",
+      "source": "skeleton-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 600
+    }
+  ],
+  "events": []
+}

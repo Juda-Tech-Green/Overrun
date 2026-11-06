@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "werewolf-spawn",
+      "file": "werewolf-spawn.wav",
+      "source": "werewolf-spawn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1100
+    }
+  ],
+  "events": []
+}

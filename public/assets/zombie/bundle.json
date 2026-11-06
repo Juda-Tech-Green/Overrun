@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "zombie.png",
+  "atlas": "zombie.atlas.json",
+  "animations": "zombie.animations.json",
+  "game": "zombie.game.json",
+  "frameWidth": 48,
+  "frameHeight": 64,
+  "padding": 0,
+  "frameCount": 65
+}

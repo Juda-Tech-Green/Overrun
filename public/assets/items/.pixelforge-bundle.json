@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "files": {
+    "bundle.json": "4f4daf318956aaf4f0c5c348f9e48d4f04be3ecd8c945862abe241faa9635a1d",
+    "items.animations.json": "c88200096efdc9f20b77618ae8248704b7d12dba3a95f6a28fee9b9f97497168",
+    "items.game.json": "fd7e559b53c2e0540202921c86c45bb0f6729013e429de62eedf79aad6e40dc5",
+    "README.md": "afa00a744f75320238f6f25b496a62252f8e32ecd343ef1319c4af610eaafe2f",
+    "items.atlas.json": "b7567c3badf09ea1460c8622c779962c8e54f214fecf4919b994c5cff9a2e6f5",
+    "items.png": "b138a356c4626ec756c35375ffbede901ae17e73f5ea686d4fbcc412edfb99de"
+  }
+}

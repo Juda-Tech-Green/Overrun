@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "drowner.png",
+  "atlas": "drowner.atlas.json",
+  "animations": "drowner.animations.json",
+  "game": "drowner.game.json",
+  "frameWidth": 48,
+  "frameHeight": 64,
+  "padding": 0,
+  "frameCount": 65
+}

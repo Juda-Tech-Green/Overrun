@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "dragon-fireball-launch",
+      "file": "dragon-fireball-launch.wav",
+      "source": "dragon-fireball-launch.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 550
+    }
+  ],
+  "events": []
+}

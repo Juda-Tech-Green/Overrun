@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "loot-drop",
+      "file": "loot-drop.wav",
+      "source": "loot-drop.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 40
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,143 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 180
+        },
+        {
+          "frameId": "idle-side-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "idle-side-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "idle-side-3",
+          "durationMs": 180
+        },
+        {
+          "frameId": "idle-side-4",
+          "durationMs": 160
+        },
+        {
+          "frameId": "idle-side-5",
+          "durationMs": 180
+        }
+      ]
+    },
+    {
+      "name": "fly",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "fly-side-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-side-1",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-side-2",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-side-3",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-side-4",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-side-5",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-side-6",
+          "durationMs": 80
+        },
+        {
+          "frameId": "fly-side-7",
+          "durationMs": 80
+        }
+      ]
+    },
+    {
+      "name": "attack",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-side-0",
+          "durationMs": 100
+        },
+        {
+          "frameId": "attack-side-1",
+          "durationMs": 100
+        },
+        {
+          "frameId": "attack-side-2",
+          "durationMs": 140
+        },
+        {
+          "frameId": "attack-side-3",
+          "durationMs": 140
+        },
+        {
+          "frameId": "attack-side-4",
+          "durationMs": 140
+        },
+        {
+          "frameId": "attack-side-5",
+          "durationMs": 260
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-side-0",
+          "durationMs": 90
+        },
+        {
+          "frameId": "hurt-side-1",
+          "durationMs": 90
+        }
+      ]
+    },
+    {
+      "name": "die",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-side-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "die-side-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "die-side-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "die-side-3",
+          "durationMs": 160
+        },
+        {
+          "frameId": "die-side-4",
+          "durationMs": 650
+        }
+      ]
+    }
+  ]
+}

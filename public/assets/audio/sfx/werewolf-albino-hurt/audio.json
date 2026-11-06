@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "werewolf-albino-hurt",
+      "file": "werewolf-albino-hurt.wav",
+      "source": "werewolf-albino-hurt.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 180
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,175 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "drop-bone",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "drop-bone-0",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-bone-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-bone-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-bone-3",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "icon-bone",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "icon-bone",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "drop-fang",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "drop-fang-0",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-fang-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-fang-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-fang-3",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "icon-fang",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "icon-fang",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "drop-eye",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "drop-eye-0",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-eye-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-eye-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-eye-3",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "icon-eye",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "icon-eye",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "drop-pearl",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "drop-pearl-0",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-pearl-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-pearl-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-pearl-3",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "icon-pearl",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "icon-pearl",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "drop-portal-key",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "drop-portal-key-0",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-portal-key-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-portal-key-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "drop-portal-key-3",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "icon-portal-key",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "icon-portal-key",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "icon-backpack",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "icon-backpack",
+          "durationMs": 140
+        }
+      ]
+    }
+  ]
+}

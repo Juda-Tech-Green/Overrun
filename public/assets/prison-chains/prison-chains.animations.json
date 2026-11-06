@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "sway",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 160
+        },
+        {
+          "frameId": "chain-sway-1",
+          "durationMs": 160
+        },
+        {
+          "frameId": "frame-0",
+          "durationMs": 160
+        },
+        {
+          "frameId": "chain-sway-2",
+          "durationMs": 160
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "dragon-fireball-charge",
+      "file": "dragon-fireball-charge.wav",
+      "source": "dragon-fireball-charge.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 350
+    }
+  ],
+  "events": []
+}

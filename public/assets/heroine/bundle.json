@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "heroine.png",
+  "atlas": "heroine.atlas.json",
+  "animations": "heroine.animations.json",
+  "game": "heroine.game.json",
+  "frameWidth": 48,
+  "frameHeight": 64,
+  "padding": 0,
+  "frameCount": 200
+}

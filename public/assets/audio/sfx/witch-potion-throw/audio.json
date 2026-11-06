@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "witch-potion-throw",
+      "file": "witch-potion-throw.wav",
+      "source": "witch-potion-throw.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 200
+    }
+  ],
+  "events": []
+}

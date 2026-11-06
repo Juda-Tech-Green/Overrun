@@ -1,0 +1,20 @@
+{
+  "version": "1.0",
+  "width": 16,
+  "height": 32,
+  "frameIds": [
+    "frame-0",
+    "bars-rattle-1",
+    "bars-rattle-2"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

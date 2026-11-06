@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "dog-whimper-alert",
+      "file": "dog-whimper-alert.wav",
+      "source": "dog-whimper-alert.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 600
+    }
+  ],
+  "events": []
+}

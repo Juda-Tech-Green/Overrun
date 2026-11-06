@@ -1,0 +1,125 @@
+{
+  "format": "pixelforge-manifest",
+  "version": "1.0",
+  "name": "grass-set",
+  "width": 80,
+  "height": 32,
+  "frameWidth": 16,
+  "frameHeight": 16,
+  "columns": 5,
+  "rows": 2,
+  "padding": 0,
+  "margin": 0,
+  "frames": [
+    {
+      "id": "frame-0",
+      "index": 0,
+      "x": 0,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "tufts",
+      "index": 1,
+      "x": 16,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "sway-b",
+      "index": 2,
+      "x": 32,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "sway-c",
+      "index": 3,
+      "x": 48,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "pebbles",
+      "index": 4,
+      "x": 64,
+      "y": 0,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "clover",
+      "index": 5,
+      "x": 0,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "flower-a",
+      "index": 6,
+      "x": 16,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "flower-b",
+      "index": 7,
+      "x": 32,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    },
+    {
+      "id": "dirt-edge",
+      "index": 8,
+      "x": 48,
+      "y": 16,
+      "width": 16,
+      "height": 16
+    }
+  ],
+  "animations": [
+    {
+      "name": "sway",
+      "loop": true,
+      "frames": [
+        {
+          "index": 1,
+          "durationMs": 150
+        },
+        {
+          "index": 2,
+          "durationMs": 250
+        },
+        {
+          "index": 1,
+          "durationMs": 150
+        },
+        {
+          "index": 3,
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "breeze",
+      "loop": true,
+      "frames": [
+        {
+          "index": 6,
+          "durationMs": 400
+        },
+        {
+          "index": 7,
+          "durationMs": 400
+        }
+      ]
+    }
+  ]
+}

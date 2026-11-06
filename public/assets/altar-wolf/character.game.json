@@ -1,0 +1,54 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 32,
+  "frameIds": [
+    "frame-0",
+    "idle-b",
+    "active-1",
+    "active-2",
+    "summon-1",
+    "summon-2",
+    "summon-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 4,
+      "y": 12,
+      "width": 24,
+      "height": 18
+    },
+    "boxes": [
+      {
+        "id": "altar-wolf-interact",
+        "kind": "hitbox",
+        "name": "interact",
+        "scope": {
+          "type": "project"
+        },
+        "rect": {
+          "x": 0,
+          "y": 6,
+          "width": 32,
+          "height": 26
+        },
+        "enabled": true
+      }
+    ],
+    "anchors": [],
+    "events": [
+      {
+        "id": "altar-wolf-summon-burst",
+        "animation": "summon",
+        "index": 1,
+        "name": "altar_wolf_summon_burst"
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "id": "rifle-fire",
+  "name": "rifle-fire",
+  "sampleRate": 44100,
+  "durationMs": 400,
+  "seed": 178109,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 1,
+            "value": 1
+          },
+          {
+            "timeMs": 130,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 6000
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 4,
+            "value": 1
+          },
+          {
+            "timeMs": 370,
+            "value": 0
+          },
+          {
+            "timeMs": 400,
+            "value": 0
+          }
+        ]
+      },
+      "type": "damped",
+      "frequency": {
+        "startHz": 100,
+        "endHz": 45,
+        "curve": "linear"
+      },
+      "decay": 24,
+      "initialAmplitude": 1
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "rifle-fire"
+  },
+  "metadata": {
+    "trigger": "Firing standard survivor rifle",
+    "design": "`gunshot` recipe: sharp white-noise transient + damped 120→45 Hz body"
+  }
+}

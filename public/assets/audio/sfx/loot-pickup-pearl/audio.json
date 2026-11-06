@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "loot-pickup-pearl",
+      "file": "loot-pickup-pearl.wav",
+      "source": "loot-pickup-pearl.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 550
+    }
+  ],
+  "events": []
+}

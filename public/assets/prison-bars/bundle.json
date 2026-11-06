@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "prison-bars.png",
+  "atlas": "prison-bars.atlas.json",
+  "animations": "prison-bars.animations.json",
+  "game": "prison-bars.game.json",
+  "frameWidth": 16,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 3
+}

@@ -1,24 +1,57 @@
-# Logs
-logs
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-pnpm-debug.log*
-lerna-debug.log*
+# Dependencies and generated builds
+node_modules/
+/dist/
+/dist-ssr/
+/.netlify/
+/release/
 
-node_modules
-dist
-dist-ssr
+# Local skill notes, large editable art and previews
+/TODO/
+/brag-output/
+/scratch/
+/src/game/assets-src/*
+# Tests and reproducible sound tooling require these compact sources.
+!/src/game/assets-src/audio/
+!/src/game/assets-src/hud/
+/src/game/assets-src/hud/*
+!/src/game/assets-src/hud/hud.sprite.json
+
+# Browser test artifacts
+/test-results/
+/playwright-report/
+/.playwright/
+
+# Secrets and machine-specific configuration
+.env
+.env.*
+!.env.example
+!.env.*.example
 *.local
+.npmrc
+.netrc
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
 
-# Editor directories and files
+# Logs
+logs/
+*.log
+
+# Editor and OS files
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 .DS_Store
+Thumbs.db
 *.suo
 *.ntvs*
 *.njsproj
 *.sln
 *.sw?
+
+# Keep public/assets and vendor/pixelforge archives: Netlify needs both.

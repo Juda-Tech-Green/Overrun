@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "hud.png",
+  "atlas": "hud.atlas.json",
+  "animations": "hud.animations.json",
+  "game": "hud.game.json",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 23
+}

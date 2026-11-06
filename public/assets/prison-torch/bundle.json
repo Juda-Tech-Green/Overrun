@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "prison-torch.png",
+  "atlas": "prison-torch.atlas.json",
+  "animations": "prison-torch.animations.json",
+  "game": "prison-torch.game.json",
+  "frameWidth": 16,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 6
+}

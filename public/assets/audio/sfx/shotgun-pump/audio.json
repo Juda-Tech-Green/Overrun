@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "shotgun-pump",
+      "file": "shotgun-pump.wav",
+      "source": "shotgun-pump.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 260
+    }
+  ],
+  "events": []
+}

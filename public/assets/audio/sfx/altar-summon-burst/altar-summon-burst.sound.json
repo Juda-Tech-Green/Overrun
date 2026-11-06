@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "id": "altar-summon-burst",
+  "name": "altar-summon-burst",
+  "sampleRate": 44100,
+  "durationMs": 2400,
+  "seed": 661168,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.15,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 700,
+        "decayMs": 300,
+        "sustain": 0.7,
+        "releaseMs": 800
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 220,
+        "endHz": 330,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 3,
+        "depth": 0.4
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.15,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 700,
+        "decayMs": 300,
+        "sustain": 0.7,
+        "releaseMs": 800
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 330,
+        "endHz": 495,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 4,
+        "depth": 0.4
+      }
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.15,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 700,
+        "decayMs": 300,
+        "sustain": 0.7,
+        "releaseMs": 800
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 441,
+        "endHz": 661.5,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 5,
+        "depth": 0.4
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "space",
+      "type": "delay",
+      "delayMs": 160,
+      "feedback": 0.4,
+      "mix": 0.25
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "altar-summon-burst"
+  },
+  "metadata": {
+    "trigger": "Pressing `[E]` to summon monster",
+    "design": "`altar-activation` recipe: three rising sines + ADSR + 160 ms echo"
+  }
+}

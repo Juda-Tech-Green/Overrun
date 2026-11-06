@@ -1,0 +1,74 @@
+{
+  "version": "1.0",
+  "id": "impact-metal-bars",
+  "name": "impact-metal-bars",
+  "sampleRate": 44100,
+  "durationMs": 1200,
+  "seed": 265218,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 4,
+            "value": 1
+          },
+          {
+            "timeMs": 1170,
+            "value": 0
+          },
+          {
+            "timeMs": 1200,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 440,
+          "decay": 5,
+          "gain": 0.7
+        },
+        {
+          "frequencyHz": 1193,
+          "decay": 7,
+          "gain": 0.4
+        },
+        {
+          "frequencyHz": 2371,
+          "decay": 11,
+          "gain": 0.25
+        },
+        {
+          "frequencyHz": 3599,
+          "decay": 16,
+          "gain": 0.15
+        }
+      ]
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "impact-metal-bars"
+  },
+  "metadata": {
+    "trigger": "Bullet hits prison iron bars / chains",
+    "design": "`metal-impact` recipe: 4 inharmonic modes (440, 1193, 2371, 3599 Hz)"
+  }
+}

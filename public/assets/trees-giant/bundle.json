@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "trees-giant.png",
+  "atlas": "trees-giant.atlas.json",
+  "animations": "trees-giant.animations.json",
+  "game": "trees-giant.game.json",
+  "frameWidth": 128,
+  "frameHeight": 192,
+  "padding": 0,
+  "frameCount": 6
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "inventory-close",
+      "file": "inventory-close.wav",
+      "source": "inventory-close.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 100
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "altar-witch.png",
+  "atlas": "altar-witch.atlas.json",
+  "animations": "altar-witch.animations.json",
+  "game": "altar-witch.game.json",
+  "frameWidth": 64,
+  "frameHeight": 64,
+  "padding": 0,
+  "frameCount": 14
+}

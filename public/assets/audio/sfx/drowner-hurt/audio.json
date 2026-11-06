@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "drowner-hurt",
+      "file": "drowner-hurt.wav",
+      "source": "drowner-hurt.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 180
+    }
+  ],
+  "events": []
+}

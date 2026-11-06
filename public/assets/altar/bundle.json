@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "altar.png",
+  "atlas": "altar.atlas.json",
+  "animations": "altar.animations.json",
+  "game": "altar.game.json",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 7
+}

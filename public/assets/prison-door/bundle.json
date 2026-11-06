@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "prison-door.png",
+  "atlas": "prison-door.atlas.json",
+  "animations": "prison-door.animations.json",
+  "game": "prison-door.game.json",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 3
+}

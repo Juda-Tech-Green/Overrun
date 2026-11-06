@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "flicker",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 90
+        },
+        {
+          "frameId": "flame-1",
+          "durationMs": 90
+        },
+        {
+          "frameId": "flame-2",
+          "durationMs": 90
+        },
+        {
+          "frameId": "flame-3",
+          "durationMs": 90
+        },
+        {
+          "frameId": "flame-4",
+          "durationMs": 90
+        },
+        {
+          "frameId": "flame-5",
+          "durationMs": 90
+        }
+      ]
+    }
+  ]
+}

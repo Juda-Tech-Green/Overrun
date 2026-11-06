@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ghoul-spawn",
+      "file": "ghoul-spawn.wav",
+      "source": "ghoul-spawn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 700
+    }
+  ],
+  "events": []
+}

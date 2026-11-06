@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "dragon-front.png",
+  "atlas": "dragon-front.atlas.json",
+  "animations": "dragon-front.animations.json",
+  "game": "dragon-front.game.json",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "padding": 0,
+  "frameCount": 27
+}

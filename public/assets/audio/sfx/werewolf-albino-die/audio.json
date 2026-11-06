@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "werewolf-albino-die",
+      "file": "werewolf-albino-die.wav",
+      "source": "werewolf-albino-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 850
+    }
+  ],
+  "events": []
+}

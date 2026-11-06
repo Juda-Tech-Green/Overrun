@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "impact-flesh",
+      "file": "impact-flesh.wav",
+      "source": "impact-flesh.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 160
+    }
+  ],
+  "events": []
+}

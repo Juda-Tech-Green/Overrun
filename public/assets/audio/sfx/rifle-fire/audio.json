@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "rifle-fire",
+      "file": "rifle-fire.wav",
+      "source": "rifle-fire.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 400
+    }
+  ],
+  "events": []
+}

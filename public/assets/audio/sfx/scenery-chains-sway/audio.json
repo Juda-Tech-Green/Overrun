@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "scenery-chains-sway",
+      "file": "scenery-chains-sway.wav",
+      "source": "scenery-chains-sway.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 350
+    }
+  ],
+  "events": []
+}

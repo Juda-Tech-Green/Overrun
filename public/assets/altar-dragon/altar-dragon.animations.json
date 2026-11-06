@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "summoning",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "summoning-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "summoning-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "summoning-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "summoning-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "active",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "summoning-0",
+          "durationMs": 180
+        },
+        {
+          "frameId": "summoning-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "summoning-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "summoning-3",
+          "durationMs": 180
+        }
+      ]
+    }
+  ]
+}

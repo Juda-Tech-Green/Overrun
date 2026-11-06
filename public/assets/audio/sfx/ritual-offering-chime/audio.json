@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ritual-offering-chime",
+      "file": "ritual-offering-chime.wav",
+      "source": "ritual-offering-chime.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 950
+    }
+  ],
+  "events": []
+}

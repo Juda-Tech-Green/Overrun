@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "id": "rifle-empty",
+  "name": "rifle-empty",
+  "sampleRate": 44100,
+  "durationMs": 70,
+  "seed": 186028,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 70,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 1800,
+          "decay": 12,
+          "gain": 0.5
+        },
+        {
+          "frequencyHz": 3186,
+          "decay": 15,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.12,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 42,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 3500
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "rifle-empty"
+  },
+  "metadata": {
+    "trigger": "Firing with 0 ammo",
+    "design": "High-pitched metallic click, damped dual resonator (1800 & 3200 Hz)"
+  }
+}

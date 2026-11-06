@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "potion-splash-acid",
+      "file": "potion-splash-acid.wav",
+      "source": "potion-splash-acid.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 700
+    }
+  ],
+  "events": []
+}

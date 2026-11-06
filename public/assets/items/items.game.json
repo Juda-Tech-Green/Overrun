@@ -1,0 +1,43 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 32,
+  "frameIds": [
+    "drop-bone-0",
+    "drop-bone-1",
+    "drop-bone-2",
+    "drop-bone-3",
+    "icon-bone",
+    "drop-fang-0",
+    "drop-fang-1",
+    "drop-fang-2",
+    "drop-fang-3",
+    "icon-fang",
+    "drop-eye-0",
+    "drop-eye-1",
+    "drop-eye-2",
+    "drop-eye-3",
+    "icon-eye",
+    "drop-pearl-0",
+    "drop-pearl-1",
+    "drop-pearl-2",
+    "drop-pearl-3",
+    "icon-pearl",
+    "drop-portal-key-0",
+    "drop-portal-key-1",
+    "drop-portal-key-2",
+    "drop-portal-key-3",
+    "icon-portal-key",
+    "icon-backpack"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

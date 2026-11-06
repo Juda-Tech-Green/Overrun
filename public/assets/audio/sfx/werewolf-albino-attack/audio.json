@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "werewolf-albino-attack",
+      "file": "werewolf-albino-attack.wav",
+      "source": "werewolf-albino-attack.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 300
+    }
+  ],
+  "events": []
+}

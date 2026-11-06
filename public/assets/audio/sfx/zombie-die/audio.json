@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "zombie-die",
+      "file": "zombie-die.wav",
+      "source": "zombie-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 850
+    }
+  ],
+  "events": []
+}

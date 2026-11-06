@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "bullet-whiz",
+      "file": "bullet-whiz.wav",
+      "source": "bullet-whiz.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 50
+    }
+  ],
+  "events": []
+}

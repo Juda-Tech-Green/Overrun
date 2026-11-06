@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "dragon-hurt",
+      "file": "dragon-hurt.wav",
+      "source": "dragon-hurt.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 450
+    }
+  ],
+  "events": []
+}

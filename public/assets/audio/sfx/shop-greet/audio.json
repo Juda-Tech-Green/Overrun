@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "shop-greet",
+      "file": "shop-greet.wav",
+      "source": "shop-greet.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 500
+    }
+  ],
+  "events": []
+}

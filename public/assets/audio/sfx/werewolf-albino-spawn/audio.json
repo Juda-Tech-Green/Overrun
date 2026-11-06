@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "werewolf-albino-spawn",
+      "file": "werewolf-albino-spawn.wav",
+      "source": "werewolf-albino-spawn.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1000
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "player-die",
+      "file": "player-die.wav",
+      "source": "player-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 900
+    }
+  ],
+  "events": []
+}

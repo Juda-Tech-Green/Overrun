@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "drowner-attack",
+      "file": "drowner-attack.wav",
+      "source": "drowner-attack.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 300
+    }
+  ],
+  "events": []
+}

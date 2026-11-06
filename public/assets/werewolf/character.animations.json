@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 400
+        },
+        {
+          "frameId": "idle-2",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "walk-3",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-4",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "attack",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "attack-2",
+          "durationMs": 140
+        },
+        {
+          "frameId": "attack-3",
+          "durationMs": 220
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "die",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-1",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-3",
+          "durationMs": 450
+        }
+      ]
+    }
+  ]
+}

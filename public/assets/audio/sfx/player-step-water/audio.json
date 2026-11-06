@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "player-step-water",
+      "file": "player-step-water.wav",
+      "source": "player-step-water.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 120
+    }
+  ],
+  "events": []
+}

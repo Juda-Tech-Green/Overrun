@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "shop-denied",
+      "file": "shop-denied.wav",
+      "source": "shop-denied.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 300
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "scenery-prison-drip",
+      "file": "scenery-prison-drip.wav",
+      "source": "scenery-prison-drip.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 700
+    }
+  ],
+  "events": []
+}

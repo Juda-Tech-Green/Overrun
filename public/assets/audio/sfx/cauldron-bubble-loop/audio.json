@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "cauldron-bubble-loop",
+      "file": "cauldron-bubble-loop.wav",
+      "source": "cauldron-bubble-loop.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 2000
+    }
+  ],
+  "events": []
+}

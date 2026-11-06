@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "drowner-die",
+      "file": "drowner-die.wav",
+      "source": "drowner-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 800
+    }
+  ],
+  "events": []
+}

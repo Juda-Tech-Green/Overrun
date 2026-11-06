@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "loot-pickup-fang",
+      "file": "loot-pickup-fang.wav",
+      "source": "loot-pickup-fang.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 280
+    }
+  ],
+  "events": []
+}

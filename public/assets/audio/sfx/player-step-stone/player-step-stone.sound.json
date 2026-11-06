@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "id": "player-step-stone",
+  "name": "player-step-stone",
+  "sampleRate": 44100,
+  "durationMs": 70,
+  "seed": 98919,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 70,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 2000
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 70,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 780,
+          "decay": 12,
+          "gain": 0.5
+        },
+        {
+          "frequencyHz": 1540,
+          "decay": 15,
+          "gain": 0.5
+        }
+      ]
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "player-step-stone"
+  },
+  "metadata": {
+    "trigger": "Walking on castle stone tiles",
+    "design": "Resonant bandpass transient (70 ms), high-mid damped mode"
+  }
+}

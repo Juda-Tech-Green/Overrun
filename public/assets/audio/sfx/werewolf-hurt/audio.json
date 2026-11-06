@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "werewolf-hurt",
+      "file": "werewolf-hurt.wav",
+      "source": "werewolf-hurt.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 180
+    }
+  ],
+  "events": []
+}

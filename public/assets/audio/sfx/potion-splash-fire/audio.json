@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "potion-splash-fire",
+      "file": "potion-splash-fire.wav",
+      "source": "potion-splash-fire.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 700
+    }
+  ],
+  "events": []
+}

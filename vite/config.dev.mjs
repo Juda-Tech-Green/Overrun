@@ -12,6 +12,7 @@ export default defineConfig({
         },
     },
     server: {
+        allowedHosts: ['.trycloudflare.com'],
         port: 8080
     }
 });

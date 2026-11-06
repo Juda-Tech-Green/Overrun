@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "dragon.png",
+  "atlas": "dragon.atlas.json",
+  "animations": "dragon.animations.json",
+  "game": "dragon.game.json",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "padding": 0,
+  "frameCount": 27
+}

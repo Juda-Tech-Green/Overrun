@@ -1,0 +1,104 @@
+{
+  "version": "1.0",
+  "id": "werewolf-albino-spawn",
+  "name": "werewolf-albino-spawn",
+  "sampleRate": 44100,
+  "durationMs": 1000,
+  "seed": 471112,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 1000,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "pulse",
+      "frequency": {
+        "startHz": 380,
+        "endHz": 760,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 7,
+        "depth": 0.4
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.1,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 1000,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 3200
+    }
+  ],
+  "effects": [
+    {
+      "id": "grit",
+      "type": "distortion",
+      "model": "tanh",
+      "inputGain": 2,
+      "outputGain": 0.7,
+      "mix": 0.35,
+      "positive": 1,
+      "negative": 1,
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "oversample": 4
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "werewolf-albino-spawn"
+  },
+  "metadata": {
+    "trigger": "Altar emergence",
+    "design": "Piercing, shrill bloodcurdling howl (higher register, 380→720 Hz)"
+  }
+}

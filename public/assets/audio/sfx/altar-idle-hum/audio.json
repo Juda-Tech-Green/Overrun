@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "altar-idle-hum",
+      "file": "altar-idle-hum.wav",
+      "source": "altar-idle-hum.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 2000
+    }
+  ],
+  "events": []
+}

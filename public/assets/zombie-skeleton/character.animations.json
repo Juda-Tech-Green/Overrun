@@ -1,0 +1,87 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 500
+        },
+        {
+          "frameId": "idle-b",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-1",
+          "durationMs": 110
+        },
+        {
+          "frameId": "walk-2",
+          "durationMs": 150
+        },
+        {
+          "frameId": "walk-3",
+          "durationMs": 110
+        },
+        {
+          "frameId": "walk-4",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "name": "attack",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "attack-windup",
+          "durationMs": 160
+        },
+        {
+          "frameId": "attack-lunge",
+          "durationMs": 110
+        },
+        {
+          "frameId": "attack-recover",
+          "durationMs": 220
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "die",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-1",
+          "durationMs": 130
+        },
+        {
+          "frameId": "die-2",
+          "durationMs": 160
+        },
+        {
+          "frameId": "die-3",
+          "durationMs": 400
+        }
+      ]
+    }
+  ]
+}

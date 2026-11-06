@@ -1,0 +1,124 @@
+{
+  "version": "1.0",
+  "id": "zombie-spawn",
+  "name": "zombie-spawn",
+  "sampleRate": 44100,
+  "durationMs": 1400,
+  "seed": 296894,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 4,
+            "value": 1
+          },
+          {
+            "timeMs": 1370,
+            "value": 0
+          },
+          {
+            "timeMs": 1400,
+            "value": 0
+          }
+        ]
+      },
+      "type": "nonlinear",
+      "frequency": {
+        "startHz": 65,
+        "endHz": 42,
+        "curve": "linear"
+      },
+      "sigma": 1,
+      "cReal": -4,
+      "cImag": 80,
+      "initialAmplitude": 0.6
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.12,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 4,
+            "value": 1
+          },
+          {
+            "timeMs": 1370,
+            "value": 0
+          },
+          {
+            "timeMs": 1400,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "pulse",
+      "frequency": {
+        "startHz": 91,
+        "endHz": 62,
+        "curve": "linear"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 13,
+        "depth": 0.8
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "grit",
+      "type": "distortion",
+      "model": "tanh",
+      "inputGain": 3,
+      "outputGain": 0.7,
+      "mix": 1,
+      "positive": 1,
+      "negative": 1,
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "oversample": 4
+    },
+    {
+      "id": "dark",
+      "type": "lowpass",
+      "cutoffHz": 1800
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "zombie-spawn"
+  },
+  "metadata": {
+    "trigger": "Summoned / emerging from altar",
+    "design": "`zombie-growl` recipe: nonlinear ODE + modulated pulse (1200 ms)"
+  }
+}

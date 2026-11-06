@@ -1,0 +1,89 @@
+{
+  "version": "1.0",
+  "width": 48,
+  "height": 64,
+  "frameIds": [
+    "frame-0",
+    "idle-b",
+    "walk-1",
+    "walk-2",
+    "walk-3",
+    "walk-4",
+    "attack-windup",
+    "attack-lunge",
+    "attack-recover",
+    "hurt",
+    "die-1",
+    "die-2",
+    "die-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 14,
+      "y": 12,
+      "width": 20,
+      "height": 50
+    },
+    "boxes": [
+      {
+        "id": "body-hurt",
+        "kind": "hurtbox",
+        "name": "body",
+        "scope": {
+          "type": "project"
+        },
+        "rect": {
+          "x": 14,
+          "y": 12,
+          "width": 20,
+          "height": 50
+        },
+        "enabled": true
+      },
+      {
+        "id": "bite-hit",
+        "kind": "hitbox",
+        "name": "bite",
+        "scope": {
+          "type": "entry",
+          "animation": "attack",
+          "index": 1
+        },
+        "rect": {
+          "x": 28,
+          "y": 20,
+          "width": 18,
+          "height": 24
+        },
+        "enabled": true
+      }
+    ],
+    "anchors": [],
+    "events": [
+      {
+        "id": "zombie-bite-start",
+        "animation": "attack",
+        "index": 1,
+        "name": "zombie_bite_start"
+      },
+      {
+        "id": "zombie-bite-end",
+        "animation": "attack",
+        "index": 2,
+        "name": "zombie_bite_end"
+      },
+      {
+        "id": "zombie-die-end",
+        "animation": "die",
+        "index": 2,
+        "name": "zombie_die_end"
+      }
+    ]
+  }
+}

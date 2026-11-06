@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "prison-straw.png",
+  "atlas": "prison-straw.atlas.json",
+  "animations": "prison-straw.animations.json",
+  "game": "prison-straw.game.json",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 4
+}

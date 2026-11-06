@@ -1,0 +1,40 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 32,
+  "frameIds": [
+    "portrait-frame",
+    "face-survivor",
+    "face-scholar",
+    "heart-full",
+    "heart-empty",
+    "skull",
+    "icon-menu",
+    "icon-spawner",
+    "bullet-pip-full",
+    "bullet-pip-empty",
+    "icon-reload",
+    "prompt-altar-zombie",
+    "prompt-altar-wolf",
+    "prompt-vendor-buy",
+    "icon-shotgun",
+    "shell-pip-full",
+    "shell-pip-empty",
+    "icon-ammo-shotgun",
+    "icon-medkit",
+    "icon-rifle",
+    "icon-ammo",
+    "prompt-altar-witch",
+    "prompt-altar-drowner"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

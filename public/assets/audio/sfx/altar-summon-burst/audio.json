@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "altar-summon-burst",
+      "file": "altar-summon-burst.wav",
+      "source": "altar-summon-burst.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 2400
+    }
+  ],
+  "events": []
+}

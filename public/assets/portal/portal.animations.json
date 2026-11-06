@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 150
+        },
+        {
+          "frameId": "frame-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "frame-2",
+          "durationMs": 150
+        },
+        {
+          "frameId": "frame-3",
+          "durationMs": 150
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "width": 48,
+  "height": 64,
+  "frameIds": [
+    "emerald-1",
+    "emerald-2",
+    "emerald-3",
+    "olive-1",
+    "olive-2",
+    "olive-3",
+    "teal-1",
+    "teal-2",
+    "teal-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 18,
+      "y": 52,
+      "width": 12,
+      "height": 10
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

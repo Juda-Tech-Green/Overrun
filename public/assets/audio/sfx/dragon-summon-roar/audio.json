@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "dragon-summon-roar",
+      "file": "dragon-summon-roar.wav",
+      "source": "dragon-summon-roar.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 2200
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,47 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "terracotta",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "terracotta-1",
+          "durationMs": 500
+        },
+        {
+          "frameId": "terracotta-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "gray",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "gray-1",
+          "durationMs": 500
+        },
+        {
+          "frameId": "gray-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "olive",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "olive-1",
+          "durationMs": 500
+        },
+        {
+          "frameId": "olive-2",
+          "durationMs": 500
+        }
+      ]
+    }
+  ]
+}

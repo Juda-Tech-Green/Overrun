@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "player-heartbeat-low",
+      "file": "player-heartbeat-low.wav",
+      "source": "player-heartbeat-low.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 500
+    }
+  ],
+  "events": []
+}

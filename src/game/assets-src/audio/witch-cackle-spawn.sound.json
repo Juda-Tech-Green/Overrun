@@ -1,0 +1,101 @@
+{
+  "version": "1.0",
+  "id": "witch-cackle-spawn",
+  "name": "witch-cackle-spawn",
+  "sampleRate": 44100,
+  "durationMs": 900,
+  "seed": 534464,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.24,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 840,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "pulse",
+      "frequency": {
+        "startHz": 600,
+        "endHz": 900,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 9,
+        "depth": 0.95
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.08,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 850,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 1200,
+        "endHz": 600,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 100,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "witch-cackle-spawn"
+  },
+  "metadata": {
+    "trigger": "Witch summoned from cauldron",
+    "design": "Sinister stepping FM modulation cackle (600→900 Hz vibrato steps)"
+  }
+}

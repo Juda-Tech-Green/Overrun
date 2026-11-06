@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "dog-bark",
+      "file": "dog-bark.wav",
+      "source": "dog-bark.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 200
+    }
+  ],
+  "events": []
+}

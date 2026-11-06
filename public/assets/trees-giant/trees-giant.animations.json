@@ -1,0 +1,41 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "sway-green",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "green-1",
+          "durationMs": 280
+        },
+        {
+          "frameId": "green-2",
+          "durationMs": 280
+        },
+        {
+          "frameId": "green-3",
+          "durationMs": 280
+        }
+      ]
+    },
+    {
+      "name": "sway-pink",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "pink-1",
+          "durationMs": 260
+        },
+        {
+          "frameId": "pink-2",
+          "durationMs": 260
+        },
+        {
+          "frameId": "pink-3",
+          "durationMs": 260
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 32,
+  "frameIds": [
+    "berry-1",
+    "berry-2",
+    "berry-3",
+    "flower-1",
+    "flower-2",
+    "flower-3",
+    "lavender-1",
+    "lavender-2",
+    "lavender-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 6,
+      "y": 19,
+      "width": 20,
+      "height": 10
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

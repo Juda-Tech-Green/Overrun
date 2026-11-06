@@ -1,0 +1,35 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "drip",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "drip-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "drip-2",
+          "durationMs": 150
+        },
+        {
+          "frameId": "drip-3",
+          "durationMs": 150
+        },
+        {
+          "frameId": "drip-4",
+          "durationMs": 150
+        },
+        {
+          "frameId": "drip-5",
+          "durationMs": 200
+        }
+      ]
+    }
+  ]
+}

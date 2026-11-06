@@ -1,0 +1,232 @@
+{
+  "version": "1.0",
+  "width": 48,
+  "height": 64,
+  "frameIds": [
+    "idle-side-0",
+    "idle-side-1",
+    "idle-side-2",
+    "idle-side-3",
+    "walk-side-0",
+    "walk-side-1",
+    "walk-side-2",
+    "walk-side-3",
+    "walk-side-4",
+    "walk-side-5",
+    "attack-side-0",
+    "attack-side-1",
+    "attack-side-2",
+    "attack-side-3",
+    "attack-side-4",
+    "hurt-side-0",
+    "hurt-side-1",
+    "die-side-0",
+    "die-side-1",
+    "die-side-2",
+    "die-side-3",
+    "die-side-4",
+    "idle-front-0",
+    "idle-front-1",
+    "idle-front-2",
+    "idle-front-3",
+    "walk-front-0",
+    "walk-front-1",
+    "walk-front-2",
+    "walk-front-3",
+    "walk-front-4",
+    "walk-front-5",
+    "attack-front-0",
+    "attack-front-1",
+    "attack-front-2",
+    "attack-front-3",
+    "attack-front-4",
+    "hurt-front-0",
+    "hurt-front-1",
+    "die-front-0",
+    "die-front-1",
+    "die-front-2",
+    "die-front-3",
+    "die-front-4",
+    "idle-front45-0",
+    "idle-front45-1",
+    "idle-front45-2",
+    "idle-front45-3",
+    "walk-front45-0",
+    "walk-front45-1",
+    "walk-front45-2",
+    "walk-front45-3",
+    "walk-front45-4",
+    "walk-front45-5",
+    "attack-front45-0",
+    "attack-front45-1",
+    "attack-front45-2",
+    "attack-front45-3",
+    "attack-front45-4",
+    "hurt-front45-0",
+    "hurt-front45-1",
+    "die-front45-0",
+    "die-front45-1",
+    "die-front45-2",
+    "die-front45-3",
+    "die-front45-4",
+    "idle-back-0",
+    "idle-back-1",
+    "idle-back-2",
+    "idle-back-3",
+    "walk-back-0",
+    "walk-back-1",
+    "walk-back-2",
+    "walk-back-3",
+    "walk-back-4",
+    "walk-back-5",
+    "attack-back-0",
+    "attack-back-1",
+    "attack-back-2",
+    "attack-back-3",
+    "attack-back-4",
+    "hurt-back-0",
+    "hurt-back-1",
+    "die-back-0",
+    "die-back-1",
+    "die-back-2",
+    "die-back-3",
+    "die-back-4",
+    "idle-back45-0",
+    "idle-back45-1",
+    "idle-back45-2",
+    "idle-back45-3",
+    "walk-back45-0",
+    "walk-back45-1",
+    "walk-back45-2",
+    "walk-back45-3",
+    "walk-back45-4",
+    "walk-back45-5",
+    "attack-back45-0",
+    "attack-back45-1",
+    "attack-back45-2",
+    "attack-back45-3",
+    "attack-back45-4",
+    "hurt-back45-0",
+    "hurt-back45-1",
+    "die-back45-0",
+    "die-back45-1",
+    "die-back45-2",
+    "die-back45-3",
+    "die-back45-4"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 12,
+      "y": 24,
+      "width": 24,
+      "height": 38
+    },
+    "boxes": [
+      {
+        "id": "witch-body",
+        "kind": "hurtbox",
+        "name": "body",
+        "scope": {
+          "type": "project"
+        },
+        "rect": {
+          "x": 12,
+          "y": 24,
+          "width": 24,
+          "height": 38
+        },
+        "enabled": true
+      }
+    ],
+    "anchors": [
+      {
+        "id": "potion",
+        "name": "potion-release",
+        "x": 41,
+        "y": 31,
+        "scope": {
+          "type": "animation",
+          "animation": "attack"
+        }
+      },
+      {
+        "id": "potion-front",
+        "name": "potion-release",
+        "x": 40,
+        "y": 31,
+        "scope": {
+          "type": "animation",
+          "animation": "attack-front"
+        }
+      },
+      {
+        "id": "potion-front45",
+        "name": "potion-release",
+        "x": 41,
+        "y": 31,
+        "scope": {
+          "type": "animation",
+          "animation": "attack-front45"
+        }
+      },
+      {
+        "id": "potion-back",
+        "name": "potion-release",
+        "x": 40,
+        "y": 23,
+        "scope": {
+          "type": "animation",
+          "animation": "attack-back"
+        }
+      },
+      {
+        "id": "potion-back45",
+        "name": "potion-release",
+        "x": 41,
+        "y": 23,
+        "scope": {
+          "type": "animation",
+          "animation": "attack-back45"
+        }
+      }
+    ],
+    "events": [
+      {
+        "id": "throw",
+        "animation": "attack",
+        "index": 2,
+        "name": "throw-potion"
+      },
+      {
+        "id": "throw-front",
+        "animation": "attack-front",
+        "index": 2,
+        "name": "throw-potion"
+      },
+      {
+        "id": "throw-front45",
+        "animation": "attack-front45",
+        "index": 2,
+        "name": "throw-potion"
+      },
+      {
+        "id": "throw-back",
+        "animation": "attack-back",
+        "index": 2,
+        "name": "throw-potion"
+      },
+      {
+        "id": "throw-back45",
+        "animation": "attack-back45",
+        "index": 2,
+        "name": "throw-potion"
+      }
+    ]
+  }
+}

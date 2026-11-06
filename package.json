@@ -1,21 +1,30 @@
 {
-  "name": "pixelforge-game",
-  "description": "An action shooter game built with Phaser and TypeScript.",
+  "name": "overrun",
+  "description": "Overrun - An action shooter game built with Phaser and TypeScript.",
   "version": "0.1.0",
   "scripts": {
     "dev": "vite --config vite/config.dev.mjs",
-    "build": "vite build --config vite/config.prod.mjs"
+    "build": "vite build --config vite/config.prod.mjs",
+    "typecheck": "tsc --noEmit",
+    "test": "node --test tests/game-systems.test.cjs",
+    "tunnel": "node scripts/tunnel.mjs",
+    "dev:tunnel": "vite --config vite/config.dev.mjs --host 127.0.0.1 --port 8080 --strictPort",
+    "release:check": "npm run typecheck && npm test && npm run build",
+    "preview": "vite preview --config vite/config.prod.mjs --host 127.0.0.1 --port 4173 --strictPort"
   },
   "devDependencies": {
     "typescript": "~5.7.2",
     "vite": "^6.3.1"
   },
   "dependencies": {
-    "@pixelforge/cli": "file:vendor/pixelforge/pixelforge-cli-0.4.0.tgz",
-    "@pixelforge/core": "file:vendor/pixelforge/pixelforge-core-0.4.0.tgz",
-    "@pixelforge/exporters": "file:vendor/pixelforge/pixelforge-exporters-0.4.0.tgz",
-    "@pixelforge/phaser": "file:vendor/pixelforge/pixelforge-phaser-0.4.0.tgz",
-    "phaser": "4.0.0",
+    "@pixelforge/audio-core": "file:vendor/pixelforge/pixelforge-audio-core-0.6.0.tgz",
+    "@pixelforge/audio-exporters": "file:vendor/pixelforge/pixelforge-audio-exporters-0.6.0.tgz",
+    "@pixelforge/cli": "file:vendor/pixelforge/pixelforge-cli-0.6.0.tgz",
+    "@pixelforge/core": "file:vendor/pixelforge/pixelforge-core-0.6.0.tgz",
+    "@pixelforge/exporters": "file:vendor/pixelforge/pixelforge-exporters-0.6.0.tgz",
+    "@pixelforge/phaser": "file:vendor/pixelforge/pixelforge-phaser-0.6.0.tgz",
+    "peerjs": "^1.5.5",
+    "phaser": "4.2.1",
     "terser": "^5.39.0"
   }
 }

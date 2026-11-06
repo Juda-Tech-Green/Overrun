@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "prison-floor.png",
+  "atlas": "prison-floor.atlas.json",
+  "animations": "prison-floor.animations.json",
+  "game": "prison-floor.game.json",
+  "frameWidth": 32,
+  "frameHeight": 32,
+  "padding": 0,
+  "frameCount": 4
+}

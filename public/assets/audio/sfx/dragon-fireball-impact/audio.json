@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "dragon-fireball-impact",
+      "file": "dragon-fireball-impact.wav",
+      "source": "dragon-fireball-impact.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 850
+    }
+  ],
+  "events": []
+}

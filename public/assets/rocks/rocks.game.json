@@ -1,0 +1,30 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 32,
+  "frameIds": [
+    "terracotta-1",
+    "terracotta-2",
+    "gray-1",
+    "gray-2",
+    "olive-1",
+    "olive-2"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 6,
+      "y": 18,
+      "width": 20,
+      "height": 11
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

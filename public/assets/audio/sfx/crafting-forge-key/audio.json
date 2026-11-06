@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "crafting-forge-key",
+      "file": "crafting-forge-key.wav",
+      "source": "crafting-forge-key.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 1100
+    }
+  ],
+  "events": []
+}

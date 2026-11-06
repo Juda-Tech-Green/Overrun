@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "id": "laser-aim-hum",
+  "name": "laser-aim-hum",
+  "sampleRate": 44100,
+  "durationMs": 2000,
+  "seed": 225623,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.16,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 40,
+        "decayMs": 0,
+        "sustain": 1,
+        "releaseMs": 40
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 120,
+        "endHz": 120,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 2,
+        "depth": 0.16
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "laser-aim-hum"
+  },
+  "metadata": {
+    "trigger": "Aim ray / desktop laser active",
+    "design": "Subtle continuous low-gain triangle drone (120 Hz) with gentle LFO"
+  }
+}

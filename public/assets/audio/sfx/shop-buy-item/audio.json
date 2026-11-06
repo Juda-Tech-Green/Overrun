@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "shop-buy-item",
+      "file": "shop-buy-item.wav",
+      "source": "shop-buy-item.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 400
+    }
+  ],
+  "events": []
+}

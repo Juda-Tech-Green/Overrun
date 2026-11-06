@@ -1,0 +1,65 @@
+{
+  "version": "1.0",
+  "id": "scenery-chains-sway",
+  "name": "scenery-chains-sway",
+  "sampleRate": 44100,
+  "durationMs": 350,
+  "seed": 827467,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 340,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 680,
+          "decay": 12,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 1740,
+          "decay": 15,
+          "gain": 0.3333333333333333
+        },
+        {
+          "frequencyHz": 2900,
+          "decay": 18,
+          "gain": 0.3333333333333333
+        }
+      ]
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "scenery-chains-sway"
+  },
+  "metadata": {
+    "trigger": "Prison hanging chains sway",
+    "design": "Subtle metallic iron link clink"
+  }
+}

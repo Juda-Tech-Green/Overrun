@@ -1,0 +1,826 @@
+[
+  {
+    "key": "player-step-grass",
+    "peak": 0.1317134530575761,
+    "rms": 0.027305426244933654,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 2646
+  },
+  {
+    "key": "player-step-stone",
+    "peak": 0.2946651915074453,
+    "rms": 0.058959566391952184,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 3087
+  },
+  {
+    "key": "player-step-water",
+    "peak": 0.30869586896057166,
+    "rms": 0.07664745201236484,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 5292
+  },
+  {
+    "key": "player-hurt-male",
+    "peak": 0.30424683551617415,
+    "rms": 0.17942875782673756,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 10584
+  },
+  {
+    "key": "player-hurt-female",
+    "peak": 0.24374385098818052,
+    "rms": 0.08577257104768365,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 9702
+  },
+  {
+    "key": "player-die",
+    "peak": 0.3413262550724042,
+    "rms": 0.10315293935918955,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 39690
+  },
+  {
+    "key": "player-heartbeat-low",
+    "peak": 0.2934056982697188,
+    "rms": 0.09199910902089427,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 22050
+  },
+  {
+    "key": "character-switch",
+    "peak": 0.20374059269039838,
+    "rms": 0.05103395200583569,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 16758
+  },
+  {
+    "key": "heal-use",
+    "peak": 0.21065668575405178,
+    "rms": 0.050683100433184344,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 19845
+  },
+  {
+    "key": "dog-bark",
+    "peak": 0.2837465823761399,
+    "rms": 0.13228077373310948,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 8820
+  },
+  {
+    "key": "dog-whimper-alert",
+    "peak": 0.1717500372167584,
+    "rms": 0.05936817164659112,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 26460
+  },
+  {
+    "key": "rifle-fire",
+    "peak": 0.40606949161630235,
+    "rms": 0.048037119856619084,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 17640
+  },
+  {
+    "key": "rifle-empty",
+    "peak": 0.2670948167472838,
+    "rms": 0.05878882938999531,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 3087
+  },
+  {
+    "key": "rifle-reload",
+    "peak": 0.19064086213244222,
+    "rms": 0.036048390412917956,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 21168
+  },
+  {
+    "key": "shotgun-fire",
+    "peak": 0.35869465670766815,
+    "rms": 0.10365122400006414,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 22050
+  },
+  {
+    "key": "shotgun-pump",
+    "peak": 0.2681281411821939,
+    "rms": 0.0489152326776892,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 11466
+  },
+  {
+    "key": "shotgun-reload",
+    "peak": 0.230407030630815,
+    "rms": 0.0570778130697544,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "laser-aim-hum",
+    "peak": 0.11514951378766958,
+    "rms": 0.06048479382621206,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 88200
+  },
+  {
+    "key": "bullet-whiz",
+    "peak": 0.21214063067219238,
+    "rms": 0.057410061673283476,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 2205
+  },
+  {
+    "key": "impact-rock",
+    "peak": 0.3048667265373661,
+    "rms": 0.04268872271806183,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 9702
+  },
+  {
+    "key": "impact-wood",
+    "peak": 0.25657956709346874,
+    "rms": 0.09032956892667043,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 3528
+  },
+  {
+    "key": "impact-castle-stone",
+    "peak": 0.21164563697261268,
+    "rms": 0.022965504245679415,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 17640
+  },
+  {
+    "key": "impact-metal-bars",
+    "peak": 0.32434502972192786,
+    "rms": 0.03750584684396671,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 52920
+  },
+  {
+    "key": "impact-flesh",
+    "peak": 0.3102353344197502,
+    "rms": 0.07767595688687996,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7056
+  },
+  {
+    "key": "impact-bone",
+    "peak": 0.24692000975757022,
+    "rms": 0.0550495039678197,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 4190
+  },
+  {
+    "key": "impact-dragon-scale",
+    "peak": 0.25504501691293247,
+    "rms": 0.02175246993176337,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 28665
+  },
+  {
+    "key": "zombie-spawn",
+    "peak": 0.37054575140831675,
+    "rms": 0.10903180164922346,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 61740
+  },
+  {
+    "key": "zombie-attack",
+    "peak": 0.3067825196702714,
+    "rms": 0.1085762644369703,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "zombie-hurt",
+    "peak": 0.2666312794373196,
+    "rms": 0.13758489622244952,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "zombie-die",
+    "peak": 0.2988457949536435,
+    "rms": 0.0862855077138365,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 37485
+  },
+  {
+    "key": "banshee-spawn",
+    "peak": 0.2533035867490243,
+    "rms": 0.06310601274444955,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 39690
+  },
+  {
+    "key": "banshee-attack",
+    "peak": 0.30948080210909323,
+    "rms": 0.06732202295959391,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "banshee-hurt",
+    "peak": 0.2478118706196318,
+    "rms": 0.07565484219660794,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "banshee-die",
+    "peak": 0.2517160963563937,
+    "rms": 0.05255616828663311,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 37485
+  },
+  {
+    "key": "skeleton-spawn",
+    "peak": 0.1790476190476146,
+    "rms": 0.04950724088045616,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 10584
+  },
+  {
+    "key": "skeleton-attack",
+    "peak": 0.28780227527120644,
+    "rms": 0.06480983162644896,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "skeleton-hurt",
+    "peak": 0.23416851530031463,
+    "rms": 0.07793879943623823,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "skeleton-die",
+    "peak": 0.29168679176060563,
+    "rms": 0.054891987204167644,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 26460
+  },
+  {
+    "key": "ghoul-spawn",
+    "peak": 0.2606738852012898,
+    "rms": 0.06697505309006184,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 30870
+  },
+  {
+    "key": "ghoul-electric-spark",
+    "peak": 0.3088297952481277,
+    "rms": 0.08510196310425873,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 1103
+  },
+  {
+    "key": "ghoul-attack",
+    "peak": 0.3550092234230593,
+    "rms": 0.06484152627798191,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "ghoul-hurt",
+    "peak": 0.2471112570050088,
+    "rms": 0.07961928539409688,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "ghoul-die",
+    "peak": 0.27118853214812955,
+    "rms": 0.05359638289221061,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 37485
+  },
+  {
+    "key": "werewolf-spawn",
+    "peak": 0.2586783494998193,
+    "rms": 0.06761789175675861,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 48510
+  },
+  {
+    "key": "werewolf-step",
+    "peak": 0.26663543375835713,
+    "rms": 0.10484169833919536,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 4410
+  },
+  {
+    "key": "werewolf-attack",
+    "peak": 0.28496973253543917,
+    "rms": 0.06615733913979223,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "werewolf-hurt",
+    "peak": 0.2579090962791606,
+    "rms": 0.08071014954427332,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "werewolf-die",
+    "peak": 0.25221137408905075,
+    "rms": 0.053611085629709974,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 37485
+  },
+  {
+    "key": "werewolf-albino-spawn",
+    "peak": 0.2736926883908968,
+    "rms": 0.11238591370877833,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 44100
+  },
+  {
+    "key": "werewolf-albino-attack",
+    "peak": 0.2981173946740913,
+    "rms": 0.10712074251970347,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "werewolf-albino-hurt",
+    "peak": 0.2693708651382541,
+    "rms": 0.13502038644399234,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "werewolf-albino-die",
+    "peak": 0.3010620965374524,
+    "rms": 0.08656916901861074,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 37485
+  },
+  {
+    "key": "drowner-spawn",
+    "peak": 0.3550143020757126,
+    "rms": 0.07840572629621376,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 26460
+  },
+  {
+    "key": "drowner-attack",
+    "peak": 0.31041960064159096,
+    "rms": 0.07979870012486029,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "drowner-hurt",
+    "peak": 0.2783069290819584,
+    "rms": 0.0986204132848701,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "drowner-die",
+    "peak": 0.3422487104072292,
+    "rms": 0.07822077455223272,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 35280
+  },
+  {
+    "key": "witch-cackle-spawn",
+    "peak": 0.19316666445074135,
+    "rms": 0.05420081392862095,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 39690
+  },
+  {
+    "key": "witch-potion-throw",
+    "peak": 0.25738098729208414,
+    "rms": 0.06349018048567551,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 8820
+  },
+  {
+    "key": "potion-shatter",
+    "peak": 0.38065410777069064,
+    "rms": 0.04374484601046014,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 16758
+  },
+  {
+    "key": "potion-splash-acid",
+    "peak": 0.3385007519273138,
+    "rms": 0.07785131792872244,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 30870
+  },
+  {
+    "key": "potion-splash-fire",
+    "peak": 0.35897045720965787,
+    "rms": 0.10315778680322374,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 30870
+  },
+  {
+    "key": "witch-hurt",
+    "peak": 0.23506121424962792,
+    "rms": 0.13156778750222584,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 10584
+  },
+  {
+    "key": "witch-die",
+    "peak": 0.1818480037237876,
+    "rms": 0.041511635145951326,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 48510
+  },
+  {
+    "key": "dragon-summon-roar",
+    "peak": 0.3665660730751394,
+    "rms": 0.11200199001088823,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 97020
+  },
+  {
+    "key": "dragon-wing-flap",
+    "peak": 0.27574519092902433,
+    "rms": 0.07501146297098217,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 5292
+  },
+  {
+    "key": "dragon-fireball-charge",
+    "peak": 0.21664712646376172,
+    "rms": 0.0826505778841854,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 15435
+  },
+  {
+    "key": "dragon-fireball-launch",
+    "peak": 0.3615053196320541,
+    "rms": 0.10347923515313184,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 24255
+  },
+  {
+    "key": "dragon-fireball-impact",
+    "peak": 0.36593155272528066,
+    "rms": 0.10352104738849496,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 37485
+  },
+  {
+    "key": "dragon-hurt",
+    "peak": 0.3441253010762333,
+    "rms": 0.09060844141236382,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 19845
+  },
+  {
+    "key": "dragon-die",
+    "peak": 0.29683880114767724,
+    "rms": 0.08329764819827211,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 123480
+  },
+  {
+    "key": "altar-idle-hum",
+    "peak": 0.1656,
+    "rms": 0.10127034778767055,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 88200
+  },
+  {
+    "key": "altar-active-glow",
+    "peak": 0.19626782127327552,
+    "rms": 0.04892509828429507,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 28665
+  },
+  {
+    "key": "altar-summon-burst",
+    "peak": 0.25732171073894,
+    "rms": 0.051853056174932216,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 105840
+  },
+  {
+    "key": "cauldron-bubble-loop",
+    "peak": 0.1439355413551975,
+    "rms": 0.05577552989495162,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 88200
+  },
+  {
+    "key": "ritual-offering-chime",
+    "peak": 0.26857979605616233,
+    "rms": 0.058429408143874734,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 41895
+  },
+  {
+    "key": "portal-locked-rattle",
+    "peak": 0.31894777122260287,
+    "rms": 0.04624633648566883,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "portal-unlock-turn",
+    "peak": 0.25504790198152316,
+    "rms": 0.05845626423225204,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 19845
+  },
+  {
+    "key": "portal-teleport",
+    "peak": 0.25692923123940414,
+    "rms": 0.06708250962302244,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 48510
+  },
+  {
+    "key": "loot-drop",
+    "peak": 0.23919900994718266,
+    "rms": 0.06417016291747453,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 1764
+  },
+  {
+    "key": "loot-pickup-bone",
+    "peak": 0.1662647599782031,
+    "rms": 0.05273641073921061,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 9702
+  },
+  {
+    "key": "loot-pickup-fang",
+    "peak": 0.16746789296149475,
+    "rms": 0.04628779011805388,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 12348
+  },
+  {
+    "key": "loot-pickup-eye",
+    "peak": 0.304816748102837,
+    "rms": 0.0784976558441228,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 15435
+  },
+  {
+    "key": "loot-pickup-pearl",
+    "peak": 0.19020780989505073,
+    "rms": 0.0658903716215128,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 24255
+  },
+  {
+    "key": "crafting-forge-key",
+    "peak": 0.2365673557961255,
+    "rms": 0.05575518324605984,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 48510
+  },
+  {
+    "key": "inventory-open",
+    "peak": 0.20803626725910018,
+    "rms": 0.0321265522494189,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7056
+  },
+  {
+    "key": "inventory-close",
+    "peak": 0.18786867429645618,
+    "rms": 0.046361051078033934,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 4410
+  },
+  {
+    "key": "shop-greet",
+    "peak": 0.19919444495758926,
+    "rms": 0.06123659315362224,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 22050
+  },
+  {
+    "key": "shop-buy-item",
+    "peak": 0.25210514447423293,
+    "rms": 0.049090120439603986,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 17640
+  },
+  {
+    "key": "shop-buy-shotgun",
+    "peak": 0.22097087182416372,
+    "rms": 0.043357528998027126,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 28665
+  },
+  {
+    "key": "shop-denied",
+    "peak": 0.17999199679871947,
+    "rms": 0.08678300610693239,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 13230
+  },
+  {
+    "key": "scenery-bush-rustle",
+    "peak": 0.16186333359075117,
+    "rms": 0.03464135449399072,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 9702
+  },
+  {
+    "key": "scenery-torch-crackle",
+    "peak": 0.18228368463552327,
+    "rms": 0.018182879309231795,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 22050
+  },
+  {
+    "key": "scenery-prison-drip",
+    "peak": 0.2655033876130121,
+    "rms": 0.031087767558660745,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 30870
+  },
+  {
+    "key": "scenery-chains-sway",
+    "peak": 0.22013814745816368,
+    "rms": 0.02839909040906654,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 15435
+  },
+  {
+    "key": "scenery-bars-rattle",
+    "peak": 0.19169447507016646,
+    "rms": 0.029085376758489757,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 19845
+  },
+  {
+    "key": "ui-button-hover",
+    "peak": 0.12803999728833612,
+    "rms": 0.05149223108664861,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 662
+  },
+  {
+    "key": "ui-button-click",
+    "peak": 0.23514417413262545,
+    "rms": 0.0640442876762766,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 1544
+  },
+  {
+    "key": "ui-menu-toggle",
+    "peak": 0.15340306396902229,
+    "rms": 0.047375496216413675,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 7938
+  },
+  {
+    "key": "ui-autospawn-toggle",
+    "peak": 0.22957679647498763,
+    "rms": 0.06050534131362119,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 2646
+  },
+  {
+    "key": "ui-chat-message",
+    "peak": 0.1791189033520388,
+    "rms": 0.07323321490124038,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 1323
+  },
+  {
+    "key": "ui-game-over-stinger",
+    "peak": 0.19269984839647689,
+    "rms": 0.03318256286473359,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 79380
+  },
+  {
+    "key": "ui-boss-victory",
+    "peak": 0.22211832977636267,
+    "rms": 0.04397338320824342,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 97020
+  },
+  {
+    "key": "ui-coop-connect",
+    "peak": 0.17541055394844784,
+    "rms": 0.055829078075284116,
+    "clippedSamples": 0,
+    "silent": false,
+    "samples": 19845
+  }
+]

@@ -1,0 +1,133 @@
+{
+  "version": "1.0",
+  "id": "werewolf-albino-attack",
+  "name": "werewolf-albino-attack",
+  "sampleRate": 44100,
+  "durationMs": 300,
+  "seed": 479031,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.24,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 270,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "pulse",
+      "frequency": {
+        "startHz": 456,
+        "endHz": 247,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 3,
+            "value": 1
+          },
+          {
+            "timeMs": 140,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 2400
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.2,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 160,
+            "value": 0
+          },
+          {
+            "timeMs": 163,
+            "value": 1
+          },
+          {
+            "timeMs": 295,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 3000
+    }
+  ],
+  "effects": [
+    {
+      "id": "grit",
+      "type": "distortion",
+      "model": "tanh",
+      "inputGain": 2,
+      "outputGain": 0.7,
+      "mix": 0.35,
+      "positive": 1,
+      "negative": 1,
+      "coefficients": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0
+      ],
+      "oversample": 4
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "werewolf-albino-attack"
+  },
+  "metadata": {
+    "trigger": "Rabid frenzy attack",
+    "design": "Rapid double-slash with feral screech"
+  }
+}

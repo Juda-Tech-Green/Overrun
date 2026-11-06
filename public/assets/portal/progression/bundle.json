@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "portal-progress.png",
+  "atlas": "portal-progress.atlas.json",
+  "animations": "portal-progress.animations.json",
+  "game": "portal-progress.game.json",
+  "frameWidth": 32,
+  "frameHeight": 48,
+  "padding": 0,
+  "frameCount": 8
+}

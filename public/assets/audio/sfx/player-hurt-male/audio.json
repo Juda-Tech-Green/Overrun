@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "player-hurt-male",
+      "file": "player-hurt-male.wav",
+      "source": "player-hurt-male.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 240
+    }
+  ],
+  "events": []
+}

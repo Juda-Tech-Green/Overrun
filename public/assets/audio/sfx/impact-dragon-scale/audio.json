@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "impact-dragon-scale",
+      "file": "impact-dragon-scale.wav",
+      "source": "impact-dragon-scale.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 650
+    }
+  ],
+  "events": []
+}

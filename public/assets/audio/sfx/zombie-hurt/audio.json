@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "zombie-hurt",
+      "file": "zombie-hurt.wav",
+      "source": "zombie-hurt.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 180
+    }
+  ],
+  "events": []
+}

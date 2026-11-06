@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "laser-aim-hum",
+      "file": "laser-aim-hum.wav",
+      "source": "laser-aim-hum.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 2000
+    }
+  ],
+  "events": []
+}

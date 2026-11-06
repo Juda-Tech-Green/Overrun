@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "width": 48,
+  "height": 64,
+  "frameIds": [
+    "heal-1",
+    "heal-2",
+    "heal-3",
+    "heal-4",
+    "heal-5",
+    "heal-6"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

@@ -1,0 +1,281 @@
+{
+  "version": "1.0",
+  "width": 48,
+  "height": 64,
+  "frameIds": [
+    "frame-0",
+    "idle-b",
+    "walk-1",
+    "walk-2",
+    "walk-3",
+    "walk-4",
+    "attack-windup",
+    "attack-lunge",
+    "attack-recover",
+    "hurt",
+    "die-1",
+    "die-2",
+    "die-3",
+    "idle-front-0",
+    "idle-front-1",
+    "walk-front-0",
+    "walk-front-1",
+    "walk-front-2",
+    "walk-front-3",
+    "attack-front-0",
+    "attack-front-1",
+    "attack-front-2",
+    "hurt-front-0",
+    "die-front-0",
+    "die-front-1",
+    "die-front-2",
+    "idle-front45-0",
+    "idle-front45-1",
+    "walk-front45-0",
+    "walk-front45-1",
+    "walk-front45-2",
+    "walk-front45-3",
+    "attack-front45-0",
+    "attack-front45-1",
+    "attack-front45-2",
+    "hurt-front45-0",
+    "die-front45-0",
+    "die-front45-1",
+    "die-front45-2",
+    "idle-back-0",
+    "idle-back-1",
+    "walk-back-0",
+    "walk-back-1",
+    "walk-back-2",
+    "walk-back-3",
+    "attack-back-0",
+    "attack-back-1",
+    "attack-back-2",
+    "hurt-back-0",
+    "die-back-0",
+    "die-back-1",
+    "die-back-2",
+    "idle-back45-0",
+    "idle-back45-1",
+    "walk-back45-0",
+    "walk-back45-1",
+    "walk-back45-2",
+    "walk-back45-3",
+    "attack-back45-0",
+    "attack-back45-1",
+    "attack-back45-2",
+    "hurt-back45-0",
+    "die-back45-0",
+    "die-back45-1",
+    "die-back45-2"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 1
+    },
+    "body": {
+      "type": "rectangle",
+      "x": 14,
+      "y": 12,
+      "width": 20,
+      "height": 50
+    },
+    "boxes": [
+      {
+        "id": "body-hurt",
+        "kind": "hurtbox",
+        "name": "body",
+        "scope": {
+          "type": "project"
+        },
+        "rect": {
+          "x": 14,
+          "y": 12,
+          "width": 20,
+          "height": 50
+        },
+        "enabled": true
+      },
+      {
+        "id": "bite-hit",
+        "kind": "hitbox",
+        "name": "bite",
+        "scope": {
+          "type": "entry",
+          "animation": "attack",
+          "index": 1
+        },
+        "rect": {
+          "x": 28,
+          "y": 20,
+          "width": 18,
+          "height": 24
+        },
+        "enabled": true
+      },
+      {
+        "id": "direction-bite-hit-front",
+        "kind": "hitbox",
+        "name": "bite",
+        "scope": {
+          "type": "entry",
+          "animation": "attack-front",
+          "index": 1
+        },
+        "rect": {
+          "x": 12,
+          "y": 30,
+          "width": 26,
+          "height": 28
+        },
+        "enabled": true
+      },
+      {
+        "id": "direction-bite-hit-front45",
+        "kind": "hitbox",
+        "name": "bite",
+        "scope": {
+          "type": "entry",
+          "animation": "attack-front45",
+          "index": 1
+        },
+        "rect": {
+          "x": 23,
+          "y": 26,
+          "width": 25,
+          "height": 30
+        },
+        "enabled": true
+      },
+      {
+        "id": "direction-bite-hit-back",
+        "kind": "hitbox",
+        "name": "bite",
+        "scope": {
+          "type": "entry",
+          "animation": "attack-back",
+          "index": 1
+        },
+        "rect": {
+          "x": 12,
+          "y": 8,
+          "width": 26,
+          "height": 28
+        },
+        "enabled": true
+      },
+      {
+        "id": "direction-bite-hit-back45",
+        "kind": "hitbox",
+        "name": "bite",
+        "scope": {
+          "type": "entry",
+          "animation": "attack-back45",
+          "index": 1
+        },
+        "rect": {
+          "x": 23,
+          "y": 8,
+          "width": 25,
+          "height": 30
+        },
+        "enabled": true
+      }
+    ],
+    "anchors": [],
+    "events": [
+      {
+        "id": "zombie-bite-start",
+        "animation": "attack",
+        "index": 1,
+        "name": "zombie_bite_start"
+      },
+      {
+        "id": "zombie-bite-end",
+        "animation": "attack",
+        "index": 2,
+        "name": "zombie_bite_end"
+      },
+      {
+        "id": "zombie-die-end",
+        "animation": "die",
+        "index": 2,
+        "name": "zombie_die_end"
+      },
+      {
+        "id": "zombie-bite-start-front",
+        "animation": "attack-front",
+        "index": 1,
+        "name": "zombie_bite_start"
+      },
+      {
+        "id": "zombie-bite-end-front",
+        "animation": "attack-front",
+        "index": 2,
+        "name": "zombie_bite_end"
+      },
+      {
+        "id": "zombie-die-end-front",
+        "animation": "die-front",
+        "index": 2,
+        "name": "zombie_die_end"
+      },
+      {
+        "id": "zombie-bite-start-front45",
+        "animation": "attack-front45",
+        "index": 1,
+        "name": "zombie_bite_start"
+      },
+      {
+        "id": "zombie-bite-end-front45",
+        "animation": "attack-front45",
+        "index": 2,
+        "name": "zombie_bite_end"
+      },
+      {
+        "id": "zombie-die-end-front45",
+        "animation": "die-front45",
+        "index": 2,
+        "name": "zombie_die_end"
+      },
+      {
+        "id": "zombie-bite-start-back",
+        "animation": "attack-back",
+        "index": 1,
+        "name": "zombie_bite_start"
+      },
+      {
+        "id": "zombie-bite-end-back",
+        "animation": "attack-back",
+        "index": 2,
+        "name": "zombie_bite_end"
+      },
+      {
+        "id": "zombie-die-end-back",
+        "animation": "die-back",
+        "index": 2,
+        "name": "zombie_die_end"
+      },
+      {
+        "id": "zombie-bite-start-back45",
+        "animation": "attack-back45",
+        "index": 1,
+        "name": "zombie_bite_start"
+      },
+      {
+        "id": "zombie-bite-end-back45",
+        "animation": "attack-back45",
+        "index": 2,
+        "name": "zombie_bite_end"
+      },
+      {
+        "id": "zombie-die-end-back45",
+        "animation": "die-back45",
+        "index": 2,
+        "name": "zombie_die_end"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "version": "1.0",
+  "width": 64,
+  "height": 64,
+  "frameIds": [
+    "idle",
+    "summoning-0",
+    "summoning-1",
+    "summoning-2",
+    "summoning-3"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

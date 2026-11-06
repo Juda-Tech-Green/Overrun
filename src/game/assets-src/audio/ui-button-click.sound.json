@@ -1,0 +1,85 @@
+{
+  "version": "1.0",
+  "id": "ui-button-click",
+  "name": "ui-button-click",
+  "sampleRate": 44100,
+  "durationMs": 35,
+  "seed": 851224,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.35,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2,
+            "value": 1
+          },
+          {
+            "timeMs": 35,
+            "value": 0
+          }
+        ]
+      },
+      "type": "resonator",
+      "modes": [
+        {
+          "frequencyHz": 900,
+          "decay": 12,
+          "gain": 0.5
+        },
+        {
+          "frequencyHz": 1593,
+          "decay": 15,
+          "gain": 0.5
+        }
+      ]
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.12,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 2.625,
+            "value": 1
+          },
+          {
+            "timeMs": 21,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 3500
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ui-button-click"
+  },
+  "metadata": {
+    "trigger": "Selecting menu/dialog option",
+    "design": "Satisfying tactile wooden/plastic switch click (35 ms)"
+  }
+}

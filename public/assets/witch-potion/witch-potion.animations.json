@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "fly",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "fly-0",
+          "durationMs": 90
+        },
+        {
+          "frameId": "fly-1",
+          "durationMs": 90
+        },
+        {
+          "frameId": "fly-2",
+          "durationMs": 90
+        },
+        {
+          "frameId": "fly-3",
+          "durationMs": 90
+        }
+      ]
+    },
+    {
+      "name": "splash",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "splash-0",
+          "durationMs": 90
+        },
+        {
+          "frameId": "splash-1",
+          "durationMs": 90
+        },
+        {
+          "frameId": "splash-2",
+          "durationMs": 90
+        },
+        {
+          "frameId": "splash-3",
+          "durationMs": 90
+        }
+      ]
+    }
+  ]
+}

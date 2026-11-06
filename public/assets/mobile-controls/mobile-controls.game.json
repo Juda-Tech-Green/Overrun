@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "width": 64,
+  "height": 64,
+  "frameIds": [
+    "move-base",
+    "move-knob",
+    "aim-base",
+    "aim-knob",
+    "fire",
+    "fire-pressed",
+    "heal",
+    "heal-pressed",
+    "interact",
+    "interact-pressed"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

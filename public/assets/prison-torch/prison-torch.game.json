@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "width": 16,
+  "height": 32,
+  "frameIds": [
+    "frame-0",
+    "flame-1",
+    "flame-2",
+    "flame-3",
+    "flame-4",
+    "flame-5"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

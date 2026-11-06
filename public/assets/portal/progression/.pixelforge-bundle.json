@@ -1,0 +1,11 @@
+{
+  "version": "1.0",
+  "files": {
+    "bundle.json": "616db6f62154385a58ee856e06ede81a0449b4a1ca67af8d093ebcc54e7d7f04",
+    "portal-progress.animations.json": "8e558461bc4487317d19792d4cfe54c60ee996d517265b8d9eab2b530e8c1c73",
+    "portal-progress.game.json": "1664d238e25c965d3afee62c7e6bccc97823b8784bec03d59374f2178ee0f189",
+    "README.md": "bac09783d6495e5c5d6789b5f8f766d7eb857c9bff04afeb90e28c4af7fe5b01",
+    "portal-progress.atlas.json": "c6459090927ca6e23ba7eafc9c34d90f2c95e425ef419ad9f46550625b12da0e",
+    "portal-progress.png": "023437babdd7d45b29fcc0dc7cfc350bf075ac4accab0b22429ccc2c940fb7a6"
+  }
+}

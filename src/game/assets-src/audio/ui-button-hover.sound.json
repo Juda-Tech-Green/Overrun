@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "id": "ui-button-hover",
+  "name": "ui-button-hover",
+  "sampleRate": 44100,
+  "durationMs": 15,
+  "seed": 843305,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.18,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 1.875,
+            "value": 1
+          },
+          {
+            "timeMs": 15,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 2400,
+        "endHz": 2400,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 1.875
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ui-button-hover"
+  },
+  "metadata": {
+    "trigger": "Pointer hovers over button",
+    "design": "Minimal high-frequency click (2400 Hz sine, 15 ms)"
+  }
+}

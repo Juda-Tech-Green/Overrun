@@ -1,0 +1,97 @@
+{
+  "version": "1.0",
+  "id": "shop-denied",
+  "name": "shop-denied",
+  "sampleRate": 44100,
+  "durationMs": 300,
+  "seed": 795791,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 100,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "square",
+      "frequency": {
+        "startHz": 85,
+        "endHz": 85,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 170,
+            "value": 0
+          },
+          {
+            "timeMs": 178,
+            "value": 1
+          },
+          {
+            "timeMs": 280,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "square",
+      "frequency": {
+        "startHz": 85,
+        "endHz": 85,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "shop-denied"
+  },
+  "metadata": {
+    "trigger": "Insufficient kills to buy",
+    "design": "Dull low double-buzzer (85 Hz square wave)"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "rifle-empty",
+      "file": "rifle-empty.wav",
+      "source": "rifle-empty.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 70
+    }
+  ],
+  "events": []
+}

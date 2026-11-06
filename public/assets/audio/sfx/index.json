@@ -1,0 +1,1753 @@
+[
+  {
+    "baseURL": "assets/audio/sfx/player-step-grass",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "player-step-grass",
+          "file": "player-step-grass.wav",
+          "source": "player-step-grass.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 60
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/player-step-stone",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "player-step-stone",
+          "file": "player-step-stone.wav",
+          "source": "player-step-stone.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 70
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/player-step-water",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "player-step-water",
+          "file": "player-step-water.wav",
+          "source": "player-step-water.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 120
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/player-hurt-male",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "player-hurt-male",
+          "file": "player-hurt-male.wav",
+          "source": "player-hurt-male.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 240
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/player-hurt-female",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "player-hurt-female",
+          "file": "player-hurt-female.wav",
+          "source": "player-hurt-female.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 220
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/player-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "player-die",
+          "file": "player-die.wav",
+          "source": "player-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 900
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/player-heartbeat-low",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "player-heartbeat-low",
+          "file": "player-heartbeat-low.wav",
+          "source": "player-heartbeat-low.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 500
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/character-switch",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "character-switch",
+          "file": "character-switch.wav",
+          "source": "character-switch.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 380
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/heal-use",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "heal-use",
+          "file": "heal-use.wav",
+          "source": "heal-use.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 450
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dog-bark",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dog-bark",
+          "file": "dog-bark.wav",
+          "source": "dog-bark.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 200
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dog-whimper-alert",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dog-whimper-alert",
+          "file": "dog-whimper-alert.wav",
+          "source": "dog-whimper-alert.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 600
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/rifle-fire",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "rifle-fire",
+          "file": "rifle-fire.wav",
+          "source": "rifle-fire.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 400
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/rifle-empty",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "rifle-empty",
+          "file": "rifle-empty.wav",
+          "source": "rifle-empty.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 70
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/rifle-reload",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "rifle-reload",
+          "file": "rifle-reload.wav",
+          "source": "rifle-reload.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 480
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/shotgun-fire",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "shotgun-fire",
+          "file": "shotgun-fire.wav",
+          "source": "shotgun-fire.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 500
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/shotgun-pump",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "shotgun-pump",
+          "file": "shotgun-pump.wav",
+          "source": "shotgun-pump.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 260
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/shotgun-reload",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "shotgun-reload",
+          "file": "shotgun-reload.wav",
+          "source": "shotgun-reload.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/laser-aim-hum",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "laser-aim-hum",
+          "file": "laser-aim-hum.wav",
+          "source": "laser-aim-hum.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 2000
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/bullet-whiz",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "bullet-whiz",
+          "file": "bullet-whiz.wav",
+          "source": "bullet-whiz.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 50
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/impact-rock",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "impact-rock",
+          "file": "impact-rock.wav",
+          "source": "impact-rock.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 220
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/impact-wood",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "impact-wood",
+          "file": "impact-wood.wav",
+          "source": "impact-wood.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 80
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/impact-castle-stone",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "impact-castle-stone",
+          "file": "impact-castle-stone.wav",
+          "source": "impact-castle-stone.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 400
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/impact-metal-bars",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "impact-metal-bars",
+          "file": "impact-metal-bars.wav",
+          "source": "impact-metal-bars.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1200
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/impact-flesh",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "impact-flesh",
+          "file": "impact-flesh.wav",
+          "source": "impact-flesh.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 160
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/impact-bone",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "impact-bone",
+          "file": "impact-bone.wav",
+          "source": "impact-bone.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 95
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/impact-dragon-scale",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "impact-dragon-scale",
+          "file": "impact-dragon-scale.wav",
+          "source": "impact-dragon-scale.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 650
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/zombie-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "zombie-spawn",
+          "file": "zombie-spawn.wav",
+          "source": "zombie-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1400
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/zombie-attack",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "zombie-attack",
+          "file": "zombie-attack.wav",
+          "source": "zombie-attack.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/zombie-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "zombie-hurt",
+          "file": "zombie-hurt.wav",
+          "source": "zombie-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/zombie-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "zombie-die",
+          "file": "zombie-die.wav",
+          "source": "zombie-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 850
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/banshee-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "banshee-spawn",
+          "file": "banshee-spawn.wav",
+          "source": "banshee-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 900
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/banshee-attack",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "banshee-attack",
+          "file": "banshee-attack.wav",
+          "source": "banshee-attack.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/banshee-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "banshee-hurt",
+          "file": "banshee-hurt.wav",
+          "source": "banshee-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/banshee-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "banshee-die",
+          "file": "banshee-die.wav",
+          "source": "banshee-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 850
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/skeleton-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "skeleton-spawn",
+          "file": "skeleton-spawn.wav",
+          "source": "skeleton-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 240
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/skeleton-attack",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "skeleton-attack",
+          "file": "skeleton-attack.wav",
+          "source": "skeleton-attack.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/skeleton-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "skeleton-hurt",
+          "file": "skeleton-hurt.wav",
+          "source": "skeleton-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/skeleton-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "skeleton-die",
+          "file": "skeleton-die.wav",
+          "source": "skeleton-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 600
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ghoul-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ghoul-spawn",
+          "file": "ghoul-spawn.wav",
+          "source": "ghoul-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 700
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ghoul-electric-spark",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ghoul-electric-spark",
+          "file": "ghoul-electric-spark.wav",
+          "source": "ghoul-electric-spark.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 25
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ghoul-attack",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ghoul-attack",
+          "file": "ghoul-attack.wav",
+          "source": "ghoul-attack.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ghoul-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ghoul-hurt",
+          "file": "ghoul-hurt.wav",
+          "source": "ghoul-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ghoul-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ghoul-die",
+          "file": "ghoul-die.wav",
+          "source": "ghoul-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 850
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-spawn",
+          "file": "werewolf-spawn.wav",
+          "source": "werewolf-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1100
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-step",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-step",
+          "file": "werewolf-step.wav",
+          "source": "werewolf-step.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 100
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-attack",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-attack",
+          "file": "werewolf-attack.wav",
+          "source": "werewolf-attack.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-hurt",
+          "file": "werewolf-hurt.wav",
+          "source": "werewolf-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-die",
+          "file": "werewolf-die.wav",
+          "source": "werewolf-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 850
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-albino-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-albino-spawn",
+          "file": "werewolf-albino-spawn.wav",
+          "source": "werewolf-albino-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1000
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-albino-attack",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-albino-attack",
+          "file": "werewolf-albino-attack.wav",
+          "source": "werewolf-albino-attack.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-albino-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-albino-hurt",
+          "file": "werewolf-albino-hurt.wav",
+          "source": "werewolf-albino-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/werewolf-albino-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "werewolf-albino-die",
+          "file": "werewolf-albino-die.wav",
+          "source": "werewolf-albino-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 850
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/drowner-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "drowner-spawn",
+          "file": "drowner-spawn.wav",
+          "source": "drowner-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 600
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/drowner-attack",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "drowner-attack",
+          "file": "drowner-attack.wav",
+          "source": "drowner-attack.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/drowner-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "drowner-hurt",
+          "file": "drowner-hurt.wav",
+          "source": "drowner-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/drowner-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "drowner-die",
+          "file": "drowner-die.wav",
+          "source": "drowner-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 800
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/witch-cackle-spawn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "witch-cackle-spawn",
+          "file": "witch-cackle-spawn.wav",
+          "source": "witch-cackle-spawn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 900
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/witch-potion-throw",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "witch-potion-throw",
+          "file": "witch-potion-throw.wav",
+          "source": "witch-potion-throw.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 200
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/potion-shatter",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "potion-shatter",
+          "file": "potion-shatter.wav",
+          "source": "potion-shatter.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 380
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/potion-splash-acid",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "potion-splash-acid",
+          "file": "potion-splash-acid.wav",
+          "source": "potion-splash-acid.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 700
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/potion-splash-fire",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "potion-splash-fire",
+          "file": "potion-splash-fire.wav",
+          "source": "potion-splash-fire.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 700
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/witch-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "witch-hurt",
+          "file": "witch-hurt.wav",
+          "source": "witch-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 240
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/witch-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "witch-die",
+          "file": "witch-die.wav",
+          "source": "witch-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1100
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dragon-summon-roar",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dragon-summon-roar",
+          "file": "dragon-summon-roar.wav",
+          "source": "dragon-summon-roar.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 2200
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dragon-wing-flap",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dragon-wing-flap",
+          "file": "dragon-wing-flap.wav",
+          "source": "dragon-wing-flap.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 120
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dragon-fireball-charge",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dragon-fireball-charge",
+          "file": "dragon-fireball-charge.wav",
+          "source": "dragon-fireball-charge.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 350
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dragon-fireball-launch",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dragon-fireball-launch",
+          "file": "dragon-fireball-launch.wav",
+          "source": "dragon-fireball-launch.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 550
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dragon-fireball-impact",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dragon-fireball-impact",
+          "file": "dragon-fireball-impact.wav",
+          "source": "dragon-fireball-impact.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 850
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dragon-hurt",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dragon-hurt",
+          "file": "dragon-hurt.wav",
+          "source": "dragon-hurt.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 450
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/dragon-die",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "dragon-die",
+          "file": "dragon-die.wav",
+          "source": "dragon-die.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 2800
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/altar-idle-hum",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "altar-idle-hum",
+          "file": "altar-idle-hum.wav",
+          "source": "altar-idle-hum.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 2000
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/altar-active-glow",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "altar-active-glow",
+          "file": "altar-active-glow.wav",
+          "source": "altar-active-glow.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 650
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/altar-summon-burst",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "altar-summon-burst",
+          "file": "altar-summon-burst.wav",
+          "source": "altar-summon-burst.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 2400
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/cauldron-bubble-loop",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "cauldron-bubble-loop",
+          "file": "cauldron-bubble-loop.wav",
+          "source": "cauldron-bubble-loop.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 2000
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ritual-offering-chime",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ritual-offering-chime",
+          "file": "ritual-offering-chime.wav",
+          "source": "ritual-offering-chime.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 950
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/portal-locked-rattle",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "portal-locked-rattle",
+          "file": "portal-locked-rattle.wav",
+          "source": "portal-locked-rattle.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/portal-unlock-turn",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "portal-unlock-turn",
+          "file": "portal-unlock-turn.wav",
+          "source": "portal-unlock-turn.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 450
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/portal-teleport",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "portal-teleport",
+          "file": "portal-teleport.wav",
+          "source": "portal-teleport.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1100
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/loot-drop",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "loot-drop",
+          "file": "loot-drop.wav",
+          "source": "loot-drop.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 40
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/loot-pickup-bone",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "loot-pickup-bone",
+          "file": "loot-pickup-bone.wav",
+          "source": "loot-pickup-bone.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 220
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/loot-pickup-fang",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "loot-pickup-fang",
+          "file": "loot-pickup-fang.wav",
+          "source": "loot-pickup-fang.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 280
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/loot-pickup-eye",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "loot-pickup-eye",
+          "file": "loot-pickup-eye.wav",
+          "source": "loot-pickup-eye.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 350
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/loot-pickup-pearl",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "loot-pickup-pearl",
+          "file": "loot-pickup-pearl.wav",
+          "source": "loot-pickup-pearl.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 550
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/crafting-forge-key",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "crafting-forge-key",
+          "file": "crafting-forge-key.wav",
+          "source": "crafting-forge-key.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1100
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/inventory-open",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "inventory-open",
+          "file": "inventory-open.wav",
+          "source": "inventory-open.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 160
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/inventory-close",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "inventory-close",
+          "file": "inventory-close.wav",
+          "source": "inventory-close.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 100
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/shop-greet",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "shop-greet",
+          "file": "shop-greet.wav",
+          "source": "shop-greet.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 500
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/shop-buy-item",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "shop-buy-item",
+          "file": "shop-buy-item.wav",
+          "source": "shop-buy-item.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 400
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/shop-buy-shotgun",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "shop-buy-shotgun",
+          "file": "shop-buy-shotgun.wav",
+          "source": "shop-buy-shotgun.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 650
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/shop-denied",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "shop-denied",
+          "file": "shop-denied.wav",
+          "source": "shop-denied.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 300
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/scenery-bush-rustle",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "scenery-bush-rustle",
+          "file": "scenery-bush-rustle.wav",
+          "source": "scenery-bush-rustle.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 220
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/scenery-torch-crackle",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "scenery-torch-crackle",
+          "file": "scenery-torch-crackle.wav",
+          "source": "scenery-torch-crackle.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 500
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/scenery-prison-drip",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "scenery-prison-drip",
+          "file": "scenery-prison-drip.wav",
+          "source": "scenery-prison-drip.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 700
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/scenery-chains-sway",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "scenery-chains-sway",
+          "file": "scenery-chains-sway.wav",
+          "source": "scenery-chains-sway.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 350
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/scenery-bars-rattle",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "scenery-bars-rattle",
+          "file": "scenery-bars-rattle.wav",
+          "source": "scenery-bars-rattle.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 450
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-button-hover",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-button-hover",
+          "file": "ui-button-hover.wav",
+          "source": "ui-button-hover.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 15
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-button-click",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-button-click",
+          "file": "ui-button-click.wav",
+          "source": "ui-button-click.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 35
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-menu-toggle",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-menu-toggle",
+          "file": "ui-menu-toggle.wav",
+          "source": "ui-menu-toggle.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 180
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-autospawn-toggle",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-autospawn-toggle",
+          "file": "ui-autospawn-toggle.wav",
+          "source": "ui-autospawn-toggle.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 60
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-chat-message",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-chat-message",
+          "file": "ui-chat-message.wav",
+          "source": "ui-chat-message.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 30
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-game-over-stinger",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-game-over-stinger",
+          "file": "ui-game-over-stinger.wav",
+          "source": "ui-game-over-stinger.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 1800
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-boss-victory",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-boss-victory",
+          "file": "ui-boss-victory.wav",
+          "source": "ui-boss-victory.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 2200
+        }
+      ],
+      "events": []
+    }
+  },
+  {
+    "baseURL": "assets/audio/sfx/ui-coop-connect",
+    "manifest": {
+      "version": "1.0",
+      "kind": "pixelforge-audio",
+      "assets": [
+        {
+          "key": "ui-coop-connect",
+          "file": "ui-coop-connect.wav",
+          "source": "ui-coop-connect.sound.json",
+          "sampleRate": 44100,
+          "durationMs": 450
+        }
+      ],
+      "events": []
+    }
+  }
+]

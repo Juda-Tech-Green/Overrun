@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "death-screen.png",
+  "atlas": "death-screen.atlas.json",
+  "animations": "death-screen.animations.json",
+  "game": "death-screen.game.json",
+  "frameWidth": 320,
+  "frameHeight": 192,
+  "padding": 0,
+  "frameCount": 4
+}

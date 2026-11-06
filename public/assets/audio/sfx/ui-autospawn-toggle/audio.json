@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ui-autospawn-toggle",
+      "file": "ui-autospawn-toggle.wav",
+      "source": "ui-autospawn-toggle.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 60
+    }
+  ],
+  "events": []
+}

@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "sway-emerald",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "emerald-1",
+          "durationMs": 260
+        },
+        {
+          "frameId": "emerald-2",
+          "durationMs": 260
+        },
+        {
+          "frameId": "emerald-3",
+          "durationMs": 260
+        }
+      ]
+    },
+    {
+      "name": "sway-olive",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "olive-1",
+          "durationMs": 280
+        },
+        {
+          "frameId": "olive-2",
+          "durationMs": 280
+        },
+        {
+          "frameId": "olive-3",
+          "durationMs": 280
+        }
+      ]
+    },
+    {
+      "name": "sway-teal",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "teal-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "teal-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "teal-3",
+          "durationMs": 250
+        }
+      ]
+    }
+  ]
+}

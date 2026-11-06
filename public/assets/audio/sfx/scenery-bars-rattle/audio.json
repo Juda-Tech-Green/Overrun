@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "scenery-bars-rattle",
+      "file": "scenery-bars-rattle.wav",
+      "source": "scenery-bars-rattle.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 450
+    }
+  ],
+  "events": []
+}

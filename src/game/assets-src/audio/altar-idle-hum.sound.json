@@ -1,0 +1,49 @@
+{
+  "version": "1.0",
+  "id": "altar-idle-hum",
+  "name": "altar-idle-hum",
+  "sampleRate": 44100,
+  "durationMs": 2000,
+  "seed": 645330,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.23,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 50,
+        "decayMs": 0,
+        "sustain": 1,
+        "releaseMs": 50
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 65,
+        "endHz": 65,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 1,
+        "depth": 0.25
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "altar-idle-hum"
+  },
+  "metadata": {
+    "trigger": "Standing near dormant altar",
+    "design": "Warm low-frequency drone (65 Hz) with slow sine tremolo"
+  }
+}

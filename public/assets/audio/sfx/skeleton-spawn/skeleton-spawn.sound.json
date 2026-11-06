@@ -1,0 +1,135 @@
+{
+  "version": "1.0",
+  "id": "skeleton-spawn",
+  "name": "skeleton-spawn",
+  "sampleRate": 44100,
+  "durationMs": 240,
+  "seed": 360246,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 7.5,
+            "value": 1
+          },
+          {
+            "timeMs": 60,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 1800,
+        "endHz": 1800,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.2,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 80,
+            "value": 0
+          },
+          {
+            "timeMs": 87.5,
+            "value": 1
+          },
+          {
+            "timeMs": 140,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 1440,
+        "endHz": 1440,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 170,
+            "value": 0
+          },
+          {
+            "timeMs": 178,
+            "value": 1
+          },
+          {
+            "timeMs": 235,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 1170,
+        "endHz": 1170,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "skeleton-spawn"
+  },
+  "metadata": {
+    "trigger": "Bone assemblage rising",
+    "design": "Rapid succession of dry wooden/bone clicks (240 ms cascade)"
+  }
+}

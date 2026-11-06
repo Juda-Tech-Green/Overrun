@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "banshee-die",
+      "file": "banshee-die.wav",
+      "source": "banshee-die.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 850
+    }
+  ],
+  "events": []
+}

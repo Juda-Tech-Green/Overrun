@@ -1,0 +1,1225 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "idle-b",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-3",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-4",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shoot",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shoot-windup",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shoot-flash",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shoot-recover",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "hurt",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "die",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-1",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-3",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "reload",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "reload-1",
+          "durationMs": 280
+        },
+        {
+          "frameId": "reload-2",
+          "durationMs": 380
+        },
+        {
+          "frameId": "reload-3",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "reload-walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "reload-walk-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-3",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-4",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "idle-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-front-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "idle-front-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "walk-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-front-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shoot-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shoot-front-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shoot-front-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shoot-front-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "reload-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "reload-front-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "reload-front-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "reload-front-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "reload-walk-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "reload-walk-front-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-front-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-front-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-front-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "hurt-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-front-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "die-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-front-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-front-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-front-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "idle-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-front45-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "idle-front45-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "walk-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-front45-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front45-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front45-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-front45-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shoot-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shoot-front45-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shoot-front45-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shoot-front45-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "reload-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "reload-front45-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "reload-front45-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "reload-front45-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "reload-walk-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "reload-walk-front45-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-front45-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-front45-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-front45-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "hurt-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-front45-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "die-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-front45-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-front45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-front45-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "idle-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-back-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "idle-back-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "walk-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-back-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shoot-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shoot-back-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shoot-back-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shoot-back-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "reload-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "reload-back-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "reload-back-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "reload-back-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "reload-walk-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "reload-walk-back-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-back-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-back-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-back-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "hurt-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-back-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "die-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-back-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-back-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-back-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "idle-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "idle-back45-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "idle-back45-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "walk-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "walk-back45-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back45-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back45-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "walk-back45-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shoot-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shoot-back45-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shoot-back45-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shoot-back45-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "reload-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "reload-back45-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "reload-back45-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "reload-back45-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "reload-walk-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "reload-walk-back45-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-back45-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-back45-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "reload-walk-back45-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "hurt-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "hurt-back45-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "die-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "die-back45-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "die-back45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "die-back45-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "shotgun-idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-frame-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "shotgun-idle-b",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-walk-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-3",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-4",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shotgun-shoot",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-shoot-windup",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shotgun-shoot-flash",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shotgun-shoot-recover",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "shotgun-hurt",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-hurt",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "shotgun-die",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-die-1",
+          "durationMs": 140
+        },
+        {
+          "frameId": "shotgun-die-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "shotgun-die-3",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-1",
+          "durationMs": 280
+        },
+        {
+          "frameId": "shotgun-reload-2",
+          "durationMs": 380
+        },
+        {
+          "frameId": "shotgun-reload-3",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-walk",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-walk-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-3",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-4",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-idle-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-idle-front-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "shotgun-idle-front-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-walk-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-walk-front-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-front-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-front-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-front-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shotgun-shoot-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-shoot-front-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shotgun-shoot-front-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shotgun-shoot-front-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-front-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "shotgun-reload-front-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "shotgun-reload-front-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-walk-front",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-walk-front-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-front-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-front-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-front-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-hurt-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-hurt-front-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "shotgun-die-front",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-die-front-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "shotgun-die-front-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "shotgun-die-front-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "shotgun-idle-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-idle-front45-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "shotgun-idle-front45-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-walk-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-walk-front45-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-front45-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-front45-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-front45-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shotgun-shoot-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-shoot-front45-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shotgun-shoot-front45-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shotgun-shoot-front45-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-front45-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "shotgun-reload-front45-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "shotgun-reload-front45-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-walk-front45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-walk-front45-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-front45-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-front45-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-front45-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-hurt-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-hurt-front45-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "shotgun-die-front45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-die-front45-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "shotgun-die-front45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "shotgun-die-front45-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "shotgun-idle-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-idle-back-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "shotgun-idle-back-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-walk-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-walk-back-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-back-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-back-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-back-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shotgun-shoot-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-shoot-back-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shotgun-shoot-back-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shotgun-shoot-back-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-back-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "shotgun-reload-back-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "shotgun-reload-back-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-walk-back",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-walk-back-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-back-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-back-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-back-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-hurt-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-hurt-back-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "shotgun-die-back",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-die-back-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "shotgun-die-back-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "shotgun-die-back-2",
+          "durationMs": 500
+        }
+      ]
+    },
+    {
+      "name": "shotgun-idle-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-idle-back45-0",
+          "durationMs": 450
+        },
+        {
+          "frameId": "shotgun-idle-back45-1",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-walk-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-walk-back45-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-back45-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-back45-2",
+          "durationMs": 120
+        },
+        {
+          "frameId": "shotgun-walk-back45-3",
+          "durationMs": 120
+        }
+      ]
+    },
+    {
+      "name": "shotgun-shoot-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-shoot-back45-0",
+          "durationMs": 80
+        },
+        {
+          "frameId": "shotgun-shoot-back45-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "shotgun-shoot-back45-2",
+          "durationMs": 200
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-back45-0",
+          "durationMs": 280
+        },
+        {
+          "frameId": "shotgun-reload-back45-1",
+          "durationMs": 380
+        },
+        {
+          "frameId": "shotgun-reload-back45-2",
+          "durationMs": 340
+        }
+      ]
+    },
+    {
+      "name": "shotgun-reload-walk-back45",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "shotgun-reload-walk-back45-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-back45-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-back45-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "shotgun-reload-walk-back45-3",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "shotgun-hurt-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-hurt-back45-0",
+          "durationMs": 160
+        }
+      ]
+    },
+    {
+      "name": "shotgun-die-back45",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "shotgun-die-back45-0",
+          "durationMs": 140
+        },
+        {
+          "frameId": "shotgun-die-back45-1",
+          "durationMs": 180
+        },
+        {
+          "frameId": "shotgun-die-back45-2",
+          "durationMs": 500
+        }
+      ]
+    }
+  ]
+}

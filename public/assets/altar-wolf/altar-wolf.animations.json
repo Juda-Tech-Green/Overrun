@@ -1,0 +1,51 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 500
+        },
+        {
+          "frameId": "idle-b",
+          "durationMs": 300
+        }
+      ]
+    },
+    {
+      "name": "active",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "active-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "active-2",
+          "durationMs": 250
+        }
+      ]
+    },
+    {
+      "name": "summon",
+      "loop": false,
+      "frames": [
+        {
+          "frameId": "summon-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "summon-2",
+          "durationMs": 180
+        },
+        {
+          "frameId": "summon-3",
+          "durationMs": 250
+        }
+      ]
+    }
+  ]
+}

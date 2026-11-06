@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "impact-castle-stone",
+      "file": "impact-castle-stone.wav",
+      "source": "impact-castle-stone.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 400
+    }
+  ],
+  "events": []
+}

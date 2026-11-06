@@ -1,0 +1,14 @@
+{
+  "version": "1.0",
+  "kind": "pixelforge-audio",
+  "assets": [
+    {
+      "key": "ui-coop-connect",
+      "file": "ui-coop-connect.wav",
+      "source": "ui-coop-connect.sound.json",
+      "sampleRate": 44100,
+      "durationMs": 450
+    }
+  ],
+  "events": []
+}

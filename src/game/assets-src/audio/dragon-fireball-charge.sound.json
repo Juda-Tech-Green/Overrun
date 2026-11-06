@@ -1,0 +1,84 @@
+{
+  "version": "1.0",
+  "id": "dragon-fireball-charge",
+  "name": "dragon-fireball-charge",
+  "sampleRate": 44100,
+  "durationMs": 350,
+  "seed": 605735,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.45,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 310,
+            "value": 1
+          },
+          {
+            "timeMs": 350,
+            "value": 0
+          }
+        ]
+      },
+      "type": "noise",
+      "color": "filtered",
+      "cutoffHz": 2000
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.25,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 340,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "sine",
+      "frequency": {
+        "startHz": 60,
+        "endHz": 380,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "dragon-fireball-charge"
+  },
+  "metadata": {
+    "trigger": "Inhale before spitting fire",
+    "design": "Reverse-envelope vacuum whoosh + rising fiery crackle (350 ms)"
+  }
+}

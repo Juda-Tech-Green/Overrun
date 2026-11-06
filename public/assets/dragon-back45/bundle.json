@@ -1,0 +1,13 @@
+{
+  "format": "pixelforge-phaser",
+  "version": "1.0",
+  "layout": "atlas",
+  "texture": "dragon-back45.png",
+  "atlas": "dragon-back45.atlas.json",
+  "animations": "dragon-back45.animations.json",
+  "game": "dragon-back45.game.json",
+  "frameWidth": 512,
+  "frameHeight": 512,
+  "padding": 0,
+  "frameCount": 27
+}

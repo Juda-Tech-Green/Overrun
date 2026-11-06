@@ -1,0 +1,67 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "idle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 150
+        },
+        {
+          "frameId": "frame-1",
+          "durationMs": 150
+        },
+        {
+          "frameId": "frame-2",
+          "durationMs": 150
+        },
+        {
+          "frameId": "frame-3",
+          "durationMs": 150
+        }
+      ]
+    },
+    {
+      "name": "portal-locked",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "portal-locked",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "prompt-altar-dragon",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "prompt-altar-dragon",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "prompt-portal-locked",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "prompt-portal-locked",
+          "durationMs": 140
+        }
+      ]
+    },
+    {
+      "name": "prompt-portal-enter",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "prompt-portal-enter",
+          "durationMs": 140
+        }
+      ]
+    }
+  ]
+}

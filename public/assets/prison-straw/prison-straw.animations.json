@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "settle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 250
+        },
+        {
+          "frameId": "settle-1",
+          "durationMs": 250
+        },
+        {
+          "frameId": "settle-2",
+          "durationMs": 250
+        },
+        {
+          "frameId": "settle-3",
+          "durationMs": 250
+        }
+      ]
+    }
+  ]
+}

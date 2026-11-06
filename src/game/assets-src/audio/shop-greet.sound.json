@@ -1,0 +1,59 @@
+{
+  "version": "1.0",
+  "id": "shop-greet",
+  "name": "shop-greet",
+  "sampleRate": 44100,
+  "durationMs": 500,
+  "seed": 772034,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.3,
+      "phase": 0,
+      "envelope": {
+        "type": "points",
+        "points": [
+          {
+            "timeMs": 0,
+            "value": 0
+          },
+          {
+            "timeMs": 8,
+            "value": 1
+          },
+          {
+            "timeMs": 480,
+            "value": 0
+          }
+        ]
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 150,
+        "endHz": 180,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 5,
+        "depth": 0.35
+      }
+    }
+  ],
+  "effects": [],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "shop-greet"
+  },
+  "metadata": {
+    "trigger": "Walking up to Vendor",
+    "design": "Deep friendly merchant vocal hum"
+  }
+}

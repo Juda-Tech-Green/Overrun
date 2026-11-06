@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "move-base",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "move-base",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "move-knob",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "move-knob",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "aim-base",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "aim-base",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "aim-knob",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "aim-knob",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "fire",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "fire",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "fire-pressed",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "fire-pressed",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "heal",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "heal",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "heal-pressed",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "heal-pressed",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "interact",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "interact",
+          "durationMs": 100
+        }
+      ]
+    },
+    {
+      "name": "interact-pressed",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "interact-pressed",
+          "durationMs": 100
+        }
+      ]
+    }
+  ]
+}

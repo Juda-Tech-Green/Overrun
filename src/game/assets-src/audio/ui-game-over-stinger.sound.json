@@ -1,0 +1,105 @@
+{
+  "version": "1.0",
+  "id": "ui-game-over-stinger",
+  "name": "ui-game-over-stinger",
+  "sampleRate": 44100,
+  "durationMs": 1800,
+  "seed": 882900,
+  "prng": "xorshift32-v1",
+  "voices": [
+    {
+      "id": "voice-0",
+      "gain": 0.14,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 160,
+        "decayMs": 300,
+        "sustain": 0.5,
+        "releaseMs": 1000
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 130.81,
+        "endHz": 130.81,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-1",
+      "gain": 0.14,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 160,
+        "decayMs": 300,
+        "sustain": 0.5,
+        "releaseMs": 1000
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 155.56,
+        "endHz": 155.56,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    },
+    {
+      "id": "voice-2",
+      "gain": 0.14,
+      "phase": 0,
+      "envelope": {
+        "type": "adsr",
+        "attackMs": 160,
+        "decayMs": 300,
+        "sustain": 0.5,
+        "releaseMs": 1000
+      },
+      "type": "oscillator",
+      "waveform": "triangle",
+      "frequency": {
+        "startHz": 196,
+        "endHz": 196,
+        "curve": "exponential"
+      },
+      "duty": 0.5,
+      "modulation": {
+        "rateHz": 0,
+        "depth": 0
+      }
+    }
+  ],
+  "effects": [
+    {
+      "id": "echo",
+      "type": "delay",
+      "delayMs": 150,
+      "feedback": 0.22,
+      "mix": 0.2
+    }
+  ],
+  "output": {
+    "gain": 0.72,
+    "clipping": "error",
+    "fadeMs": 2
+  },
+  "export": {
+    "format": "wav-pcm16",
+    "key": "ui-game-over-stinger"
+  },
+  "metadata": {
+    "trigger": "Death screen appears",
+    "design": "Deep somber minor chord swell (decaying cello-like brass pad)"
+  }
+}

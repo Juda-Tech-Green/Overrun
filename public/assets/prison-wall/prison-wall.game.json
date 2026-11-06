@@ -1,0 +1,23 @@
+{
+  "version": "1.0",
+  "width": 32,
+  "height": 32,
+  "frameIds": [
+    "frame-0",
+    "drip-1",
+    "drip-2",
+    "drip-3",
+    "drip-4",
+    "drip-5"
+  ],
+  "game": {
+    "version": "1.0",
+    "origin": {
+      "x": 0.5,
+      "y": 0.5
+    },
+    "boxes": [],
+    "anchors": [],
+    "events": []
+  }
+}

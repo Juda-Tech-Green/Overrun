@@ -1,0 +1,27 @@
+{
+  "version": "1.0",
+  "animations": [
+    {
+      "name": "rattle",
+      "loop": true,
+      "frames": [
+        {
+          "frameId": "frame-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "bars-rattle-1",
+          "durationMs": 120
+        },
+        {
+          "frameId": "frame-0",
+          "durationMs": 120
+        },
+        {
+          "frameId": "bars-rattle-2",
+          "durationMs": 120
+        }
+      ]
+    }
+  ]
+}
