@@ -18,6 +18,9 @@ function load(file) {
     }).outputText;
     vm.runInNewContext(compiled, {
         exports,
+        crypto: require('node:crypto').webcrypto,
+        setTimeout: (...args) => setTimeout(...args),
+        clearTimeout: (...args) => clearTimeout(...args),
         require: name => name === 'phaser'
             ? { Scene: class {}, Physics: { Arcade: { Sprite: class {} } }, Input: { Keyboard: { KeyCodes: {}, JustDown: key => Boolean(key?.justDown) } },
                 Math: { Between: (a, b) => Math.floor(Math.random() * (b - a + 1)) + a, Clamp: (v, min, max) => Math.max(min, Math.min(max, v)),
@@ -2638,4 +2641,126 @@ test('all inventory sound keys have unique exported WAVs and valid measured leve
         hashes.add(createHash('sha256').update(wav).digest('hex'));
     }
     assert.equal(hashes.size,keys.length);
+});
+
+
+test('host invites wait for signaling and recover the same room after a disconnect', async t => {
+ t.mock.timers.enable({apis:['setTimeout']});
+ const {n}=coopFixture();n.reset();
+ const peers=[];
+ n.createPeer=async id=>{
+  const p=Object.assign(new EventEmitter(),{id,open:false,disconnected:false,destroyed:false,reconnects:0,
+   reconnect(){this.reconnects++;this.disconnected=false;},
+   destroy(){this.destroyed=true;this.open=false;this.removeAllListeners();}});
+  peers.push(p);return p;
+ };
+ for(let run=0;run<2;run++){
+  await n.host();const p=n.peer,code=n.roomCode;
+  assert.equal(n.canInvite,false,'Unregistered hosts must not share invitations');
+  p.open=true;p.emit('open');assert.equal(n.canInvite,true);
+  // PeerJS emits network error before its disconnected event. Keep the peer alive.
+  p.emit('error',{type:'network'});assert.equal(n.peer,p);assert.equal(p.destroyed,false);
+  p.open=false;p.disconnected=true;p.emit('disconnected');
+  assert.equal(n.canInvite,false);t.mock.timers.tick(2000);
+  assert.equal(p.reconnects,1);assert.equal(n.roomCode,code);
+  p.open=true;p.emit('open');assert.equal(n.canInvite,true);
+  t.mock.timers.tick(20000);assert.equal(p.reconnects,1);
+  p.open=false;p.disconnected=true;p.emit('disconnected');n.reset();
+  t.mock.timers.tick(20000);assert.equal(p.reconnects,1,'Reset cancels external recovery timers');
+  assert.equal(p.destroyed,true);assert.equal(n.canInvite,false);
+ }
+ assert.equal(peers.length,2);
+});
+
+
+test('room readiness controls invite display and a guest cannot advertise a host room',()=>{
+ const {scene,n}=coopFixture();const {CoopRoomSystem}=load('systems/CoopRoomSystem.ts');const panel=new CoopRoomSystem(scene);
+ panel.code={};panel.status={};panel.copyButton={};
+ n.roomCode='ABC234';n.peer={open:false};panel.refresh();
+ assert.equal(panel.code.textContent,'—');assert.equal(panel.copyButton.disabled,true);
+ n.peer.open=true;panel.refresh();assert.equal(panel.code.textContent,'ABC234');assert.equal(panel.copyButton.disabled,false);
+ n.isHost=false;panel.refresh();assert.equal(panel.copyButton.disabled,true);
+});
+
+test('missing hosts get actionable recovery and hosting timeout releases transport',async t=>{
+ t.mock.timers.enable({apis:['setTimeout']});
+ const {n}=coopFixture();n.reset();
+ const p=Object.assign(new EventEmitter(),{open:false,disconnected:false,destroyed:false,
+  destroy(){this.destroyed=true;this.removeAllListeners();}});
+ n.createPeer=async()=>p;
+ await n.join('ABC234');
+ // Exhaust the two bounded retries before showing recovery instructions.
+ for(let i=0;i<3;i++){p.emit('error',{type:'peer-unavailable'});if(i<2){n.clearJoinRetry();}}
+ assert.match(n.status,/Could not reach host/);assert.match(n.status,/fresh invite/);
+ assert.equal(p.destroyed,true);assert.equal(n.isGuest,true);
+ n.reset();const q=Object.assign(new EventEmitter(),{open:false,destroy(){this.destroyed=true;this.removeAllListeners();}});
+ n.createPeer=async()=>q;await n.host();t.mock.timers.tick(20000);
+ assert.equal(q.destroyed,true);assert.equal(n.peer,null);assert.match(n.status,/creation timed out/);
+});
+
+
+test('signaling recovery stops after three attempts without destroying an established game',async t=>{
+ t.mock.timers.enable({apis:['setTimeout']});
+ const {n}=coopFixture();n.reset();
+ const p=Object.assign(new EventEmitter(),{open:false,disconnected:false,destroyed:false,reconnects:0,
+  reconnect(){this.reconnects++;this.disconnected=false;},destroy(){this.destroyed=true;this.removeAllListeners();}});
+ n.createPeer=async()=>p;await n.host();p.open=true;p.emit('open');
+ const connection={open:true,removeAllListeners(){},close(){this.open=false;}};
+ n.connection=connection;n.isConnected=true;
+ p.emit('error',{type:'network'});p.open=false;p.disconnected=true;p.emit('disconnected');
+ for(const delay of [2000,5000,5000]){p.disconnected=true;t.mock.timers.tick(delay);}
+ assert.equal(p.reconnects,3);t.mock.timers.tick(5000);assert.match(n.status,/offline/);
+ assert.equal(n.connection,connection);assert.equal(n.isConnected,true);assert.equal(p.destroyed,false);
+ t.mock.timers.tick(30000);assert.equal(p.reconnects,3);n.reset();
+});
+
+
+test('guest retries transient missing-host errors and cancels retry work on reset',async t=>{
+ t.mock.timers.enable({apis:['setTimeout']});
+ const {n}=coopFixture();n.reset();
+ const connections=[];
+ const p=Object.assign(new EventEmitter(),{open:true,
+  connect(){const c=Object.assign(new EventEmitter(),{open:false,close(){this.closed=true;}});connections.push(c);return c;},
+  destroy(){this.destroyed=true;this.removeAllListeners();}});
+ n.createPeer=async()=>p;await n.join('ABC234');p.emit('open');assert.equal(connections.length,1);
+ p.emit('error',{type:'peer-unavailable'});p.emit('error',{type:'peer-unavailable'});
+ t.mock.timers.tick(1500);assert.equal(connections.length,2);assert.equal(connections[0].closed,true);
+ assert.equal(connections[0].listenerCount('open'),0);
+ p.emit('error',{type:'peer-unavailable'});t.mock.timers.tick(1500);assert.equal(connections.length,3);
+ n.isConnected=true;p.emit('error',{type:'peer-unavailable'});assert.equal(n.peer,p,'A late failed offer cannot kill a connected retry');
+ n.isConnected=false;p.emit('error',{type:'peer-unavailable'});assert.equal(n.peer,null);assert.match(n.status,/Could not reach host/);
+ assert.equal(p.destroyed,true);t.mock.timers.tick(10000);assert.equal(connections.length,3);
+ n.reset();
+ const q=Object.assign(new EventEmitter(),{open:true,connect:p.connect,destroy:p.destroy});
+ n.createPeer=async()=>q;await n.join('ABC234');q.emit('open');q.emit('error',{type:'peer-unavailable'});
+ n.reset();t.mock.timers.tick(20000);assert.equal(connections.length,4);
+});
+
+
+test('join timeout distinguishes an answered host from an unanswered invite',async t=>{
+ t.mock.timers.enable({apis:['setTimeout']});
+ const {n}=coopFixture();n.reset();
+ for(const answered of [false,true]){
+  const p=Object.assign(new EventEmitter(),{destroy(){this.removeAllListeners();}});
+  n.createPeer=async()=>p;await n.join('ABC234');
+  n.connection={peerConnection:{remoteDescription:answered?{}:null},removeAllListeners(){},close(){}};
+  t.mock.timers.tick(20000);
+  assert.match(n.status,answered?/Host answered.*TURN relay/:/Host did not answer/);
+  n.reset();
+ }
+});
+
+
+test('peer relay loader handles absent functions, valid ICE and provider failures',async()=>{
+ const {loadIceServers}=load('ice-servers.ts');const signal=new AbortController().signal;
+ assert.equal(await loadIceServers(signal,async()=>new Response('',{status:404})),undefined);
+ assert.equal(await loadIceServers(signal,async()=>new Response('<html/>',{headers:{'content-type':'text/html'}})),undefined);
+ assert.equal(await loadIceServers(signal,async()=>Response.json({iceServers:[]})),undefined);
+ const servers=[{urls:['turns:relay.example:443?transport=tcp'],username:'user',credential:'session-key'}];
+ const result=await loadIceServers(signal,async(_url,options)=>{assert.equal(options.signal,signal);return Response.json({iceServers:servers});});
+ assert.equal(JSON.stringify(result),JSON.stringify(servers));
+ await assert.rejects(loadIceServers(signal,async()=>Response.json({error:'unavailable'},{status:503})),/TURN service unavailable/);
+ await assert.rejects(loadIceServers(signal,async()=>Response.json({iceServers:[{urls:'javascript:bad'}]})),/Invalid relay/);
+ const {n}=coopFixture();const pending=new AbortController();n.pendingPeerRequests.add(pending);n.reset();
+ assert.equal(pending.signal.aborted,true);assert.equal(n.pendingPeerRequests.size,0);
 });

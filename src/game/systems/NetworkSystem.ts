@@ -30,6 +30,7 @@ import {
     FIRE_RATE,
     SHOTGUN_FIRE_RATE,
 } from '../constants';
+import { loadIceServers } from '../ice-servers';
 import { playerAnimation, playerPose } from '../player-facing';
 import { interactionContext, interactionPressed } from '../interaction';
 
@@ -71,11 +72,19 @@ export class NetworkSystem {
     private reloadUntil = 0;
     private reloadWeapon: Weapon = 'rifle';
     private connectTimeout: ReturnType<typeof setTimeout> | null = null;
+    private signalingTimer: ReturnType<typeof setTimeout> | null = null;
+    private signalingAttempts = 0;
+    private pendingPeerRequests = new Set<AbortController>();
+    private joinRetryTimer: ReturnType<typeof setTimeout> | null = null;
     private actionAt = new Map<string, number>();
     private localSkin: Skin = 'player';
     private initialized = false;
     get isGuest() {
         return this.isMultiplayer && !this.isHost;
+    }
+    get canInvite() {
+        return this.isMultiplayer && this.isHost && Boolean(this.roomCode) &&
+            Boolean(this.peer?.open) && !this.peer?.disconnected && !this.peer?.destroyed;
     }
     get blocked() {
         return this.panel.isOpen || (this.isGuest && !this.initialized);
@@ -87,8 +96,18 @@ export class NetworkSystem {
         this.scene.shop.isShopOpen ||
         this.scene.chat.isChatOpen;
     createPeer = async (id?: string): Promise<Peer> => {
-        const { Peer } = await import('peerjs');
-        return id ? new Peer(id) : new Peer();
+        const controller = new AbortController();
+        this.pendingPeerRequests.add(controller);
+        const timeout = setTimeout(() => controller.abort(), 6000);
+        try {
+            const [{ Peer }, iceServers] = await Promise.all([import('peerjs'), loadIceServers(controller.signal)]);
+            if (controller.signal.aborted) throw new Error('Room setup canceled');
+            const options = iceServers ? { config: { iceServers } } : {};
+            return id ? new Peer(id, options) : new Peer(options);
+        } finally {
+            clearTimeout(timeout);
+            this.pendingPeerRequests.delete(controller);
+        }
     };
     create = () => {
         this.seed = crypto.getRandomValues(new Uint32Array(1))[0] % 100000;
@@ -104,9 +123,41 @@ export class NetworkSystem {
         if (this.connectTimeout) clearTimeout(this.connectTimeout);
         this.connectTimeout = null;
     };
+    private clearJoinRetry = () => {
+        if (this.joinRetryTimer) clearTimeout(this.joinRetryTimer);
+        this.joinRetryTimer = null;
+    };
+    private clearSignalingTimer = () => {
+        if (this.signalingTimer) clearTimeout(this.signalingTimer);
+        this.signalingTimer = null;
+    };
+    private recoverSignaling = (peer: Peer) => {
+        if (this.peer !== peer || peer.destroyed || this.signalingTimer) return;
+        this.setStatus('Room connection interrupted. Reconnecting…');
+        this.signalingTimer = setTimeout(() => {
+            this.signalingTimer = null;
+            if (this.peer !== peer || peer.destroyed || peer.open) return;
+            if (this.signalingAttempts >= 3) {
+                this.setStatus('Room is offline. Select Host Game again and send the new invite.');
+                return;
+            }
+            this.signalingAttempts++;
+            try {
+                if (peer.disconnected) peer.reconnect();
+            } catch {
+                // Keep an existing gameplay connection alive while signaling retries.
+            }
+            this.recoverSignaling(peer);
+        }, this.signalingAttempts === 0 ? 2000 : 5000);
+    };
     private disposeTransport = () => {
         this.generation++;
+        for (const request of this.pendingPeerRequests) request.abort();
+        this.pendingPeerRequests.clear();
         this.clearTimeout();
+        this.clearSignalingTimer();
+        this.clearJoinRetry();
+        this.signalingAttempts = 0;
         const peer = this.peer,
             conn = this.connection;
         this.peer = null;
@@ -167,6 +218,10 @@ export class NetworkSystem {
         this.roomCode = makeRoomCode(crypto.getRandomValues(new Uint8Array(6)));
         this.setStatus('Creating room…');
         const generation = this.generation;
+        this.connectTimeout = setTimeout(() => {
+            if (generation === this.generation && !this.canInvite)
+                this.failure('Room creation timed out. Check your connection and select Host Game again.');
+        }, 20000);
         try {
             const peer = await this.createPeer(PEER_PREFIX + this.roomCode);
             if (generation !== this.generation) {
@@ -175,7 +230,11 @@ export class NetworkSystem {
             }
             this.peer = peer;
             peer.on('open', () => {
-                if (this.peer === peer) this.setStatus('Waiting for Player 2…');
+                if (this.peer !== peer) return;
+                this.clearTimeout();
+                this.clearSignalingTimer();
+                this.signalingAttempts = 0;
+                this.setStatus(this.isConnected ? 'Connected (Host)' : 'Waiting for Player 2…');
             });
             peer.on('connection', (conn) => {
                 if (this.peer !== peer) {
@@ -192,11 +251,15 @@ export class NetworkSystem {
                 this.attach(conn);
             });
             peer.on('error', (error) => {
-                if (this.peer === peer) this.failure(`Room error: ${error.type}. Try hosting again.`);
+                if (this.peer !== peer) return;
+                if (['network', 'socket-error', 'socket-closed'].includes(error.type)) {
+                    this.recoverSignaling(peer);
+                    return;
+                }
+                this.failure(`Room error: ${error.type}. Try hosting again.`);
             });
             peer.on('disconnected', () => {
-                if (this.peer === peer)
-                    this.setStatus('Signaling disconnected. Leave and host again to invite.');
+                this.recoverSignaling(peer);
             });
         } catch (error) {
             if (generation === this.generation) this.failure(`Unable to create room: ${String(error)}`);
@@ -221,7 +284,9 @@ export class NetworkSystem {
         const generation = this.generation;
         this.connectTimeout = setTimeout(() => {
             if (generation === this.generation)
-                this.failure('Connection timed out. Check the code and keep the host tab open.');
+                this.failure(this.connection?.peerConnection?.remoteDescription
+                    ? 'Host answered, but the gameplay connection timed out. A firewall or NAT may require a working TURN relay. Try another network.'
+                    : 'Host did not answer. Check the invite and keep the host tab open, then try Join again.');
         }, 20000);
         try {
             const peer = await this.createPeer();
@@ -230,19 +295,34 @@ export class NetworkSystem {
                 return;
             }
             this.peer = peer;
-            peer.on('open', () => {
-                if (this.peer === peer)
-                    this.attach(
-                        peer.connect(PEER_PREFIX + code, {
-                            serialization: 'binary',
-                            reliable: true,
-                            metadata: { protocol: 1 },
-                        }),
-                    );
-            });
+            let attempts = 0;
+            const connect = () => {
+                if (this.peer !== peer || this.isConnected) return;
+                this.connection?.removeAllListeners();
+                this.connection?.close();
+                this.attach(peer.connect(PEER_PREFIX + code, {
+                    serialization: 'binary',
+                    reliable: true,
+                    metadata: { protocol: 1 },
+                }));
+            };
+            peer.on('open', connect);
             peer.on('error', (error) => {
-                if (this.peer === peer)
-                    this.failure(`Could not join: ${error.type}. Check the code or network.`);
+                if (this.peer !== peer) return;
+                if (error.type === 'peer-unavailable' && this.isConnected) return;
+                if (error.type === 'peer-unavailable' && attempts < 2) {
+                    if (this.joinRetryTimer) return;
+                    attempts++;
+                    this.setStatus('Host not responding yet. Retrying…');
+                    this.joinRetryTimer = setTimeout(() => {
+                        this.joinRetryTimer = null;
+                        connect();
+                    }, 1500);
+                    return;
+                }
+                this.failure(error.type === 'peer-unavailable'
+                    ? 'Could not reach host. Ask Player 1 to keep their hosting tab open, wait for “Waiting for Player 2…”, and send a fresh invite. Then try Join again.'
+                    : `Could not join: ${error.type}. Check the code or network.`);
             });
         } catch (error) {
             if (generation === this.generation) this.failure(`Unable to join: ${String(error)}`);
@@ -292,6 +372,7 @@ export class NetworkSystem {
         this.receivedEvents.clear();
         conn.on('open', () => {
             if (this.connection !== conn) return;
+            this.clearJoinRetry();
             this.scene.audio?.play('ui-coop-connect');
             this.isConnected = true;
             if(this.isHost)this.clearTimeout();

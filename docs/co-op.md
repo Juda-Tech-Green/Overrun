@@ -1,7 +1,8 @@
 # Private two-player co-op
 
 Open **CO-OP** in the game HUD. Player 1 selects **Host Game** and shares the
-six-character room code or **Copy Invite Link**. Player 2 opens that link (the
+six-character room code or **Copy Invite Link** after the status reaches
+**Waiting for Player 2…**. Codes/copy stay unavailable until signaling registers the host. Player 2 opens that link (the
 `?room=CODE` query automatically joins), or enters the code in **Join**.
 The room accepts one guest; a third connection is rejected. Both players see a
 connection indicator and the other player's health label.
@@ -90,7 +91,8 @@ See [Cloudflare's Quick Tunnel guide](https://developers.cloudflare.com/tunnel/g
 ## Static Netlify deployment
 
 Build with `npm run build`; publish `dist/` on Netlify as before. There are no
-Netlify Functions, game servers, room databases or saved room records. Invite
+game servers, room databases or saved room records. An optional Netlify Function
+fetches TURN credentials when a relay provider is configured (see below). Invite
 links only add a query parameter to the existing static page.
 
 PeerJS 1.5.5 uses its default public cloud broker for signaling. After negotiation,
@@ -104,8 +106,9 @@ See [PeerJS's API](https://peerjs.com/client/api/peer) and
 
 No microphone/camera permission is used. HTTPS makes the deployment, clipboard
 and mobile browser context consistent. A tunnel does **not** bypass restrictive
-WebRTC NAT/firewalls. Some network pairs require a TURN relay, which this default
-broker-only setup does not provision. Test the actual desktop/phone networks;
+WebRTC NAT/firewalls. Some network pairs require a working TURN relay. PeerJS 1.5.5 ships public
+STUN and TURN defaults; this project does not provision a dedicated relay or
+guarantee the public relays are reachable from every network. Test the actual desktop/phone networks;
 connection timeout/error states provide Retry/Leave through the room panel.
 
 ## Protocol and ownership
@@ -162,3 +165,72 @@ restarts. Captures go to `/tmp/pixelforge-coop-smoke`. It controls encounter
 placement for reliable combat assertions. Existing single-player desktop, mobile,
 aim and progression smoke scripts remain relevant and use the same tooling.
 Physical-device ergonomics and all NAT/network combinations require manual testing.
+
+
+## Signaling recovery and cross-network troubleshooting
+
+Opening two tabs on one computer checks local gameplay and signaling, but does
+not validate a Colombia-to-Pakistan network path. Country boundaries are not a
+room restriction; latency, NAT, firewalls and service reachability differ. A
+`peer-unavailable` response indicates that PeerJS could not reach the advertised
+peer; do not assume a TURN failure from that message alone.
+
+The host automatically attempts to restore signaling with the same room ID,
+up to three attempts, while retaining an existing DataChannel. Copy/code display
+are disabled until the broker confirms readiness. Hosting has a 20-second startup
+timeout. Guests retry `peer-unavailable` twice at 1.5-second intervals inside the
+existing 20-second join deadline. Pending retries are canceled on success, leave,
+shutdown, failure or restart; late failed offers cannot tear down a connected retry.
+An unanswered-host timeout and an answered-host/DataChannel timeout now have
+separate recovery messages. Unreachable rooms ultimately require a fresh invite;
+closing or refreshing the host still ends its room.
+
+To exercise separate browser engines in the co-op smoke, set
+`PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH` to the host binary and
+`COOP_GUEST_CHROMIUM_EXECUTABLE_PATH` to the guest binary. The smoke deliberately
+disconnects the host from signaling, checks that sharing is disabled, waits for
+same-code recovery, then runs the ordinary combat/progression/restart scenario.
+Windows and geographically separate networks still need actual-device testing.
+
+References: [PeerJS errors and reconnect API](https://peerjs.com/client/api/peer),
+[shipped ICE defaults](https://github.com/peers/peerjs/blob/v1.5.5/lib/util.ts).
+
+
+## Configure a managed TURN relay on Netlify
+
+1. Create your own [Metered Open Relay account](https://www.metered.ca/tools/openrelay/).
+   The provider currently advertises 20 GB/month free. Review its current plan and
+   quota; no service or subscription is activated by this repository.
+2. In its dashboard, get your TURN application host (`your-app.metered.live`) and
+   TURN REST API key. Use the TURN API key, not a signaling publishable key.
+3. In Netlify → Project configuration → Environment variables, add
+   `METERED_TURN_HOST` (hostname only, no `https://` or path) and
+   `METERED_TURN_API_KEY` (mark secret), with **Functions** scope and the intended
+   production deploy context. Do not put the key in Git, chat, `netlify.toml`,
+   or a `VITE_` variable. `.env.example` contains names/placeholders only.
+4. Deploy this code through Git and redeploy after setting runtime variables.
+   The function is `netlify/functions/ice-servers.mjs`; no npm dependency is needed.
+5. Visit `/.netlify/functions/ice-servers` on the deployed site. HTTP 200 with a
+   nonempty `iceServers` list indicates the provider fetch worked. An empty list
+   means the optional provider is not configured; HTTP 503 indicates incomplete
+   settings or a provider failure. Do not share the returned relay credentials.
+6. Reload both players' game tabs and create a new room. Test the actual
+   Colombia/Linux/Brave → Pakistan/Windows/Chrome pair. Successful local tabs
+   alone do not validate the relay or either country's network access.
+
+The browser calls the same-origin endpoint before creating each Peer and supplies
+its ICE list to PeerJS. With no configuration, it retains PeerJS defaults.
+Configured-provider failures show an error rather than silently claiming a relay
+is available. Fetches have deadlines and are aborted on scene shutdown/reset.
+The function accepts GET, rejects cross-origin browser requests, validates the
+Metered host and returned ICE data, strips extra fields, marks responses no-store
+and declares a 30-request/minute per-IP Netlify rate limit. Only WebRTC credentials
+reach the browser, never the privileged REST key. This endpoint is public for a
+public game; monitor the provider's quota because rate limiting is not per-user
+authentication. The function fetches credentials only; gameplay still travels
+through WebRTC directly or through the selected TURN relay.
+
+Netlify Functions are deployed from the repository, not from a raw `dist/` upload.
+Manual static uploads and plain Vite preview retain the default PeerJS setup.
+Live provider authentication, forced-relay connectivity and cross-country success
+remain unverified until a real account is configured.

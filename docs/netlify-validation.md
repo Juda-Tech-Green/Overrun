@@ -48,3 +48,42 @@ A filename and credential-pattern scan of the proposed current file set found
 no sensitive filename candidates or credential matches in 907 text files. No
 tracked files bypass the current ignore rules. This is a scoped pattern scan,
 not an exhaustive secret or historical Git audit. No commit or push was made.
+
+
+## Remote co-op investigation — 2026-11-05
+
+The user reported a Brave/Linux host in Colombia and Chrome/Windows 10 guest in
+Pakistan, while two Brave tabs on the host computer worked. The exact geographic
+pair is not available to this test environment.
+
+- Manual live Netlify UI test: host and invite guest connected successfully.
+- Live fault injection: signaling disconnect left Copy Invite enabled/code visible;
+  the new readiness assertion failed on that production version as expected.
+- Separate Brave host + Chromium guest on the live site connected and progressed
+  through combat, personal shopping and ammunition checks; the initial full run
+  timed out at a zero-duration reload key press. This is partial live coverage,
+  not a complete live pass.
+- Local relay-only probe with shipped PeerJS defaults: no connection and zero relay
+  candidates within 20 seconds. This does not establish a worldwide provider
+  outage or prove the cause of the reported `peer-unavailable` response.
+- Revised build: TypeScript, 105 tests and production build passed. Endpoint tests
+  cover optional configuration, origins/methods, provider-host validation, malformed
+  responses, failure handling and API-key redaction. Client tests cover ICE input,
+  fallbacks and abort cleanup. No real provider API key was used.
+- Full revised-build Brave-host/separate-Chromium-guest co-op smoke passed,
+  including injected signaling loss/same-room recovery, combat/progression,
+  third-seat rejection, purchases/healing, leave/rejoin and scene restarts.
+
+Current logs: `/tmp/overrun-coop-fix-check.log`,
+`/tmp/overrun-live-recovery-baseline.log`, `/tmp/overrun-live-brave.log`,
+`/tmp/overrun-relay-probe.log`, `/tmp/overrun-final-coop.log`.
+The Metered endpoint is prepared but inactive until the user configures their own
+provider host/API key in Netlify's Functions environment and deploys this revision.
+No commit, push, provider signup, paid service or live deployment was performed.
+Actual provider authentication, deployed Function/rate-limit behavior, forced-relay
+success and Colombia-to-Pakistan compatibility remain unverified.
+
+Final desktop smoke against the revised production build also passed, including
+combat, boss overlap and two restarts (`/tmp/overrun-final-browser.log`). Earlier
+concurrent browser runs timed out on reload/restart assertions; final sequential
+runs passed. This is bounded smoke evidence, not exhaustive network reliability.

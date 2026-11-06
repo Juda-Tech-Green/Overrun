@@ -15,8 +15,9 @@ build. Preview serves the compiled game at http://127.0.0.1:4173.
 
 **Git deployment:** import the repository in Netlify, leaving the base directory
 at the repository root. `netlify.toml` sets Node 24, build command
-`npm run release:check` and publish directory `dist`. No environment variables,
-Functions or database are required for the existing co-op mode.
+`npm run release:check` and publish directory `dist`. Default PeerJS co-op needs no environment variables or database. Managed TURN
+uses the optional credentials Function and two server-only environment variables;
+see the [relay setup](co-op.md#configure-a-managed-turn-relay-on-netlify).
 
 Before pushing, include all intended game changes, `src/game/systems/`, runtime
 exports under `public/assets/`, tests, the lockfile, and the six 0.6.0 package
@@ -54,8 +55,8 @@ The host validates gameplay; room codes are private invitations, not account
 authentication or a cheat-proof security boundary. PeerJS's public signaling
 service is an external dependency. No camera or microphone is requested.
 
-Gameplay uses peer-to-peer WebRTC, not Netlify Functions. The default PeerJS
-configuration supplies STUN, but this project does not provision a TURN relay.
+Gameplay uses peer-to-peer WebRTC, not Netlify Functions. PeerJS 1.5.5 ships public STUN/TURN defaults, but this project does not
+provision a dedicated relay or guarantee those public services are reachable.
 Some restrictive NAT/firewall combinations will fail; hosting the static site
 or running a Cloudflare tunnel cannot fix that. Verify the actual players'
 networks before launch. Broader connectivity requires a separately provisioned
@@ -99,3 +100,6 @@ ask both players to reload and create a new room. Rooms cannot migrate between
 versions. Review project and third-party licenses before public distribution.
 
 Recorded results: [release validation](netlify-validation.md).
+
+For reliable cross-network testing, configure the optional TURN service using a
+Git deployment. The static upload ZIP does not contain Netlify Functions.

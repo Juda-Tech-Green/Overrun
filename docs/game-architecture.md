@@ -986,3 +986,37 @@ The sound inventory reference now lives in `assets-src/audio/sound-effects-list.
 the generator and regression tests read that path. Local `TODO/` remains ignored.
 Validate deployment from the Git-eligible file set, not just the working directory,
 so tests cannot depend on ignored local files. Runtime ownership is unchanged.
+
+
+## Co-op signaling recovery — 2026-11-05
+
+NetworkSystem owns host startup timeout, bounded same-peer signaling recovery and
+guest missing-peer retries. Native timers are canceled by transport disposal on
+leave/failure/reset/shutdown, and callbacks check the originating peer/generation.
+Host signaling errors no longer destroy an established DataChannel. Host open
+clears recovery state; guest connection success clears pending join retries.
+Readiness is derived from PeerJS open/disconnected/destroyed flags. CoopRoomSystem
+uses it to gate host room-code display/copy and cleans its button reference on
+shutdown. The composition root and gameplay authority remain unchanged.
+
+Regression tests exercise recovery, bounded attempts, timeouts, guest retries,
+stale errors and two resets. The real co-op smoke now fault-injects a signaling
+disconnect before joining and supports separate host/guest browser executables.
+Two tabs or two browser processes on one machine are not cross-network evidence.
+
+
+`NetworkSystem.createPeer` now requests optional same-origin ICE configuration
+before constructing PeerJS. It owns AbortControllers for pending setup requests,
+with a six-second deadline and explicit disposal; stale async peer results retain
+the existing generation guard. `ice-servers.ts` validates browser ICE input.
+`netlify/functions/ice-servers.mjs` optionally fetches Metered credentials using
+server-only runtime environment variables, never a Vite-embedded privileged key.
+No provider configured retains defaults; configured-provider errors are explicit.
+`npm test` runs all `tests/*.test.cjs`, including endpoint validation and secret
+redaction checks. TURN activation and actual external-network verification need
+a provider account. The release guide documents Git-only Function deployment.
+
+Final verification: TypeScript, 105 Node tests and production build pass. The
+revised compiled build passes desktop smoke and separate Brave/Chromium co-op
+with injected signaling recovery and restarts. The live cross-country pair and
+a real configured TURN service remain unverified; see netlify-validation.md.

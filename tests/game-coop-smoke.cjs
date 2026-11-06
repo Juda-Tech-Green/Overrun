@@ -4,6 +4,7 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 (async()=>{
  const browser=await chromium.launch({headless:true,args:['--no-sandbox'],executablePath:process.env.PLAYWRIGHT_CHROMIUM_EXECUTABLE_PATH||'/home/juda/.cache/ms-playwright/chromium-1248/chrome-linux64/chrome'});
+ const guestBrowser=process.env.COOP_GUEST_CHROMIUM_EXECUTABLE_PATH?await chromium.launch({headless:true,args:['--no-sandbox'],executablePath:process.env.COOP_GUEST_CHROMIUM_EXECUTABLE_PATH}):browser;
  const errors=[];const root=process.env.GAME_URL||'http://127.0.0.1:8094';
  try{
   fs.mkdirSync('/tmp/pixelforge-coop-smoke',{recursive:true});
@@ -13,6 +14,13 @@ const fs=require('node:fs');
   await boot(host,root);
   await host.locator('#coop-toggle').click();await host.getByRole('button',{name:'Host Game',exact:true}).click();
   await host.waitForFunction(()=>window.__testGame.scene.getScene('Game').network.peer?.open,null,{timeout:30000});
+  // A suspended/lost signaling socket must recover the same advertised room.
+  const originalRoom=await host.evaluate(()=>window.__testGame.scene.getScene('Game').network.roomCode);
+  await host.evaluate(()=>window.__testGame.scene.getScene('Game').network.peer.disconnect());
+  assert.equal(await host.getByRole('button',{name:'Copy Invite Link',exact:true}).isEnabled(),false);
+  assert.equal(await host.locator('.coop-room output').textContent(),'—');
+  await host.waitForFunction(()=>window.__testGame.scene.getScene('Game').network.canInvite,null,{timeout:15000});
+  assert.equal(await host.evaluate(()=>window.__testGame.scene.getScene('Game').network.roomCode),originalRoom);
   await host.context().grantPermissions(['clipboard-read','clipboard-write']);
   const sizes=await host.locator('.coop-room button').evaluateAll(buttons=>buttons.map(b=>({w:b.getBoundingClientRect().width,h:b.getBoundingClientRect().height})));
   assert.ok(sizes.every(s=>s.w>=48&&s.h>=48));
@@ -21,7 +29,7 @@ const fs=require('node:fs');
   await host.screenshot({path:'/tmp/pixelforge-coop-smoke/room-panel.png'});
   const room=await host.evaluate(()=>window.__testGame.scene.getScene('Game').network.roomCode);
   assert.match(room,/^[A-Z2-9]{6}$/);
-  const guest=await browser.newPage({viewport:{width:924,height:412},hasTouch:true,isMobile:true});
+  const guest=await guestBrowser.newPage({viewport:{width:924,height:412},hasTouch:true,isMobile:true});
   await boot(guest,`${root}/?room=${room}`);
   await guest.waitForFunction(()=>window.__testGame.scene.getScene('Game').network.remotePlayer,null,{timeout:40000});
   const state=page=>page.evaluate(()=>{const s=window.__testGame.scene.getScene('Game');return {connected:s.network.isConnected,host:s.network.isHost,skin:s.playerController.currentCharacter,remoteSkin:s.network.remoteState?.skin,p:{x:s.playerController.player.x,y:s.playerController.player.y},hp:s.playerController.playerHealth,enemyCount:s.enemies.zombies.countActive(true),drops:s.loot.pickups.size,inventory:{...s.inventory.counts},key:s.inventory.hasPortalKey,zone:s.castle.currentZone};});
@@ -98,7 +106,7 @@ const fs=require('node:fs');
   await tapControl('fire');
   await host.waitForFunction(()=>window.__testGame.scene.getScene('Game').network.remoteAmmo.shotgun===3);
   await guest.waitForFunction(()=>window.__testGame.scene.getScene('Game').weapons.currentAmmo===3);
-  await guest.keyboard.press('r');
+  await guest.keyboard.press('r',{delay:80});
   await host.waitForFunction(()=>window.__testGame.scene.getScene('Game').network.remoteAmmo.shotgun===4);
   await guest.waitForFunction(()=>window.__testGame.scene.getScene('Game').weapons.currentAmmo===4&&!window.__testGame.scene.getScene('Game').weapons.isReloading);
   // Personal purchases update only the buyer's balance/kit count and mobile label.
@@ -148,7 +156,12 @@ const fs=require('node:fs');
   assert.equal(rejected,true);assert.equal((await state(host)).connected,true);
   for(let run=0;run<2;run++){
    await guest.evaluate(()=>{window.__oldPeer=window.__testGame.scene.getScene('Game').network.peer;window.__testGame.scene.getScene('Game').scene.restart();});
-   await guest.waitForFunction(()=>window.__testGame.scene.getScene('Game').network.remotePlayer&&window.__testGame.scene.getScene('Game').network.peer!==window.__oldPeer,null,{timeout:40000});
+   await guest.waitForFunction(()=>window.__testGame.scene.getScene('Game').network.remotePlayer&&window.__testGame.scene.getScene('Game').network.peer!==window.__oldPeer,null,{timeout:40000}).catch(async error=>{
+    for(const [name,page] of [['host',host],['guest',guest]])console.error(name,await page.evaluate(()=>{
+     const n=window.__testGame.scene.getScene('Game').network;
+     return {status:n.status,connected:n.isConnected,peerOpen:n.peer?.open,signalingLost:n.peer?.disconnected,channelOpen:n.connection?.open,ice:n.connection?.peerConnection?.iceConnectionState};
+    }));throw error;
+   });
    await guest.waitForFunction(()=>{const s=window.__testGame.scene.getScene('Game');return s.score===0&&s.playerController.medkits===0;});
    assert.equal(await guest.evaluate(()=>window.__oldPeer.destroyed),true);assert.equal(await guest.locator('.coop-hud').count(),1);
   }
@@ -169,5 +182,5 @@ const fs=require('node:fs');
    assert.equal(await host.evaluate(()=>window.__testGame.scene.getScene('Game').network.peer),null);
   }
   assert.deepEqual(errors,[]);console.log('Co-op smoke passed using real PeerJS Cloud/WebRTC: two skins, world geometry, bidirectional movement, guest combat/loot/craft/portal/altar, personal kills and first-aid purchases/healing, health authority, third-seat rejection, leave and restarts.');
- }finally{await browser.close();}
+ }finally{if(guestBrowser!==browser)await guestBrowser.close();await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});
